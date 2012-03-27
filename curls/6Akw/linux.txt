@@ -1,0 +1,167 @@
+Linux and Unix PDF's/
+├── 0470413395 Fed10BIB.pdf
+├── 1584503718.chm
+├── Advanced Programming In The UNIX Environment, 2nd Edition (2005) - allbooksfree.tk
+│   ├── Advanced Programming In The UNIX Environment, 2nd Edition (2005) - allbooksfree.tk.chm
+│   ├── allbooksfree.tk.URL
+│   ├── ProgrammersHeaven.tk.URL
+│   └── Read Me.txt
+├── A Practical Guide To Linux Commands, Editors, And Shell Programming (2005) - allbooksfree.tk
+│   ├── allbooksfree.tk.URL
+│   ├── A Practical Guide To Linux Commands, Editors, And Shell Programming (2005) - allbooksfree.tk.chm
+│   ├── ProgrammersHeaven.tk.URL
+│   └── Read Me.txt
+├── Apress Beginning Linux Command Line.pdf
+├── Apress.Beginning.Ubuntu.Linux.3rd.Edition.Jun.2008.eBook
+│   ├── Apress.Beginning.Ubuntu.Linux.3rd.Edition.Jun.2008.pdf
+│   └── ebooks-share.blogspot.com.url
+├── Apress.Beginning.Ubuntu.Server.Administration.From.Novice.To.Professional.RETAiL.eBOOk-sUppLeX.pdf
+├── Apress.Expert.Shell.Scripting.Jan.2009.eBook-BBL
+│   ├── Apress.Expert.Shell.Scripting.Jan.2009.pdf
+│   ├── bbl.nfo
+│   ├── ebookshare.net.url
+│   └── file_id.diz
+├── Automating Linux and Unix System Administration~tqw~_darksiderg
+│   ├── Automating Linux and Unix System Administration~tqw~_darksiderg.nfo
+│   ├── Automating Linux and Unix System Administration~tqw~_darksiderg.pdf
+│   └── DARKSIDE RG.URL
+├── Beginning_shell_scripting.pdf
+├── Beginning the Linux Command Line~tqw~_darksiderg
+│   ├── Beginning the Linux Command Line~tqw~_darksiderg.nfo
+│   ├── Beginning the Linux Command Line~tqw~_darksiderg.pdf
+│   └── DARKSIDE RG.URL
+├── !!!! C Programming in Linux.pdf
+├── Designing and Implementing Linux Firewalls and QoS.pdf
+├── Designing_Implementing_Linux_Firewalls-QoS.rar
+├── Expert Shell Scripting~tqw~_darksiderg
+│   ├── DARKSIDE RG.URL
+│   ├── Expert Shell Scripting~tqw~_darksiderg.nfo
+│   └── Expert Shell Scripting~tqw~_darksiderg.pdf
+├── How Linux Works - What Every Super-User Should Know (2004) - allbooksfree.tk
+│   ├── allbooksfree.tk.URL
+│   ├── How Linux Works - What Every Super-User Should Know (2004) - allbooksfree.tk.chm
+│   ├── ProgrammersHeaven.tk.URL
+│   └── Read Me.txt
+├── How Linux Works - What Every Super-User Should Know.chm
+├── John_Wiley_-_Redhat_Linux_Networking_and_System_Administration_3rd_Edition.pdf
+├── Linux 2009 Edition.pdf
+├── Linux Administration - A Beginner's Guide Fifth Edition.pdf
+├── Linux Administration Handbook 2nd Ed~tqw~_darksiderg
+│   ├── DARKSIDE RG.URL
+│   ├── Linux Administration Handbook 2nd Ed~tqw~_darksiderg.nfo
+│   └── Linux Administration Handbook 2nd Ed~tqw~_darksiderg.pdf
+├── Linux and Unix PDF's - Shortcut.lnk
+├── Linux and UNIX Programming Books 2007
+│   ├── Blanchette - C++ GUI Programming With Qt 4 (Prentice, 2006).chm
+│   ├── Bovet - Understanding the Linux Kernel 3e (O'Reilly, 2005).chm
+│   ├── Burtch - Linux Shell Scripting with Bash (2004).pdf
+│   ├── Glass,Ables - Linux for Programmers and Users (Prentice, 2006).chm
+│   ├── Hagen - The Definitive Guide to GCC 2e (Apress, 2006).pdf
+│   ├── Krause - Foundations of GTK Development (Apress, 2007).pdf
+│   ├── Love - Linux System Programming (O'Reilly, 2007).pdf
+│   ├── Matthew - Beginning Linux Programming 4e (Wrox, 2007).pdf
+│   ├── Michael - Mastering UNIX Shell Scripting (Wiley, 2003).pdf
+│   ├── Mitchell - Advanced Linux Programming (New Riders, 2001).pdf
+│   ├── Molkentin - The Book of Qt 4 - The Art of Building Qt Applications (No Starch Press, 2007).pdf
+│   ├── Newham - Learning the bash Shell 2e (O'Reilly, 1998).chm
+│   ├── Stevens - Advanced Programming In The UNIX Environment 2e (2005).chm
+│   ├── Stevens - Unix Network Programming - Vol. II - Interprocess Communications 2e (1999).djvu
+│   ├── Stevens - Unix Network Programming - Vol. I - The Sockets Networking API 3e (2003).chm
+│   ├── The Art of Unix Programming - E. Raymond (2003) WW.chm
+│   └── Wall - Linux Programming Unleashed (SAMS, 1999).pdf
+├── Linux Bible 2009 Edition~tqw~_darksiderg
+│   ├── DARKSIDE RG.URL
+│   ├── Linux Bible 2009 Edition~tqw~_darksiderg.nfo
+│   └── Linux Bible 2009 Edition~tqw~_darksiderg.pdf
+├── Linux Firewalls Attack Detection and Response with Iptables, PSAD, and Fwsnort
+│   ├── Linux Firewalls Attack Detection and Response with Iptables, PSAD, and Fwsnort.pdf
+│   └── Linux Firewalls - Attack Detection and Response with Iptables, PSAD, and Fwsnort~tqw~_darksiderg.nfo
+├── Linux Journal Issue #181 - May 2009 True PDF (Malestrom).pdf
+├── Linux Journal - October 2008.pdf
+├── Linux Network Administration [CuPpY]
+│   ├── Learn C Language.url
+│   ├── Linux Network Administration.pdf
+│   ├── More eBooks.url
+│   └── Read Me.txt
+├── Linux Socket Programming
+│   ├── Linux Socket Programming By Example.pdf
+│   └── tracked_by_h33t_com.txt
+├── Linux.System.Programming.pdf
+├── Linux The Complete Reference.6th.Edition(Nov.2007).pdf
+├── Linux Troubleshooting For System Administrators And Power Users (2006) - allbooksfree.tk
+│   ├── allbooksfree.tk.URL
+│   ├── Linux Troubleshooting For System Administrators And Power Users (2006) - allbooksfree.tk.chm
+│   └── ProgrammersHeaven.tk.URL
+├── l-lpic1-v3-103-1-pdf.pdf
+├── LPIC-1_ Linux Professional Institute Certification Study Guide, 2nd Edition.pdf
+├── mastering-unix-shell-scripting.9780471218210.21259.pdf
+├── McGraw.Hill.RHCE.Red.Hat.Certified.Engineer.Linux.Study.Guide.Exam.RH302.5th.Edition.Jun.2007.chm
+├── Open Source Web Development with LAMP.chm
+├── OpenSUSE__11.0_and_SUSE__Linux__Enterprise_Server_Bible.pdf
+├── Optimizing_Linux_Performance_a_Hands-on_Guide
+│   ├── Prentice Hall - Optimizing Linux Performance A Hands-On Guide.chm
+│   └── Showgirls! Free!.url
+├── O'Reilly - Linux in a Nutshell 6th Edition (2009).pdf
+├── OReilly.Linux.Networking.Cookbook.Nov.2007.eBook-BBL
+│   ├── bbl.nfo
+│   ├── ebookshare.net.url
+│   ├── file_id.diz
+│   ├── OReilly.Linux.Networking.Cookbook.Nov.2007.eBook-BBL -> /var/www/sente/htdocs/books/Linux and Unix PDF's/OReilly.Linux.Networking.Cookbook.Nov.2007.eBook-BBL
+│   └── OReilly.Linux.Networking.Cookbook.Nov.2007.pdf
+├── Packt.Publishing.Linux.Thin.Client.Networks.Design.and.Deployment.Aug.2007.eBook-BBL
+│   ├── bbl.nfo
+│   ├── ebookshare.net.url
+│   ├── file_id.diz
+│   └── Packt.Publishing.Linux.Thin.Client.Networks.Design.and.Deployment.Aug.2007.pdf
+├── Practical Unix & Internet Security, 3rd Edition (2003) - allbooksfree.tk
+│   ├── allbooksfree.tk.URL
+│   ├── Practical Unix & Internet Security, 3rd Edition (2003) - allbooksfree.tk.chm
+│   ├── ProgrammersHeaven.tk.URL
+│   └── Read Me.txt
+├── Professional LAMP - Linux, Apache, MySQL, & PHP5 Web Development (2006) - allbooksfree.tk.pdf
+├── Professional Linux Kernel Architecture.pdf
+├── Pro Linux System Administration~tqw~_darksiderg
+│   ├── DARKSIDE RG.URL
+│   ├── Pro Linux System Administration~tqw~_darksiderg.nfo
+│   └── Pro Linux System Administration~tqw~_darksiderg.pdf
+├── QUE - Practical Linux 2000.pdf
+├── Red Hat Linux Networking And System Administration (2002) - allbooksfree.tk.pdf
+├── Red_Hat_Linux_Security_and_Optimization.pdf
+├── Sams - Redhat Enterprise Linux Administration Unleashed.pdf
+├── SHELL SCRIPTING IN LINUX.7z
+├── Sybex - LPIC-1 Linux Professional Institute Certification Study Guide.pdf
+├── TCPIP Architecture, Design and Implementation in Linux~tqw~_darksiderg.pdf
+├── Understanding The Linux Kernel, 3rd Edition (2005) - allbooksfree.tk
+│   ├── allbooksfree.tk.URL
+│   ├── ProgrammersHeaven.tk.URL
+│   ├── Read Me.txt
+│   └── Understanding The Linux Kernel, 3rd Edition (2005) - allbooksfree.tk.chm
+├── Unix.books.apress
+│   ├── Automating_Linux_Unix.pdf
+│   └── Expert.Shell.Scripting.pdf
+├── UNIX Filesystems - Evolution, Design, & Implementation (2003) - allbooksfree.tk.pdf
+├── Unix Network Programming - Volume I - The Sockets Networking API, 3rd Edition
+│   ├── Geeky!.url
+│   ├── More Downloads!.url
+│   ├── Torrent downloaded from Demonoid.com.txt
+│   └── Unix Network Programming - Volume I - The Sockets Networking API, 3rd Edition.rar
+├── Unix Network Programming - Volume I - The Sockets Networking API, 3rd Edition (2003) - allbooksfree.tk
+│   ├── allbooksfree.tk.URL
+│   ├── ProgrammersHeaven.tk.URL
+│   └── Unix Network Programming - Volume I - The Sockets Networking API, 3rd Edition (2003) - allbooksfree.tk.chm
+├── Unix Power Tools, 3rd Edition (2002) - allbooksfree.tk
+│   ├── allbooksfree.tk.URL
+│   ├── ProgrammersHeaven.tk.URL
+│   ├── Read Me.txt
+│   └── Unix Power Tools, 3rd Edition (2002) - allbooksfree.tk.chm
+├── Unix Shell Programming, 3rd Edition (2003) - allbooksfree.tk
+│   ├── allbooksfree.tk.URL
+│   ├── ProgrammersHeaven.tk.URL
+│   ├── Read Me.txt
+│   └── Unix Shell Programming, 3rd Edition (2003) - allbooksfree.tk.chm
+├── UNIX System Administration - A Beginner's Guide (2002) - allbooksfree.tk.pdf
+├── Wiley.Linux.Command.Line.and.Shell.Scripting.Bible.May.2008.pdf
+├── wiley.suse.linux.toolbox.1000.plus.commands.for.opensuse.and.suse.linux.enterprise.dec.2007.pdf
+└── Wrox.Beginning.Linux.Programming.4th.Edition.Nov.2007-BBL.pdf
+
+27 directories, 137 files
