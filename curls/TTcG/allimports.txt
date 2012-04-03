@@ -1,0 +1,19 @@
+stu@lispclub ~/tmp/daily/04/03/ttt/tablib $ find -type f -exec grep 'compat' {} + | grep import | columnate.awk -F:
+./test_tablib.py                                    from tablib.compat import markup, unicode
+./tablib/formats/_ods.py                            from tablib.compat import opendocument, style, table, text, unicode
+./tablib/formats/_xls.py                            from tablib.compat import BytesIO, xlwt
+./tablib/formats/_html.py                           from .compat import bytes
+./tablib/formats/_tsv.py                            from tablib.compat import is_py3, csv, StringIO
+./tablib/formats/_xlsx.py                           from tablib.compat import openpyxl
+./tablib/formats/_xlsx.py                           from tablib.compat import unicode
+./tablib/formats/_csv.py                            from tablib.compat import is_py3, csv, StringIO
+./tablib/packages/odf/element.py                    from xml.dom.minicompat import *
+./tablib/packages/openpyxl/reader/worksheet.py      from ....compat import ifilter
+./tablib/packages/openpyxl/reader/worksheet.py      from ....compat import BytesIO as StringIO
+./tablib/packages/openpyxl/reader/iter_worksheet.py from ....compat import BytesIO as StringIO
+./tablib/packages/openpyxl/writer/strings.py        from ....compat import BytesIO as StringIO
+./tablib/packages/openpyxl/writer/worksheet.py      from ....compat import BytesIO as StringIO  # cStringIO doesn't handle unicode
+./tablib/packages/openpyxl/writer/excel.py          from ....compat import BytesIO as StringIO
+./tablib/packages/odf3/element.py                   from xml.dom.minicompat import *
+./tablib/core.py                                    from tablib.compat import OrderedDict, unicode
+
