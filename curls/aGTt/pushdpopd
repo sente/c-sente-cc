@@ -1,0 +1,18 @@
+pushd /di_atlantis/dial                         >> $TOP_DIR/DI_Pernod/logs/domail.log
+
+   java -jar dial.jar natl_natl.das             >> $TOP_DIR/DI_Pernod/logs/domail.log
+
+   pushd /DI_Pernod/programs                    >> $TOP_DIR/DI_Pernod/logs/domail.log
+
+      integ nau_003.int -D na_natl=1            >> $TOP_DIR/DI_Pernod/logs/domail.log
+      builder f_natl_acct.dsc -D na_natl=1      >> $TOP_DIR/DI_Pernod/logs/domail.log
+      if [ $? -gt 0 ]; 
+         then echo `date` FAILED__Natl Factor   >> $TOP_DIR/DI_Pernod/logs/tomail.log
+         else echo `date` OK______Natl Factor   >> $TOP_DIR/DI_Pernod/logs/tomail.log
+              if [ -z $1 ]; then
+                 mv ../models/f_natl_natl.md*   $TOP_DIR/di_atlantis/dl-dataroot/data/sales
+              fi
+     fi
+
+   popd                                         >> $TOP_DIR/DI_Pernod/logs/domail.log
+popd                                            >> $TOP_DIR/DI_Pernod/logs/domail.log
