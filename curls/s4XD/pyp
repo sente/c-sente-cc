@@ -1,0 +1,59 @@
+All pyp statements should be enclosed in double quotes, with single quotes being used to enclose any strings.
+
+     echo 'FOO IS AN ' | pyp "p.replace('FOO','THIS') | p + 'EXAMPLE'"
+       ==> THIS IS AN EXAMPLE
+    
+Splitting texton metacharacters is often critical for picking out particular fields of interest,
+so common SPLITS and JOINS have been assigned variables. For example, "underscore" or "u" will split a string
+to an array based on undercores ("_"), while "underscore" or "u" will ALSO join an array with underscores ("_") 
+back to a string.  
+
+Here are a few key split/join variables; run with --manual for all variable and see examples below in the string section.
+    
+    s OR slash           splits AND joins on "/"
+    u OR underscore      splits AND joins on "_"
+    w OR whitespace      splits on whitespace (spaces,tabs,etc) AND joins with spaces
+    a OR all             splits on ALL metacharacters [!@#$%^&*()...] AND joins with spaces
+    
+EXAMPLES:
+------------------------------------------------------------------------------
+              List Operations              # all python list methods work
+------------------------------------------------------------------------------
+print all lines                              ==> pyp  "pp"
+sort all input lines                         ==> pyp  "pp.sort()"
+eliminate duplicates                         ==> pyp  "pp.uniq()"
+combine all lines to one line                ==> pyp  "pp.oneline()"
+print line after FOO                         ==> pyp  "pp.after('FOO')"
+list comprehenision                          ==> pyp  "[x for x in pp]"
+return to string context after sort          ==> pyp  "pp.sort() | p"
+
+-------------------------------------------------------------------------------
+            String Operations               # all python str methods work
+-------------------------------------------------------------------------------
+print line                                   ==> pyp  "p"
+combine line with FOO                        ==> pyp  "p +'FOO'"
+above, but combine with original input       ==> pyp  "p +'FOO'| p + o"
+
+replace FOO with GOO                         ==> pyp  "p.replace('FOO','GOO')"
+remove all GOO and FOO                       ==> pyp  "p.kill('GOO','FOO')"
+
+string substitution                          ==> pyp  "'%s FOO %s %s GOO'%(p,p,5)"
+
+split up line by FOO                         ==> pyp  "p.split('FOO')"
+split up line by '/'                         ==> pyp  "slash"
+select 1st field split up by '/'             ==> pyp  "slash[0]"
+select fields 3 through 5 split up by '/'    ==> pyp  "s[2:6]"   
+above joined together with '/'               ==> pyp  "s[2:6] | s"
+
+-------------------------------------------------------------------------------
+            Logic Filters                   # all python Booleon methods work
+-------------------------------------------------------------------------------
+keep all lines with GOO and FOO              ==> pyp  "'GOO' in p and 'FOO' in p"
+keep all lines with GOO or FOO               ==> pyp  "keep('GOO','FOO')"
+keep all lines that are numbers              ==> pyp  "p.isdigit()"
+
+lose all lines with GOO and FOO              ==> pyp  "'GOO' not in p and 'FOO' not in p"
+lose all lines with GOO or FOO               ==> pyp  "lose('GOO','FOO')"
+lose all lines that are numbers              ==> pyp  "not p.isdigit()"
+
+-------------------------------------------------------------------------------                
