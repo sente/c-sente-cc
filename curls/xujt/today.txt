@@ -1,0 +1,61 @@
+/home/stu/tmp/daily/03/28/finalsnail
+	|_____->finalsnail.py
+
+/home/stu/tmp/daily/04/03
+	|_____->extract_tables.py
+	|_____->readit.py
+	|_____->wikipedia.py
+	|_____->foofoo.py
+	|_____->lxmlpython.py
+
+/home/stu/tmp/daily/04/03/tablib
+	|_____->setup.py
+	|_____->test_tablib.py
+	|_____->toy.py
+
+/home/stu/tmp/daily/04/03
+	|_____->extract_tables.py
+	|_____->readit.py
+	|_____->wikipedia.py
+	|_____->foofoo.py
+	|_____->lxmlpython.py
+
+/home/stu/tmp/daily/04/04/antijoke
+	|_____->antijoke_local.py
+	|_____->antijoke.py
+
+/home/stu/tmp/daily/04/04
+	|_____->deep_json.py
+	|_____->lxmlpower.py
+
+/home/stu/tmp/daily/04/04/reddit-graphs
+	|_____->reddit-graph.py
+	|_____->reddit_analyze.py
+
+/home/stu/tmp/daily/04/04/diffit
+	|_____->_html.py
+	|_____->test_tablib.py
+
+/home/stu/tmp/daily/04/04
+	|_____->deep_json.py
+	|_____->lxmlpower.py
+
+/home/stu/tmp/daily/04/04/imap
+	|_____->imaptest.py
+
+/home/stu/tmp/daily/04/04/adullamlogs
+	|_____->logit.py
+
+/home/stu/code
+	|_____->pynotify.py
+	|_____->pynotify_notifier.py
+
+/home/stu
+	|_____->_html.py
+
+/home/stu/tmp/tablib
+	|_____->tablib_test.py
+
+/home/stu/bin
+	|_____->diff-demo.py
+
