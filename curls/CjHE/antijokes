@@ -1,0 +1,51 @@
+==> antijoke_local.py <==
+import glob
+import sys
+import lxml
+import lxml.html
+
+
+for f in ['index.html'] + sorted(glob.glob('index*html.*'),key=lambda x: int(x.split('.')[-1])):
+  root = lxml.html.fromstring(open(f).read())
+  root.make_links_absolute(base_url='http://www.quickmeme.com/memes/submissions/1/')
+  for link in root.xpath('//div[@id="categories"]//a'):
+      if link.text:
+          print '\t'.join((f, link.attrib.get('href',''), link.text))
+
+
+==> antijoke.py <==
+import sys
+import lxml
+import lxml.html
+import time
+import requests
+
+globalmemes = []
+
+
+def get_memes(url):
+
+
+    root = lxml.html.parse(url).getroot()
+    root.make_links_absolute()
+
+    my_memes = []
+
+    for link in root.xpath('//div[@id="categories"]//a'):
+        if link.text:
+            my_memes.append((link.attrib.get('href',''), link.text))
+    return my_memes
+
+
+if __name__ == '__main__':
+    memes =  []
+    for i in [index + 1 for index in range(31)]:
+        url = 'http://www.quickmeme.com/memes/submissions/%d/' %i
+        #sys.stderr.write('retrieiving %s\n' %url)
+        print url
+        page_memes = get_memes(url)
+        print 'retrieved  %d memes' % len(page_memes)
+        time.sleep(10)
+        memes.extend(page_memes)
+    globalmeme = memes
+
