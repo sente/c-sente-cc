@@ -1,0 +1,7 @@
+stu@lispclub ~ $ cat urlenc.py
+import urllib
+
+print urllib.urlencode((('key','val'),('anotherkey',100),('finally','this has spaces and a !')))
+stu@lispclub ~ $ python urlenc.py
+key=val&anotherkey=100&finally=this+has+spaces+and+a+%21
+
