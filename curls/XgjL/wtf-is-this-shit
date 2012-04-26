@@ -1,0 +1,15 @@
+stu@sente /var/log/unattended-upgrades $ find /var/log/unattended-upgrades -type f  -exec ls -lrt {} +
+-rw-r--r-- 1 root root 1803 2012-03-06 06:53 /var/log/unattended-upgrades/unattended-upgrades-dpkg_2012-03-06_06:53:36.664220.log
+-rw-r--r-- 1 root root  644 2012-03-09 06:37 /var/log/unattended-upgrades/unattended-upgrades-dpkg_2012-03-09_06:37:54.382732.log
+-rw-r--r-- 1 root root 1876 2012-03-16 06:30 /var/log/unattended-upgrades/unattended-upgrades-dpkg_2012-03-16_06:30:22.386048.log
+-rw-r--r-- 1 root root 3114 2012-03-23 06:46 /var/log/unattended-upgrades/unattended-upgrades-dpkg_2012-03-23_06:46:00.269106.log
+-rw-r--r-- 1 root root 1183 2012-04-01 06:42 /var/log/unattended-upgrades/unattended-upgrades.log.1.gz
+-rw-r--r-- 1 root root  333 2012-04-05 06:31 /var/log/unattended-upgrades/unattended-upgrades-dpkg_2012-04-05_06:31:31.735131.log
+-rw-r--r-- 1 root root  944 2012-04-06 06:27 /var/log/unattended-upgrades/unattended-upgrades-dpkg_2012-04-06_06:27:34.634403.log
+-rw-r--r-- 1 root root  624 2012-04-13 06:35 /var/log/unattended-upgrades/unattended-upgrades-dpkg_2012-04-13_06:35:29.565068.log
+-rw-r--r-- 1 root root  889 2012-04-20 06:40 /var/log/unattended-upgrades/unattended-upgrades-dpkg_2012-04-20_06:40:09.530391.log
+-rw-r--r-- 1 root root 2308 2012-04-23 06:54 /var/log/unattended-upgrades/unattended-upgrades-dpkg_2012-04-23_06:53:07.244560.log
+-rw-r--r-- 1 root root 3033 2012-04-25 06:55 /var/log/unattended-upgrades/unattended-upgrades-dpkg_2012-04-25_06:54:05.630608.log
+-rw-r--r-- 1 root root 8242 2012-04-25 06:55 /var/log/unattended-upgrades/unattended-upgrades.log
+stu@sente /var/log/unattended-upgrades $
+
