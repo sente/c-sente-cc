@@ -1,0 +1,35 @@
+# vim: set ft=apache:
+<VirtualHost *>
+
+    ServerName  data.picturingtolearn.org
+    ServerAdmin vinay.d.shah@gmail.com
+    DocumentRoot /var/www/picturingtolearn/www.picturingtolearn.org/
+
+    ProxyPass / http://127.0.0.1:40888/ 
+
+    ServerSignature On
+
+    LogLevel warn
+    CustomLog /var/log/apache2/vhost/picturing_access.log combined
+    CustomLog /var/log/apache2/vhost_access.log vhost_combined 
+    ErrorLog  /var/log/apache2/vhost/picturing_error.log
+
+</VirtualHost>
+
+
+<VirtualHost *>
+
+    ServerName  picturingtolearn.org
+    ServerAdmin vinay.d.shah@gmail.com
+    ServerAlias picturingtolearn.org *.picturingtolearn.org
+
+    DocumentRoot /var/www/picturingtolearn/www.picturingtolearn.org/
+
+    ServerSignature On
+
+    LogLevel warn
+    CustomLog /var/log/apache2/vhost/picturing_access.log combined
+    CustomLog /var/log/apache2/vhost_access.log vhost_combined 
+    ErrorLog  /var/log/apache2/vhost/picturing_error.log
+
+</VirtualHost>
