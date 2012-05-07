@@ -1,0 +1,10 @@
+stu@vervet ~/xkcd-genetic $ echo -ne "OOOOiiiiOOOOOiiii\n1234\n55555" | ./a.out
+OOO     iiii    OOOOO   iiii
+        2       3       4
+555
+stu@vervet ~/xkcd-genetic $ echo -ne "OOOOiiiiOOOOOiiii\n1234\n55555" | python groupthemby.py
+OOOO    iiii    OOOOO   iiii
+1       2       3       4
+55555
+stu@vervet ~/xkcd-genetic $
+
