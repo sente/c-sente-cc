@@ -1,0 +1,64 @@
+json.dumps(submission.json_encode(),indent=4)
+--------------------------------------------------------------------------------
+{
+    "domain": "thedailywtf.com",
+    "banned_by": null,
+    "media_embed": {},
+    "subreddit": "Python",
+    "selftext_html": null,
+    "selftext": "",
+    "likes": null,
+    "saved": false,
+    "id": "kmur4",
+    "clicked": false,
+    "title": "Finally, a piece of Python code is featured in The Daily WTF ... :/ ",
+    "num_comments": 112,
+    "score": 258,
+    "approved_by": null,
+    "over_18": false,
+    "hidden": false,
+    "thumbnail": "",
+    "subreddit_id": "t5_2qh0y",
+    "link_flair_css_class": null,
+    "author_flair_css_class": null,
+    "downs": 28,
+    "is_self": false,
+    "permalink": "http://www.reddit.com/r/Python/comments/kmur4/finally_a_piece_of_python_code_is_featured_in_the/",
+    "name": "t3_kmur4",
+    "created": 1316621935.0,
+    "url": "http://thedailywtf.com/Articles/Python-Charmer.aspx",
+    "author_flair_text": null,
+    "author": "cocoon56",
+    "created_utc": 1316621935.0,
+    "link_flair_text": null,
+    "media": null,
+    "num_reports": null,
+    "ups": 286
+}
+
+
+
+json.dumps(submission.all_comments[0].json_encode(),indent=4)
+--------------------------------------------------------------------------------
+{
+    "body": "What the heck is this even trying to do? It's like nightmare fuel for python. ",
+    "subreddit_id": "t5_2qh0y",
+    "num_reports": null,
+    "author_flair_css_class": null,
+    "author": "Vonney",
+    "banned_by": null,
+    "downs": 5,
+    "created": 1316622950.0,
+    "created_utc": 1316622950.0,
+    "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;What the heck is this even trying to do? It&amp;#39;s like nightmare fuel for python. &lt;/p&gt;\n&lt;/div&gt;",
+    "subreddit": "Python",
+    "parent_id": "t3_kmur4",
+    "approved_by": null,
+    "likes": null,
+    "author_flair_text": null,
+    "link_id": "t3_kmur4",
+    "ups": 60,
+    "id": "c2liqvx",
+    "name": "t1_c2liqvx"
+}
+
