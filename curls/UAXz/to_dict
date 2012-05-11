@@ -1,0 +1,25 @@
+    def to_dict(self, recurse=False):
+
+        d = {}
+        for key, value in self.__dict__.items():
+            if key.startswith('_') or key == 'reddit_session':
+                continue
+
+            if isinstance(value, Subreddit):
+                d[key] = value.display_name
+
+            elif isinstance(value, Redditor):
+                d[key] = value.name
+
+            else:
+                d[key] = value
+
+        if recurse:
+            if self.__dict__.get('_replies', None):
+                d['replies'] = [r.to_dict(recurse=True) for r in self._replies]
+
+            if self.__dict__.get('_comments', None):
+                d['comments'] = [c.to_dict(recurse=True) for c in self._comments]
+
+        return d
+
