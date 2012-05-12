@@ -1,0 +1,12 @@
+stu@sente ~/tmp/daily/05/12/pelican $ grep jpg samples/output/pages/this-is-a-test-page.html
+<img alt="alternate text" src="../static/pictures/Fat_Cat.jpg" style="width: 600px; height: 450px;" />
+
+stu@sente ~/tmp/daily/05/12/pelican $ find samples/output/|grep jpg
+samples/output/static/pictures/Fat_Cat.jpg
+samples/output/static/pictures/Sushi.jpg
+samples/output/static/pictures/Sushi_Macro.jpg
+
+stu@sente ~/tmp/daily/05/12/pelican $ grep -A1 static samples/pelican.conf.py
+# static paths will be copied under the same name
+STATIC_PATHS = ["pictures", ]
+
