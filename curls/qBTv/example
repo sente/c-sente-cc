@@ -1,0 +1,22 @@
+stu@vervet ~ $ lwp-request -o links http://nedbatchelder.com/ | head -n20
+LINK    http://nedbatchelder.com/blog/rss.xml
+LINK    http://www.myopenid.com/server
+LINK    http://nedbat.myopenid.com/
+LINK    http://nedbat.myopenid.com
+LINK    http://www.myopenid.com/server
+LINK    http://nedbatchelder.com/printstyle.css
+A       http://nedbatchelder.com/blog
+A       http://nedbatchelder.com/code
+A       http://nedbatchelder.com/text
+A       http://nedbatchelder.com/site
+A       http://nedbatchelder.com/blog/201205/coveragepy_v352.html
+A       http://pypi.python.org/pypi/coverage/3.5.2
+A       http://nedbatchelder.com/blog/201205/coveragepy_v352.html
+A       http://nedbatchelder.com/blog/201204/coveragepy_v352b1.html
+A       http://pypi.python.org/pypi/coverage/3.5.2b1
+A       http://nedbatchelder.com/blog/201204/coveragepy_v352b1.html
+A       http://nedbatchelder.com/blog/201204/two_problems.html
+A       http://nedbatchelder.com/blog/201204/two_problems.html
+A       http://nedbatchelder.com/blog/201204/python_iteration_presentation.html
+A       http://nedbatchelder.com/text/iter.html
+
