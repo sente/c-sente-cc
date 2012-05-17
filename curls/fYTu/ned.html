@@ -1,0 +1,20 @@
+
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+        <title>dygraph</title>
+        <script type="text/javascript" src="http://dygraphs.com/dygraph-dev.js"></script></head><body>
+        <div style="width:80%; height:30%" id="ned"></div>
+
+        <script src="http://c.sente.cc/7BUz/ned.json"></script>
+
+        <script>
+            var g2 = new Dygraph(document.getElementById("ned"),
+            data,
+
+            { labels: [ "Date", "reputation" ] });
+        </script>
+    </body>
+</html>
+
+
