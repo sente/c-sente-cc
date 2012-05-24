@@ -1,0 +1,44 @@
+{
+  "iter_limit": 99999, 
+  "palette_phase": 55, 
+  "palette": [
+    [
+      "spectrum", 
+      {
+        "ncolors": 12
+      }
+    ], 
+    [
+      "stretch", 
+      {
+        "steps": 10, 
+        "hsl": true
+      }
+    ], 
+    [
+      "adjust", 
+      {
+        "hue": 40, 
+        "saturation": 0
+      }
+    ]
+  ], 
+  "diam": [
+    2.4925185219930178e-08, 
+    2.8176296296145154e-08
+  ], 
+  "angle": 0.0, 
+  "center": [
+    0.28235291524584677, 
+    0.009764126024308607
+  ], 
+  "continuous": true, 
+  "Aptus State": 1, 
+  "mode": "mandelbrot", 
+  "palette_scale": 0.12426864667236176, 
+  "supersample": 1, 
+  "size": [
+    823, 
+    563
+  ]
+}
