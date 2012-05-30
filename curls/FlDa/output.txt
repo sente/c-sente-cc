@@ -1,0 +1,16 @@
+stu@sente ~ $ which aptuscmd.py
+/usr/local/bin/aptuscmd.py
+stu@sente ~ $
+stu@sente ~ $
+stu@sente ~ $ /usr/local/bin/aptuscmd.py
+Traceback (most recent call last):
+  File "/usr/local/bin/aptuscmd.py", line 2, in <module>
+    import aptus, aptus.cmdline, sys
+  File "/usr/local/lib/python2.6/dist-packages/aptus/cmdline.py", line 3, in <module>
+    from aptus.compute import AptusCompute
+  File "/usr/local/lib/python2.6/dist-packages/aptus/compute.py", line 13, in <module>
+    AptEngine = importer('AptEngine')
+  File "/usr/local/lib/python2.6/dist-packages/aptus/importer.py", line 36, in importer
+    raise Exception("There is no Python implementation of the compute engine!")
+Exception: There is no Python implementation of the compute engine!
+
