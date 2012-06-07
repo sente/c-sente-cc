@@ -1,0 +1,156 @@
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $ make clean
+rm -rf build
+rm -rf dist
+rm -f MANIFEST
+rm -f doc/*.png
+rm -f *.pyc */*.pyc */*/*.pyc */*/*/*.pyc
+rm -f *.pyo */*.pyo */*/*.pyo */*/*/*.pyo
+rm -f *.bak */*.bak */*/*.bak */*/*/*.bak
+
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $ python setup.py build
+running build
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.6
+creating build/lib.linux-x86_64-2.6/aptus
+copying src/__init__.py -> build/lib.linux-x86_64-2.6/aptus
+copying src/cmdline.py -> build/lib.linux-x86_64-2.6/aptus
+copying src/compute.py -> build/lib.linux-x86_64-2.6/aptus
+copying src/ggr.py -> build/lib.linux-x86_64-2.6/aptus
+copying src/importer.py -> build/lib.linux-x86_64-2.6/aptus
+copying src/options.py -> build/lib.linux-x86_64-2.6/aptus
+copying src/palettes.py -> build/lib.linux-x86_64-2.6/aptus
+copying src/progress.py -> build/lib.linux-x86_64-2.6/aptus
+copying src/settings.py -> build/lib.linux-x86_64-2.6/aptus
+copying src/timeutil.py -> build/lib.linux-x86_64-2.6/aptus
+copying src/tinyjson.py -> build/lib.linux-x86_64-2.6/aptus
+creating build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/__init__.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/computepanel.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/dictpanel.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/help.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/ids.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/juliapanel.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/mainframe.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/misc.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/palettespanel.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/pointinfo.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/resources.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/statspanel.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/viewpanel.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/gui/youarehere.py -> build/lib.linux-x86_64-2.6/aptus/gui
+copying src/icon16.png -> build/lib.linux-x86_64-2.6/aptus
+copying src/icon32.png -> build/lib.linux-x86_64-2.6/aptus
+copying src/icon48.png -> build/lib.linux-x86_64-2.6/aptus
+copying src/splash.png -> build/lib.linux-x86_64-2.6/aptus
+creating build/lib.linux-x86_64-2.6/aptus/palettes
+copying src/palettes/DEM_screen.ggr -> build/lib.linux-x86_64-2.6/aptus/palettes
+copying src/palettes/bluefly.ggr -> build/lib.linux-x86_64-2.6/aptus/palettes
+copying src/palettes/ib15.ggr -> build/lib.linux-x86_64-2.6/aptus/palettes
+copying src/palettes/ib18.ggr -> build/lib.linux-x86_64-2.6/aptus/palettes
+copying src/palettes/redblue.ggr -> build/lib.linux-x86_64-2.6/aptus/palettes
+running build_ext
+building 'aptus.engine' extension
+creating build/temp.linux-x86_64-2.6
+creating build/temp.linux-x86_64-2.6/ext
+gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/home/stu/tmp/daily/06/07/mytmp3/aptusenv3/lib/python2.6/site-packages/numpy/core/include -I/usr/include/python2.6 -c ext/engine.cpp -o build/temp.linux-x86_64-2.6/ext/engine.o -O3
+cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/ObjC but not for C++
+ext/engine.cpp: In function ‘int call_progress(AptEngine*, PyObject*, PyObject*, u4int, char*)’:
+ext/engine.cpp:458: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp: In function ‘char* human_u8int(u8int, char*)’:
+ext/engine.cpp:508: warning: format ‘%lu’ expects type ‘long unsigned int’, but argument 3 has type ‘u4int’
+ext/engine.cpp: At global scope:
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1122: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1131: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1131: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1131: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1131: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1131: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1131: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1131: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp:1131: warning: deprecated conversion from string constant to ‘char*’
+ext/engine.cpp: In function ‘PyObject* compute_array(AptEngine*, PyObject*)’:
+ext/engine.cpp:935: warning: ‘_save’ may be used uninitialized in this function
+g++ -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions build/temp.linux-x86_64-2.6/ext/engine.o -o build/lib.linux-x86_64-2.6/aptus/engine.so
+running build_scripts
+creating build/scripts-2.6
+copying and adjusting scripts/aptuscmd.py -> build/scripts-2.6
+copying and adjusting scripts/aptusgui.py -> build/scripts-2.6
+changing mode of build/scripts-2.6/aptuscmd.py from 644 to 755
+changing mode of build/scripts-2.6/aptusgui.py from 644 to 755
+
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $ make install
+python setup.py install
+running install
+running build
+running build_py
+running build_ext
+running build_scripts
+running install_lib
+copying build/lib.linux-x86_64-2.6/aptus/engine.so -> /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/lib/python2.6/site-packages/aptus
+running install_scripts
+copying build/scripts-2.6/aptuscmd.py -> /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/bin
+copying build/scripts-2.6/aptusgui.py -> /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/bin
+changing mode of /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/bin/aptuscmd.py to 755
+changing mode of /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/bin/aptusgui.py to 755
+running install_egg_info
+Removing /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/lib/python2.6/site-packages/Aptus-2.1-py2.6.egg-info
+Writing /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/lib/python2.6/site-packages/Aptus-2.1-py2.6.egg-info
+
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $ # oops meant to python setup.py install
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $
+
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $ python setup.py install
+running install
+running build
+running build_py
+running build_ext
+running build_scripts
+running install_lib
+running install_scripts
+changing mode of /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/bin/aptuscmd.py to 755
+changing mode of /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/bin/aptusgui.py to 755
+running install_egg_info
+Removing /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/lib/python2.6/site-packages/Aptus-2.1-py2.6.egg-info
+Writing /home/stu/tmp/daily/06/07/mytmp3/aptusenv3/lib/python2.6/site-packages/Aptus-2.1-py2.6.egg-info
+
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $ which aptuscmd.py
+/home/stu/tmp/daily/06/07/mytmp3/aptusenv3/bin/aptuscmd.py
+
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $ find -name engine.so -exec ls -lrt {} +
+-rwxr-xr-x 1 stu stu 65905 2012-06-07 15:39 ./build/lib.linux-x86_64-2.6/aptus/engine.so
+
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $ date
+Thu Jun  7 15:40:44 EDT 2012
+
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $ # just built
+stu@vervet ~/tmp/daily/06/07/mytmp3/aptus $ aptuscmd.py
+Traceback (most recent call last):
+  File "/home/stu/tmp/daily/06/07/mytmp3/aptusenv3/bin/aptuscmd.py", line 2, in <module>
+    import aptus, aptus.cmdline, sys
+  File "/home/stu/tmp/daily/06/07/mytmp3/aptusenv3/lib/python2.6/site-packages/aptus/cmdline.py", line 3, in <module>
+    from aptus.compute import AptusCompute
+  File "/home/stu/tmp/daily/06/07/mytmp3/aptusenv3/lib/python2.6/site-packages/aptus/compute.py", line 13, in <module>
+    AptEngine = importer('AptEngine')
+  File "/home/stu/tmp/daily/06/07/mytmp3/aptusenv3/lib/python2.6/site-packages/aptus/importer.py", line 36, in importer
+    raise Exception("There is no Python implementation of the compute engine!")
+Exception: There is no Python implementation of the compute engine!
