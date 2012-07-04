@@ -1,0 +1,18 @@
+[oslo]$ echo "select id,post_content INTO OUTFILE 'out/out.csv' from wp_posts where post_mime_type='image/jpeg' limit 2;" | mysql --delimiter==$'\t' -u sente -p -h mysql.sentedrop.com zendeavor
+Enter password:
+ERROR 1045 (28000) at line 1: Access denied for user 'sente'@'69.163.128.0/255.255.128.0' (using password: YES)
+
+[oslo]$ echo "select id,post_content INTO OUTFILE '/home/sentexfer/out/out.csv' from wp_posts where post_mime_type='image/jpeg' limit 2;" | mysql --delimiter==$'\t' -u sente -p -h mysql.sentedrop.com zendeavor
+Enter password:
+ERROR 1045 (28000) at line 1: Access denied for user 'sente'@'69.163.128.0/255.255.128.0' (using password: YES)
+
+[oslo]$ echo "select id,post_content from wp_posts where post_mime_type='image/jpeg' limit 2;" | mysql --delimiter==$'\t' -u sente -p -h mysql.sentedrop.com zendeavor
+Enter password:
+id      post_content
+4
+20480   http://officialwire.com/wp-content/uploads/2012/05/TestLogo.jpg
+
+[oslo]$ ls -lrtd /home/sentexfer/out
+drwxrwxrwx 2 sentexfer pg2662512 4096 2012-07-04 05:57 /home/sentexfer/out
+
+
