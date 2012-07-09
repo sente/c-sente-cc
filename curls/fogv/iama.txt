@@ -1,0 +1,51 @@
+                    "description": "Microsoft .Net Application Development by expert .Net developers: Encodex India offers offshore .NET Application development, .Net Outsourcing, &amp; ASP.Net Consulting using Microsoft .NET framework 3.5, ADO.NET, C#, &amp; XML Web Services.", 
+                    "display_name": "SmithJackson", 
+                    "header_img": null, 
+                    "header_size": null, 
+                    "header_title": "", 
+                    "id": "2r3ze", 
+                    "name": "t5_2r3ze", 
+                    "over18": false, 
+                    "public_description": "", 
+                    "subscribers": 36, 
+                    "title": ".NET Application Development", 
+                    "url": "/r/SmithJackson/"
+                }, 
+                "kind": "t5"
+            }, 
+            {
+                "data": {
+                    "created": 1249375801.0, 
+                    "created_utc": 1249375801.0, 
+                    "description": "I'm currently majoring in a concentration of Computer Science called Computer Science (Games) at a well-respected university (some may not know you can do this).  If you are considering a career in video games, and you have any questions about this process, I will answer what I can.\n\nThe program is not all fun and games, no pun intended.  You will work hard, but it will be fun.  I transferred from pre-med to this program, knowing full well that this is what I SHOULD do.\n", 
+                    "display_name": "IAmA\n", 
+                    "header_img": null, 
+                    "header_size": null, 
+                    "header_title": "", 
+                    "id": "2r3zb", 
+                    "name": "t5_2r3zb", 
+                    "over18": false, 
+                    "public_description": "", 
+                    "subscribers": 2, 
+                    "title": "I am a student at a large private university majoring in Video Games. AMA.", 
+                    "url": "/r/IAmA\n/"
+                }, 
+                "kind": "t5"
+            }, 
+            {
+                "data": {
+                    "created": 1249375411.0, 
+                    "created_utc": 1249375411.0, 
+                    "description": "I'm currently majoring in a concentration of Computer Science called Computer Science (Games) at a well-respected university (some may not know you can do this).  If you are considering a career in video games, and you have any questions about this process, I will answer what I can.\n\nThe program is not all fun and games, no pun intended.  You will work hard, but it will be fun.  I transferred from pre-med to this program, knowing full well that this is what I SHOULD do.\n", 
+                    "display_name": "majoringInVideoGames", 
+                    "header_img": null, 
+                    "header_size": null, 
+                    "header_title": "", 
+                    "id": "2r3za", 
+                    "name": "t5_2r3za", 
+                    "over18": false, 
+                    "public_description": "", 
+                    "subscribers": 2, 
+                    "title": "I am a student at a large private school majoring in Video Games. AMA", 
+                    "url": "/r/majoringInVideoGames/"
+                }, 
