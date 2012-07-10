@@ -1,0 +1,19 @@
+ 1 pick a1c55bb Update deploy script.
+ 2 squash 22cc4bd Add README.md to manifest file.
+ 3 squash 12c9b6e added rudimentary logging of the http requests being made
+ 4 squash a9704d7 added rudimentary logging of the http requests being made
+ 5 squash bb64fda fixed typo
+ 6
+ 7 # Rebase 5ca04fb..7810b11 onto 5ca04fb
+ 8 #
+ 9 # Commands:
+10 #  p, pick = use commit
+11 #  r, reword = use commit, but edit the commit message
+12 #  e, edit = use commit, but stop for amending
+13 #  s, squash = use commit, but meld into previous commit
+14 #  f, fixup = like "squash", but discard this commit's log message
+15 #
+16 # If you remove a line here THAT COMMIT WILL BE LOST.
+17 # However, if you remove everything, the rebase will be aborted.
+18 #
+
