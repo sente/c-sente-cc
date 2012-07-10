@@ -1,0 +1,13 @@
+19:09 <bboe> Hey
+19:10 <bboe> So basically you want to do a git rebase -i master
+19:10 <bboe> assuming your master branch tracks the remote master
+19:10 <bboe> then you want to tell it to squash all the commits (except for the top most)
+19:11 <sente> heya
+19:11 <bboe> after doing that you should have 1 single commit
+19:11 <bboe> you can verify via `git log`
+19:11 <bboe> if the log message is not what you wanted it to be then you can rebase again as before
+19:11 <bboe> this time instead of specifying 'squash' you can use the reword or whatever 'r' argument stands for
+19:11 <sente> http://c.sente.cc/6QFI/git-lol.txt
+19:11 <bboe> and provide a new commit message
+19:11 <sente> yeah
+
