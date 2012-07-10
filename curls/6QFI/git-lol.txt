@@ -1,0 +1,30 @@
+*   7810b11 (HEAD, origin/http_logging, http_logging) Merge branch 'http_logging' of github.com:sente/reddit_api into http_logging
+|\  
+| * bb64fda fixed typo
+| * a9704d7 added rudimentary logging of the http requests being made
+* | 12c9b6e added rudimentary logging of the http requests being made
+|/  
+* 22cc4bd (upstream/master, origin/master, origin/HEAD, master) Add README.md to manifest file.
+* a1c55bb (tag: PRAW-1.0) Update deploy script.
+* 5ca04fb Update README to reflect name change.
+* 29cb523 Official PRAW (renamed) version 1.0.
+* ab5a59d Fix some lint.sh issues.
+* ef5ac78 Remove submission error check hack now that reddit is actually checking for captchas.
+* adaf89f Update file contents for the new package name.
+* add35a9 Rename files as part of the package rename.
+* 447116b (tag: 1.4.0) Add explict listing selectors and use account default for non-explicit selectors
+* b08363f (tag: 1.3.11) Fix format string for python 2.6
+* d0bde82 (tag: 1.3.10) Temporary PRAW-side fix for captcha error on successful submission.
+* 281f4e8 (tag: 1.3.9) Fix unicode format string error. Version bump.
+* 6628b30 (tag: 1.3.8) Add support for the public_description field. Version bump.
+* 8a5169f Added easy_install, fixed amount of submissions in intro.
+* fa80818 Added doc strings to the functions in class Distinguishable
+* ff50f8e Changed submission.remove function to not mark as spam by default.
+* e83b269 Don't try to create a Redditor out of boolean values.
+* a3addd4 Fix captcha decorator problem that resulted from reordering the decorators.
+* 2d91358 (tag: 1.3.7) Quick fix for update_settings with header_hover_text. Version bump.
+* 58b1dff Fix the version number stuff again. Hopefully this settles it all.
+* 10dd9dd (tag: 1.3.6) Version bump.
+* 4eddd20 Add special 'mod' subreddit to moderator list, and obtain _all_ moderation subreddits.
+* 5ed9501 Added submission  function.
+* 983b05a Added optional arguments to add_flair_template
