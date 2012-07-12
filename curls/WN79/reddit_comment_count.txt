@@ -1,0 +1,21 @@
+In [15]: for t in top_posts:
+    print t.num_comments,len(t.all_comments_flat)
+   ....:
+75 41
+254 204
+70 60
+52 48
+27 24
+12 11
+33 32
+14 14
+11 10
+14 14
+6 6
+24 18
+16 16
+21 19
+
+
+... # what causes the discrepency? is num_comments simply updated every so often and taht's the issue, or is it something else?
+
