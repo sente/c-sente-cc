@@ -1,0 +1,20 @@
+In [66]: words = [word.strip() for word in open('/home/tsoporan/nltk_data/corpora/words/en','r') if len(word.strip())==5]
+
+In [67]: len(words)
+Out[67]: 9987
+
+In [68]: [w for w in words if w in res]
+Out[68]:
+['abhor',
+ 'abilo',
+ 'ablow',
+ 'abort',
+ 'achor',
+ 'adept',
+ 'adfix',
+ 'adopt',
+ 'adoxy',
+ 'aegis']
+
+In [69]:
+
