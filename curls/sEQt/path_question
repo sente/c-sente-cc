@@ -1,0 +1,10 @@
+#how can I have bash correct which 'ipython' is used when there are multiple ipython's in the path?
+#i just installed ipython in a virtualenv, 'whereis ipython' shows the newly installed ipyhon
+#but when i run 'ipython' it's using the global one in /usr/bin/ipython
+
+(ENV_CONS)stu@li237-151:/var/www/massconstructionschool/code/mare$ which ipython
+/home/environments/ENV_CONS/bin/ipython
+(ENV_CONS)stu@li237-151:/var/www/massconstructionschool/code/mare$ whereis ipython
+ipython: /usr/bin/ipython /usr/bin/ipython2.7 /usr/bin/ipython2.6 /usr/share/man/man1/ipython.1.gz
+(ENV_CONS)stu@li237-151:/var/www/massconstructionschool/code/mare$
+
