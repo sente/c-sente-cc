@@ -1,0 +1,17 @@
+stu@sente ~/tmp/daily/07/19/tty.js/bin (master) $ node tty.js
+
+node.js:201
+        throw e; // process.nextTick error, or 'error' event on first tick
+              ^
+Error: Cannot find module 'express'
+    at Function._resolveFilename (module.js:334:11)
+    at Function._load (module.js:279:25)
+    at Module.require (module.js:357:17)
+    at require (module.js:368:17)
+    at Object.<anonymous> (/home/stu/tmp/daily/07/19/tty.js/lib/tty.js:15:15)
+    at Module._compile (module.js:432:26)
+    at Object..js (module.js:450:10)
+    at Module.load (module.js:351:31)
+    at Function._load (module.js:310:12)
+    at Module.require (module.js:357:17)
+
