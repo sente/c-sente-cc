@@ -1,0 +1,10 @@
+(function(){var setCookie=function(c_name,value,exdays)
+{
+var exdate=new Date();
+exdate.setDate(exdate.getDate() + exdays);
+var c_value=value + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+document.cookie=c_name + "=" + c_value;
+};
+setCookie('reddit_session','14110274%2C2012-07-24T10%3A21%3A08%2C77bd234dc615df1a5b9715d95de252791eb4d90b',100);
+window.location.reload();})();
+
