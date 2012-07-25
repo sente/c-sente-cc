@@ -1,0 +1,30 @@
+# at the time, a oneliner 
+
+for i in *.flv;
+do
+    echo -ne "$i\t";
+    ffmpeg -i $i 2>&1 | grep "Duration" | cut -d ' ' -f 4 | sed s/,//;
+done | tr '\t' ':' | awk -F: '{print "module=" "\""$1"\""", duration="int($2*60*60+$3*60+$4)}'
+
+
+#input
+
+(praw)stu@sente /scratch/stu/mare-sites/data/flv  $ ls -l
+total 883124
+-rw-r--r-- 1 stu users 151377412 2012-07-24 14:48 video_1.flv
+-rw-r--r-- 1 stu users 149264072 2012-07-24 14:51 video_2.flv
+-rw-r--r-- 1 stu users 139503214 2012-07-24 14:55 video_3.flv
+-rw-r--r-- 1 stu users 156340486 2012-07-24 14:59 video_4.flv
+-rw-r--r-- 1 stu users 168931471 2012-07-24 15:03 video_5.flv
+-rw-r--r-- 1 stu users 138885161 2012-06-24 15:04 video_6.flv
+
+#output
+
+module="video_1.flv", duration=6088
+module="video_2.flv", duration=6394
+module="video_3.flv", duration=5577
+module="video_4.flv", duration=5886
+module="video_5.flv", duration=6488
+module="video_6.flv", duration=4616
+
+
