@@ -1,0 +1,48 @@
+#i've made wrapper function's for curl, find, git, and a bunch common commands:
+
+
+stu@sente ~ (master) $ type curl
+curl is a function
+curl ()
+{
+    echo -e "$(date +%s)\t$PWD\t$(history 1 | sed -r 's/^ +[0-9]+ +//' )" >> ${HOME}/logs/cmds/curl.log 2> /dev/null;
+    command curl "$@"
+}
+
+stu@sente ~ (master) $ type git
+git is a function
+git ()
+{
+    echo -e "$(date +%s)\t$PWD\t$(history 1 | sed -r 's/^ +[0-9]+ +//' )" >> ${HOME}/logs/cmds/git.log 2> /dev/null;
+    command git "$@"
+}
+
+stu@sente ~ (master) $ type find
+find is a function
+find ()
+{
+    echo -e "$(date +%s)\t$PWD\t$(history 1 | sed -r 's/^ +[0-9]+ +//' )" >> ${HOME}/logs/cmds/find.log 2> /dev/null;
+    command find "$@"
+}
+
+
+# now lets use curl
+
+stu@sente ~ (master) $ curl -i http://icanhazip.com/
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 25 Jul 2012 10:56:00 GMT
+Content-Type: text/plain
+Content-Length: 15
+Connection: keep-alive
+X-RTFM: Learn about this site at http://rkrh.kr/2us and don't abuse the service
+
+208.118.225.99
+
+# and note it's in the logs
+
+stu@sente ~ (master) $ tail -n1 logs/cmds/curl.log
+1343213622      /home/stu       10379  curl -i http://icanhazip.com/
+
+
+
