@@ -1,0 +1,14 @@
+161     `status` is one of 'OK', 'FAIL', or 'ERROR'.  'OK' means the expectation
+162     was met, 'FAIL' means it wasn't met, and 'ERROR' means an exception was
+163     encountered.  `expect` is the text of the `expect` call, what was expected.
+164     `did` is a message about what actually happened.  `traceback` is a list of
+165     tuples, the traceback, if any, in the form produced by `traceback.extract_tb`.
+166
+167     """
+168     results = {'stdout': '', 'checks': []}
+169     with patchattr(sys, 'stdout', StringIO()) as stdout:
+170         patchattr(sys, 'path', ['.']+sys.path)
+171         with isolated_modules():
+172             c = None
+173             try:
+
