@@ -1,0 +1,34 @@
+10:21 < gvandeweyer> is there a way to order awk to skip to the next line if NF > $value?
+10:22 < gvandeweyer> i have awk ' BEGIN { FS = "\t" ; OFS = "\t" } NF > 102 {next} {print $1,$2,$3,$100,$99}' for a file with >1500 columns, gradually incrementing and printing out higher number columns
+10:22 < geirha> NF>102{exit}
+10:23 < geirha> oh wait, I read that as NR
+10:23 < gvandeweyer> indeed, that finishes awk. I'm looking for an equivelent of perl split(/seperator/,$line,$nrfields)
+10:24 < geirha> NF>102{n=NR+1} n < NR {print $1,$2...
+10:25 < geirha> though that skips the line with > 102 fields too
+10:25 < geirha> n<NR{print ...} NF>102{n=NR+1}
+10:25 < gvandeweyer> it needs to process all lines, I was just thinking i might ignore the higher number fields (less splitting and assigning for awk) => higher performance
+10:27 < gvandeweyer> this doesn't seem to have a significant improvement over the program with(out) NF>102 {next}
+10:29 < geirha> well, if a line has more than 102 fields, it should skip printing the next line. Wasn't that what you wanted?
+10:31 < gvandeweyer> no :-). I  have a file of 2.5M lines, with 1500 cols each. I need to split it to subfiles of 2.5M lines with 6 columns from the original file each. These six cols are 1-3 and 3 other cols.
+10:31 < gvandeweyer> in perl, this split(/sep/,line,fields) fields variable limits the number of splitting output variables. Lower value reduces computational time.
+10:31 < gvandeweyer> I'm looking for an equivalent in awk if available to further optimize the code
+10:32 < geirha> Ah, you want to avoid splitting more than 102 fields, I see
+10:32 < geirha> I don't think you can control that with awk.
+10:34 < gvandeweyer> hmmm
+10:34 < gvandeweyer> pity
+13:10 < sente> what's wrong with cut?
+13:13 < jordanm> vague question, but normally you want to do other things with the output than just cut it, which makes shell internals or awk better choices
+13:13 < jordanm> if all you really want is cut, then use cut
+13:14 < e36freak> if it's on a variable, it's a pointless call that can be done with the shell itself
+13:14 < e36freak> but that's true for any string manipulation done with an external command
+13:14 < e36freak> if it's on a stream or a file, the only time you'd want cut is if you're doing nothing else to it
+13:15 < e36freak> and even then, it's not nearly as flexible as something like awk
+13:17 < sente> jordanm: my question wasn't meant out of context
+13:17 < sente> it was just a very delayed response to gvandeweyer's 2.5M line file
+13:17 < sente> with 1500 columns and only 6 wanted
+13:22 < xpt> jordanm, e36freak: well ksh88 don't support ${var:num:num2} so i think cut from variable is sometimes usefull.
+13:23 < xpt> sente: I don't see the prevoius discussion. Was your issue solved or you still want a solution?
+13:23 < jordanm> no, that means ksh88 is not useful
+13:24 < sente> xpt: thanks for asking, but i don't have an issue
+13:24 < xpt> jordanm: tell it to IBM
+
