@@ -1,0 +1,18 @@
+function print_first_line_of_passwd ()
+{
+    while IFS=: read -ra line; do
+        echo "${line[@]:0:1}";
+    done < /etc/passwd
+}
+
+#output....
+root
+daemon
+bin
+sys
+sync
+games
+man
+lp
+mail
+news
