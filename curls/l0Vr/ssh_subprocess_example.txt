@@ -1,0 +1,31 @@
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $ ssh sente@sentedrop.com mv code/SHA1.txt /home/sente
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $ ssh sente@sentedrop.com ls -lrt SHA1.txt
+-rw-r--r-- 1 sente pg2662512 251869150 2012-06-06 10:09 SHA1.txt
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $ python testit.py
+
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $ ssh sente@sentedrop.com ls -lrt SHA1.txt
+ls: cannot access SHA1.txt: No such file or directory
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $ ssh sente@sentedrop.com ls -lrt code/SHA1.txt
+-rw-r--r-- 1 sente pg2662512 251869150 2012-06-06 10:09 code/SHA1.txt
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $
+stu@sente /scratch/stu/tmp.daily/tmp/daily/07/26  $ cat testit.py
+import subprocess
+
+def runcmd(str):
+    s=subprocess.Popen(array,stderr=subprocess.PIPE,stdout=subprocess.PIPE)
+    sout,serr=s.communicate()
+    s.wait()
+    return sout,serr
+
+array="ssh sente@sentedrop.com mv SHA1.txt code".split()
+a,b = runcmd(array)
+
+print a
+
+
+
