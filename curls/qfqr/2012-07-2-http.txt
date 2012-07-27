@@ -1,0 +1,965 @@
+2012-07-20 00:10 < techmatt06> I'm looking for some help on returning a value from one function and calling it though out my code....here's my rough draft so far http://bpaste.net/show/p1HtAxInaRpgXSiPt4W4/
+2012-07-20 00:11 < wleslie> TeeCee: although there are http headers you can use to query if a resource has changed, they don't often give useful results
+2012-07-20 00:15 < raj> Why can't I see the print statements here? http://paste.ofcode.org/Yza2vAZtNzRHm8Lv4Tr4sW (gevent/socket.io)
+2012-07-20 00:31 < raj> wleslie, http://paste.ofcode.org/34hwesQybcHZZQmGTyTGynu
+2012-07-20 00:32 < rpcesar> sabren, its just a few lines, but here is the pastbin for it: http://bpaste.net/show/8d6aU1Hodf3xxCHx9Gba/
+2012-07-20 01:23 < jmwpc> I have a problem with using imagemagick from subprocess.call on a windows machine. The -resize 180x180> parameter is at the root of my problem. From the command line, it works fine so long as i quote "180x180>", but I can't seem to make it work from python, without quotes it tries to creat a file that is the name of the next parameter after >, with quotes, imagemagick throws an error. Here's my code: http://pastebin.com/LYnBnKFM
+2012-07-20 01:23 < mlt-> oh http://stackoverflow.com/questions/312443/how-do-you-split-a-list-into-evenly-sized-chunks-in-python
+2012-07-20 01:23 < infobob> http://paste.pound-python.org/show/24153/ (repasted for jmwpc)
+2012-07-20 01:23 < maslen> http://stackoverflow.com/questions/2130016/splitting-a-list-of-arbitrary-size-into-only-roughly-n-equal-parts looks relevant
+2012-07-20 01:33 < jmwpc> wleslie: http://wiki.python.org/moin/ImageMagick ? does this build in windows?
+2012-07-20 01:35 < eevee> http://www.autohotkey.net/~deleyd/parameters/parameters.htm#WIN  here's the only thorough explanation i've ever found  :D
+2012-07-20 01:38 < Avaris_> mlt-: you can wrap that in a generator that uses xrange: http://codepad.org/ckbbLYMf
+2012-07-20 02:08 < mks1209> hi all: Why is pop() not emptying a list. code(ln180): http://bpaste.net/show/QsAzFxKhaBeJ856dzedV/    result: http://bpaste.net/show/fiimCQar5WrlPO9RaMzy/
+2012-07-20 02:10 < econdudeawesome> Avaris_: you still around? I think this should make a list of unique elements that contain what I was looking for--allowing me to assign a new code to each list within the list: http://pastebin.com/izGdD4gF
+2012-07-20 02:10 < infobob> http://paste.pound-python.org/show/24154/ (repasted for econdudeawesome)
+2012-07-20 03:01 < m1chael> http://dpaste.com/772977/
+2012-07-20 03:46 < scott_w> http://bpaste.net/show/35915/
+2012-07-20 03:47 < infobob> mlt-, http://codepad.org/vXky3q6G
+2012-07-20 03:51 < mlt-> http://www.riverbankcomputing.co.uk/static/Docs/PyQt4/html/new_style_signals_slots.html
+2012-07-20 04:04 < mlt-> wleslie: http://codepad.org/wSz1Yt5y it is just the main stuff... the workhorse that extracts data is in another module
+2012-07-20 04:05 < lvh> Whether or not I count as people is up to you: https://gist.github.com/3149470
+2012-07-20 04:08 < mlt-> http://codepad.org/oozMDWhV
+2012-07-20 04:48 < wleslie> therealfakemoot: http://staging.sqlalchemy.org/docs/06/core/types.html#marshal-json-strings
+2012-07-20 04:56 < wleslie> http://staging.sqlalchemy.org/docs/orm/collections.html
+2012-07-20 05:08 < SmokeyD> revil, like this: http://bpaste.net/show/ZDoGOqNhzd9VlCYSF2JN/
+2012-07-20 05:56 < revil> hm.. SmokeyD, http://ideone.com/EYZPb it desn't seem to work on attributes. I don't mind deleting the inherited name, since no other class uses it. It's meant as an end-user read property
+2012-07-20 06:27 < suttiwit_> hello, I have problem with this code: http://pastebin.com/A52QE7CG ; I use the code on Line 9 to see the correct answer but when I use the number from the correct answer it just said I guessed wrong :( What can I do?
+2012-07-20 06:27 < infobob> http://paste.pound-python.org/show/24156/ (repasted for suttiwit_)
+2012-07-20 06:37 < sorrymyeng> guys, Why on third expose-event event.area is smaller then before? http://bpaste.net/show/VlOs0rLtgQzGyGwXkhc3/
+2012-07-20 07:44 < AlecTaylor> Why am I getting a "Too many values to unpack" error? - http://codepad.org/FteX1nqX - I definitely have the right number of keys...
+2012-07-20 08:20 < chillyy> http://pastebin.com/ibEMbFrb - any ideas?
+2012-07-20 08:20 < infobob> http://paste.pound-python.org/show/24158/ (repasted for chillyy)
+2012-07-20 08:26 < ironfroggy_> cebor: http://docs.python.org/
+2012-07-20 08:33 < naquad> https://gist.github.com/3150493 - why does it say "UnboundLocalError: local variable 'name' referenced before assignment"? it should be a closure, isn't it?
+2012-07-20 09:10 < Jerub> |^_^|: also, http://www.youtube.com/watch?v=v1AJ_OBJUpY
+2012-07-20 09:39 < NelleV> like that http://blog.ziade.org/
+2012-07-20 09:47 < TFKyle> sounds about as reasonable as the httpd kernel module, though maybe a slight bit less
+2012-07-20 09:48 < idletask> Problem: http://paste.ubuntu.com/1101831/ <-- it works, but the problem is that the __str__ function of StartWaitingState always thinks self._waits is 0, how can I fix that?
+2012-07-20 09:59 < wleslie> stardiviner: http://docs.python.org and click the modules list
+2012-07-20 10:06 < Peng> stardiviner: http://docs.python.org/py3k/py-modindex.html ?
+2012-07-20 10:06 < Peng> stardiviner: http://docs.python.org/library/urlparse.html says 3 renamed it to urllib.parse.
+2012-07-20 10:07 < rodmar> Alan: http://stackoverflow.com/questions/6031584/python-importing-from-builtin-library-when-module-with-same-name-exists
+2012-07-20 10:20 < wleslie> Alan: http://bpaste.net/show/Ints5FMIrFCeoUCOruWi/
+2012-07-20 10:38 < Krauzi> hello guys, I'm currently using CGIHTTPServer for testing my web scripts, is there a way for the scripts to print to the console of CGIHTTPServer (so not via print which goes for the http response)
+2012-07-20 10:38 < Spamicles> the order of my dict is changing. any reason for this? http://bpaste.net/show/5p9mJ1XGbDitRNVOdEAt/
+2012-07-20 11:01 < econdudeawesome> papna, mDemocritus: it appears numpy has what I'm looking for (http://www.scipy.org/NumPy_for_Matlab_Users/)
+2012-07-20 11:07 < Anime> i have this data dict with a "id" key on each pair and there's a guarantee their values are unique, i need to add a "rgb" with a color value within each based on their different ids. is there a better way of doing this? http://bpaste.net/show/nDs5x5WMHbyunRV9JbKo/
+2012-07-20 11:13 < mcepl> what does lst[::-1] slice means? I can read here http://www.effbot.org/zone/python-list.htm#accessing about steps, but -1 step? Does it mean reversing the list?
+2012-07-20 11:18 < jamiejackson> what's the proper way to quote the "a" element? you'll see that it has multiple lines, internal indentation, and internal colons: http://pastebin.com/H3xrEraV
+2012-07-20 11:18 < infobob> http://paste.pound-python.org/show/24161/ (repasted for jamiejackson)
+2012-07-20 11:24 < nedbat> bambams: this might be useful, maybe not: http://www.lurklurk.org/rosetta.html
+2012-07-20 11:28 < nedbat> bambams: this is more complete, but also not dynamic: http://rigaux.org/language-study/syntax-across-languages.html
+2012-07-20 11:28 < mDemocritus> bambams: http://docs.python.org/tutorial/datastructures.html
+2012-07-20 11:58 < infobob> Kwpolska, http://codepad.org/hz0PzyUv
+2012-07-20 11:59 < infobob> Kwpolska, http://codepad.org/YFEC6rTG
+2012-07-20 12:01 < nedbat> aroberts: http://nedbatchelder.com/blog/201110/forelse.html
+2012-07-20 12:06 < remote> ironfroggy_: http://pastebin.com/wnV7QUfE
+2012-07-20 12:06 < infobob> http://paste.pound-python.org/show/24162/ (repasted for remote)
+2012-07-20 12:09 < dash> |^_^|: http://kivy.org/
+2012-07-20 12:13 < dash> mDemocritus: one of my coworkers did this: http://people.mozilla.com/~mclaypotch/rypple.html
+2012-07-20 12:15 < mDemocritus> dash: there's another one too: http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CFQQFjAB&url=http%3A%2F%2Fblueballmachine2.ytmnd.com%2F&ei=JYQJUNKZB4LpqgH6z_i8Cg&usg=AFQjCNED40A__Et7B6Yb1wTtTrUd___SwA
+2012-07-20 12:17 < dash> So, a guy wrote this: https://github.com/erezsh/plyplus
+2012-07-20 12:27 < Spamicles> mDemocritus, any chance i can ask you to look at this real quick to make sure i didnt make any logic errors? =] http://bpaste.net/show/66zmThkHBUD72e6I9PHW/
+2012-07-20 13:25 < dlam> http://pastebin.com/Ku35edmK
+2012-07-20 13:25 < infobob> http://paste.pound-python.org/show/24165/ (repasted for dlam)
+2012-07-20 13:30 < dlam`> http://pastebin.com/Ku35edmK
+2012-07-20 13:30 < infobob> http://paste.pound-python.org/show/24165/ (repasted for dlam`)
+2012-07-20 13:48 < himansudas> can anyone help me out to resolve this error?? http://pastebin.com/ivjZD43U
+2012-07-20 13:48 < infobob> http://paste.pound-python.org/show/24166/ (repasted for himansudas)
+2012-07-20 13:58 < dash> Sicp: http://docs.sqlalchemy.org/en/rel_0_7/core/tutorial.html
+2012-07-20 14:09 < frewsxcv> https://en.wikipedia.org/wiki/ECMAScript#ECMAScript_Harmony
+2012-07-20 14:30 < nedbat> KirkMcDonald: re: ascii ignore:  http://stackoverflow.com/q/11544541/14343
+2012-07-20 14:44 < papna> pzero: There's not much to know about lambdas, try the unittest module documentation and maybe the nose documentation, and it's usually the obvious one but feel free to ask here or see if the documentation or http://wiki.python.org/moin/TimeComplexity/ tells you.
+2012-07-20 15:02 < Guest60168> question: I am playing with imdb-py and I did a search for a movie and get this list... Movie id:0293373[http] title:_The Magic of David Copperfield IV: The Vanishing Airplane (1981) (TV)_... but If print the results[0] I get just the movie title, help(results) just shows a list
+2012-07-20 15:06 < Guest60168> alexdoom: I get a big list of this seperated by , surrouned by []      <Movie id:0301125[http] title:_Comme un avion (2002)_>
+2012-07-20 15:07 < Guest60168> alexdoom: http://bpaste.net/show/neaTErpMaGW85zJLzYBD/
+2012-07-20 15:09 < deltab> matik: http://www.dirtsimple.org/2004/12/python-is-not-java.html
+2012-07-20 15:11 < Guest60168> alexdoom: <Movie id:0301125[http] title:_Comme un avion (2002)_>    (each one has an ID, title, and year)
+2012-07-20 15:12 < alexdoom> Guest60168: if you're not attached to imdb-py, i'd recommend http://imdbapi.com/
+2012-07-20 15:12 < jshanab> Can someone have a look and maybe tell me what i am doing wrong?  http://pastebin.com/iiaCyVc4    I print out the timestamp vale from the database but it looks to me like python is saying the string is empty (if it is a string)
+2012-07-20 15:12 < infobob> http://paste.pound-python.org/show/24171/ (repasted for jshanab)
+2012-07-20 15:47 < lil-murph> My coworker wrote this code ... is there a much better way to do this? It's hideous. http://pastebin.com/gZyWrt5k
+2012-07-20 15:47 < infobob> http://paste.pound-python.org/show/24172/ (repasted for lil-murph)
+2012-07-20 15:59 < Ach1lles> the code is more readable this way: http://codepad.org/xZi4vFbZ.
+2012-07-20 16:08 < ghost[]> not sure if my problem here is with ruby, or python, or my local environment: https://gist.github.com/0bfb669bce4769dd985e
+2012-07-20 16:11 < jshanab> http://paste.pound-python.org/show/24173/
+2012-07-20 16:12 < looopy> hi can someone explain the '%' here?  http://imgur.com/TInjP
+2012-07-20 16:17 < kc_sorta> http://docs.python.org/library/popen2.html
+2012-07-20 16:39 < therealfakemoot> EvanW: "vlc http://url.to/music.mp3"
+2012-07-20 16:40 < jkbbwr> EvanW: http://wiki.videolan.org/Python_bindings
+2012-07-20 16:51 < robkinyon> has anyone used tornado's AsyncHTTPTestCase and the async_test_engine decorator from http://emptysquare.net/blog/tornado-unittesting-with-generators/ ?
+2012-07-20 16:57 < jkbbwr> robkinyon: http://www.youtube.com/watch?v=dHEvfbTBPMQ
+2012-07-20 17:05 < leshaste> is there a way to install this in ubuntu http://pypi.python.org/pypi/pandas ?
+2012-07-20 17:05 < superdmp> mDemocritus:  http://dpaste.com/773280/
+2012-07-20 17:08 < superdmp>   Could not fetch URL http://cheeseshop.python.org/packages/source/l/lxml/lxml-2.0alpha3.tar.gz (from http://pypi.python.org/simple/lxml/): HTTP Error 404: Not Found
+2012-07-20 17:08 < superdmp>   Will skip URL http://cheeseshop.python.org/packages/source/l/lxml/lxml-2.0alpha3.tar.gz when looking for download links for lxml
+2012-07-20 17:09 < mDemocritus> superdmp: i can download that fine http://cheeseshop.python.org/packages/source/l/lxml/lxml-2.0alpha3.tar.gz
+2012-07-20 17:09 < mDemocritus> superdmp: what do you see for: echo $http_proxy $https_proxy
+2012-07-20 17:11 < mDemocritus> superdmp: can you download it manually? wget -O /dev/null "http://cheeseshop.python.org/packages/source/l/lxml/lxml-2.0alpha3.tar.gz"
+2012-07-20 17:21 < mDemocritus> does http_proxy support SOCKS? :)
+2012-07-20 17:38 < bluesnow> mDemocritus: Here's the view http://pastebin.com/xsaikkMt
+2012-07-20 17:38 < infobob> http://paste.pound-python.org/show/24176/ (repasted for bluesnow)
+2012-07-20 17:39 < therealfakemoot> Ancient: http://mikegrouchy.com/blog/be-pythonic-initpy.html
+2012-07-20 17:39 < Norrin> http://pastie.org/4292073
+2012-07-20 17:41 < leshaste> ChrisOelmueller, looks like http://bpaste.net/show/nFibsqSxKNQ6m1UmClAc/
+2012-07-20 17:42 < ChrisOelmueller> leshaste: i'd either recommend arr.astype() or using a view to operate on your array as demonstrated here, http://stackoverflow.com/questions/4389517/
+2012-07-20 17:58 < dash> bwq: anyway you're bringing this to mind: http://xkcd.com/605/
+2012-07-20 18:04 < mrkent> http://dpaste.com/773291/ my code is here
+2012-07-20 18:13 < leshaste> http://stackoverflow.com/questions/4389517/in-place-type-conversion-of-a-numpy-array suggests a method too
+2012-07-20 18:18 < mrkent> http://dpaste.com/773310/
+2012-07-20 18:19 < deltab> pyscripter: a Python IDE written in Object Pascal with multiple engine support: http://code.google.com/p/pyscripter/wiki/RemoteEngines
+2012-07-20 18:33 < manizzle_> halp: http://ideone.com/QLsul
+2012-07-20 18:36 < manizzle_> http://ideone.com/RMHwo as opposed to http://ideone.com/oL41I
+2012-07-20 18:41 < jshanab> I am missing something.  http://paste.pound-python.org/show/24178/   I am trying to create a newRow member var I tried a tuple and a list and I get syntax error on the f of def Upsert.  I just do not see what is syntatically wrong
+2012-07-20 18:46 < deltab> Browser: there are many; for instance http://nedbatchelder.com/blog/
+2012-07-20 18:46 < jshanab> http://paste.pound-python.org/show/24179/
+2012-07-20 18:51 < deltab> Browser: http://planet.python.org/
+2012-07-20 18:55 < Norrin> http://pastie.org/4292408
+2012-07-20 18:59 < GlenK> hi guys.  I have a little function, and I'm passing in something like [2, 3, 1].  Can anyone tell me why l turns out empty after I call do a "l = l.sort()".  code is here: http://fpaste.org/oUJA/
+2012-07-20 19:25 < EvanW> i need a bit of help controlling vlc, also any suggestions would be appreciated. http://pastie.org/4292519
+2012-07-20 19:28 < bwq> i'm using a modified version of this recipe: http://code.activestate.com/recipes/577187/
+2012-07-20 19:32 < mDemocritus> EvanW: http://docs.python.org/library/subprocess.html#subprocess.Popen
+2012-07-20 19:33 < mDemocritus> EvanW: make processes with subprocesses.Popen, and use the attributes and methods of them described here: http://docs.python.org/library/subprocess.html#popen-objects
+2012-07-20 19:40 < dash> bwq: i would suggest looking at async http clients like twisted.web.client
+2012-07-20 19:58 < EvanW> deltab, this is what i did, but i didnt get any new output, and vlc didnt do anything: http://pastie.org/4292642
+2012-07-20 20:01 < travisgriggs> i have a remote data logging device that uses python to accumulate some data, and periodically "phone home with the data" to an http server. we're not happy with the http overhead, so websockets look appealing to us. we'd really like to just have python programs on both sides, using sockets to talk to each other, but the thought is that websockets, administrated by a lightweight http server would make that possible. would this work? I'm struggling findi
+2012-07-20 20:02 < kevlarman> travisgriggs: if http overhead is noticable, you're probably not doing something right
+2012-07-20 20:03 < joepie91> hi, I'm trying to use the werkzeug fixer for the lighttpd root issue, but werkzeug.contrib.fixers doesn't seem to exist for some reason - AttributeError: 'module' object has no attribute 'fixers'
+2012-07-20 20:03 < joepie91> using werkzeug.contrib.fixers.LighttpdCGIRootFix
+2012-07-20 20:06 < doofy> I'm trying to get a search to work in BeautifulSoup, but it doesn't seem to want to do what I'm trying… any ideas? http://pastebin.com/vn6BwBfE
+2012-07-20 20:06 < infobob> http://paste.pound-python.org/show/24180/ (repasted for doofy)
+2012-07-20 20:08 < deltab> travisgriggs: maybe MQTT is what you need: https://en.wikipedia.org/wiki/MQ_Telemetry_Transport
+2012-07-20 20:14 < Renski> http://docs.python.org/library/socket.html#socket.error
+2012-07-20 20:16 < joepie91> next problem - my fastcgi config *should* be correct, but lighttpd is giving me 404 errors, and not logging anything in the error log :|
+2012-07-20 20:23 < dustingetz> question about dynamically binding locals so i can swap out implementations of a function: http://stackoverflow.com/questions/11588289/python-late-binding-dynamically-put-locals-in-scope
+2012-07-20 20:31 < bindi> reuf: http://www.thegeekstuff.com/2011/07/cron-every-5-minutes/
+2012-07-20 20:50 < deltab> https://en.wikipedia.org/wiki/Sbrk
+2012-07-20 20:55 < DrNoboto> http://pastebin.com/vfwSKy47
+2012-07-20 20:55 < infobob> http://paste.pound-python.org/show/24181/ (repasted for DrNoboto)
+2012-07-20 21:04 < DrNoboto> http://paste.pound-python.org/show/24182/
+2012-07-20 21:06 < DrNoboto> http://paste.pound-python.org/show/24183/
+2012-07-20 21:15 < DrNoboto> MindDrive: http://paste.pound-python.org/show/24184/
+2012-07-20 21:20 < Betacommand> anyone have a second to help fix a minor issue? I have an IRC bot http://pastebin.com/G4f917L2 and it occasionally gets socket timeouts and I am looking for a way to restart/keep the bot up when that happens
+2012-07-20 21:23 < daniel532> oh right i'm thinking with my http brain right now
+2012-07-20 21:53 < swordfish> hey can you guys take a look at this and help me see whats wrong http://pastebin.com/x42xDMYW would i need the module bsddb?
+2012-07-20 22:02 < GlenK> so: http://fpaste.org/cYRh/  I see the results of this exercise.  but I'm not getting why the second function differs from the first.
+2012-07-20 22:10 < shaun413> http://www.udacity.com/view#Course/cs101/CourseRev/apr2012/Unit/671001/Nugget/675002
+2012-07-20 22:33 < judoboy> Austrian, this was his paste: http://pastebin.com/x42xDMYW
+2012-07-20 22:36 < mwmnj> I have the following django view: http://dpaste.org/Q7BX7/
+2012-07-20 22:51 < judoboy> https://bbs.archlinux.org/viewtopic.php?id=122186
+2012-07-20 22:54 < idkblaze> help.... http://pastebin.com/6jj9aggA
+2012-07-20 22:54 < infobob> http://paste.pound-python.org/show/24185/ (repasted for idkblaze)
+2012-07-20 22:59 < idkblaze> shaun413: when i run this code(http://pastebin.com/6jj9aggA) in command promp (win7) it does not show *** or spaces as to when i type
+2012-07-20 22:59 < infobob> http://paste.pound-python.org/show/24185/ (repasted for idkblaze)
+2012-07-20 23:16 < judoboy> swordfish, the original code is still failing? http://pastebin.com/x42xDMYW
+2012-07-20 23:16 < infobob> http://paste.pound-python.org/show/24186/ (repasted for judoboy)
+2012-07-21 00:57 < pythonTestClient> https://github.com/MichaelTheDevel/PyRC
+2012-07-21 01:00 < MichaelTheDevel> http://www.riverbankcomputing.co.uk/software/pyqt/download/
+2012-07-21 01:07 < asdf`> Austrian, there's a lot of material, actually. There have been some very nice testing talks on the last pycon us, see http://pyvideo.org
+2012-07-21 01:07 < |^_^|> http://code.google.com/p/guess-my-number-game/ << It's not just a normal guess game but it's advanced guessing game, MichaelTheDevel
+2012-07-21 01:21 < asdf`> Time2303, http://bpaste.net is great, http://ideone.com and http://codepad.org are both code-running pastebins
+2012-07-21 01:22 < asdf`> (and there's also http://paste.pound-python.org which runs lodgeit and provides a nice api)
+2012-07-21 01:23 < Time2303> When using .format, how can I have it use a function to get the variables? This is what I mean http://paste.pound-python.org/show/24187/ (Python 3.2)
+2012-07-21 02:37 < MufinMcFlufin> hey, using the httplib module, how would I be able to "scroll down" in a webpage?
+2012-07-21 02:39 < MufinMcFlufin> but still, the website itself is http://wallbase.cc/
+2012-07-21 03:18 < AlecTaylor> Specifically controller stuff for URLs. So if you go http://localhost/group/mygroupname or http://localhost/group/mygroupnameid it will be able to use the same controller
+2012-07-21 03:39 < osmosis> suggestions on how to troubleshoot this appreciated, traceback http://dpaste.com/773457/
+2012-07-21 03:43 < osmosis> glyph, could it be the server is returning a json object but does not have valid http headers?
+2012-07-21 04:05 < kennethreitz> osmosis: http://python-requests.org
+2012-07-21 04:11 < kennethreitz> bwq: https://github.com/kennethreitz/grequests
+2012-07-21 04:15 < bwq> http://bpaste.net/show/co0RlYxdxp2KIaqxDQp9/
+2012-07-21 05:10 < bwq> here's why: http://twistedmatrix.com/trac/milestone/Python-3.x
+2012-07-21 05:21 < xZain> http://twistedmatrix.com/trac/milestone/Python-3.x
+2012-07-21 05:26 < Trashlord> http://docs.python.org/release/3.0.1/whatsnew/3.0.html
+2012-07-21 05:29 < bwq> xZain: look at this: http://twistedmatrix.com/documents/current/web/howto/xmlrpc.html
+2012-07-21 05:39 < the_drow> bwq: read about tox (https://bitbucket.org/hpk42/tox/overview)
+2012-07-21 05:50 < the_drow> bwq: http://www.mindmeister.com/187448283
+2012-07-21 07:17 < froio> hello guys please i m not sure if this pice of pseudo-work is coneceputally correct  : http://codepad.org/jN2lTiqU   you can help me ?
+2012-07-21 07:35 < idletask> http://docs.python.org/library/threading.html#rlock-objects
+2012-07-21 07:40 < froio> http://codepad.org/ZRqSDh9N
+2012-07-21 07:40 < froio> idletask liek that http://codepad.org/ZRqSDh9N
+2012-07-21 07:41 < Jerub> friohttp://codepad.org/DhHn6QLm
+2012-07-21 08:07 < Anime> just passing vars to a http GET request
+2012-07-21 08:08 < Hobbestigrou> i have error on debian sid when i try install it, http://paste.perldancer.org/17FKlpIqsmUok
+2012-07-21 08:10 < Back2Basics> Anime: try urllib http://docs.python.org/dev/library/urllib.request.html
+2012-07-21 08:12 < Back2Basics> Anime: or http://docs.python.org/howto/urllib2.html
+2012-07-21 08:17 < Hobbestigrou> https://github.com/qtile/xpyb-ng
+2012-07-21 09:05 < idletask> http://paste.ubuntu.com/1103363/ <-- it works, but can it be done better/more easily (python 2.7)?
+2012-07-21 10:48 < kanzure> http://www.djangopackages.com/grids/g/authentication/
+2012-07-21 10:50 < misblay> Short question from newbie: Code is here (http://pastebin.com/1xis7L3E) shouldn't it always return 0L due to the last return?
+2012-07-21 10:50 < infobob> http://paste.pound-python.org/show/24190/ (repasted for misblay)
+2012-07-21 11:14 < srsrs> hey guys can you please explain this weird unicode error? http://codepad.org/swUAlkkT
+2012-07-21 11:17 < rob```> GuySoft: put that on http://bpaste.net/+python please (properly indented etc.)
+2012-07-21 11:50 < Jerub> srsrs: http://lxml.de/xpathxslt.html#regular-expressions-in-xpath
+2012-07-21 12:18 < jshanab> I am trying to create a uuid from a 128 bit int using the int= CTOR http://docs.python.org/library/uuid.html  but it complains my int is not 128bit. How do I create explicitly a 128 bit integer?
+2012-07-21 12:23 < magcius> Because the main http://twistedmatrix.com page has a tab for "Web Server"
+2012-07-21 12:37 < jshanab> http://pastebin.com/16cXJbAH
+2012-07-21 12:37 < infobob> http://paste.pound-python.org/show/24191/ (repasted for jshanab)
+2012-07-21 12:42 < daniel532> MostAwesomeDude: http://pastebin.com/L7P64mR6
+2012-07-21 12:42 < infobob> http://paste.pound-python.org/show/24192/ (repasted for daniel532)
+2012-07-21 12:45 < MostAwesomeDude> daniel532: http://paste.pound-python.org/show/24193/
+2012-07-21 13:13 < leitz> Trying to figure out why my event callback inside a class is failing. http://pastebin.com/NrgKYGhF  Please note this is for a class, so I'd prefer pointers to what to read than pure answers.
+2012-07-21 13:13 < infobob> http://paste.pound-python.org/show/24194/ (repasted for leitz)
+2012-07-21 13:13 < ninjax1> http://pastebin.com/xSL306x0
+2012-07-21 13:13 < infobob> http://paste.pound-python.org/show/24195/ (repasted for ninjax1)
+2012-07-21 13:34 < jshanab> deltab.  So here is a minimal case to get working.  This does not go infinite because i have small numbers, but it still does not work. http://paste.pound-python.org/show/24196/
+2012-07-21 13:45 < judoboy> jshanab, that's what I see here: http://docs.python.org/reference/expressions.html
+2012-07-21 14:16 < tomboy64> MrElendig: can you point me to documentation bout that? http://docs.python.org/py3k/py-modindex.html didn't show anything
+2012-07-21 14:17 < MrElendig> tomboy64: http://docs.python.org/py3k/library/shutil.html#archiving-operations
+2012-07-21 14:20 < MrElendig> tomboy64: also see http://bugs.python.org/issue6715
+2012-07-21 14:45 < anandhegde> i am using lxml to scrape some stuff, i want the article_content from this page - http://www.goal.com/en/news/9/england/2012/07/21/3255988/breaking-news-manchester-united-defender-smalling-to-miss , and here is my code - http://pastebin.com/WcwgJLQF , how do i remove the unwanted stuff in between
+2012-07-21 14:45 < infobob> http://paste.pound-python.org/show/24198/ (repasted for anandhegde)
+2012-07-21 14:56 < tiaz> hi. in http://pastebin.com/KLfp3dth , after calling nodupsum(), the list derp loses an element! how/why is that? I thought all actions would take place against nodupsum()'s local copy as generated when the reference passed to it is first modified?
+2012-07-21 14:56 < infobob> http://paste.pound-python.org/show/24199/ (repasted for tiaz)
+2012-07-21 15:01 < DimmuR> Hello everyone. I have issue with encoding from (most probably) cp1252 to utf-8. Text contains signs like “ … i've tried standard encode/decode with errors=ignore/replace also tried slughifi but still getting errors about bad sequence for encoding. This is example text http://wklej.org/id/795245/ - any tips how can i convert it to utf-8?
+2012-07-21 15:09 < smalleat> tiaz: http://stackoverflow.com/questions/2322068/python-passing-list-as-argument
+2012-07-21 15:15 < smalleat> fission6: http://paste.pound-python.org/show/24199/
+2012-07-21 15:20 < fission6> well either way tiaz http://paste.pound-python.org/show/24200/
+2012-07-21 15:44 < mancha> I have found this (http://code.activestate.com/recipes/500261-named-tuples/). where do i put it in my system? /usr/lib.../sitepackage? and then how can i call it from the program?
+2012-07-21 16:24 < srsrs> http://codepad.org/872gnoYm works
+2012-07-21 16:31 < rgenito_> https://skitch.com/rgenito/een3b/draft-worker03-worker03-bash-149x15
+2012-07-21 16:59 < cocoloa> CupOfCocoa: if you want to use words used all over the net, maybe try to get your hands onhttp://googleresearch.blogspot.de/2006/08/all-our-n-gram-are-belong-to-you.html
+2012-07-21 17:28 < pepijndevos> deltab, http://pastebin.com/1CRFJkaB works for strings and ints, turns into recursive mess for a list.
+2012-07-21 17:28 < infobob> http://paste.pound-python.org/show/24202/ (repasted for pepijndevos)
+2012-07-21 17:34 < cocoloa> therealfakemoot: maybe you may find that outdated, but it there are still some valid arguments http://c2.com/cgi/wiki?SingleFunctionExitPoint
+2012-07-21 18:07 < startling> rgenito_: this guy: http://cx-freeze.sourceforge.net/
+2012-07-21 18:14 < thinkUland> Hello, I have to run a process which in most cases runs in less than a second, but can need arbitrary long time to finish, so to achieve efficiency I have to a) react nearly immadietly as it finishes b) limit its time. I use this code in order to achieve this: http://pastebin.com/SqyRb1S6 My problem is - when process is stuck and I kill it, my script hangs up when getting output. However when process exits "naturally" it is ok.
+2012-07-21 18:14 < infobob> http://paste.pound-python.org/show/24204/ (repasted for thinkUland)
+2012-07-21 18:18 < nedbat> idletask: you might find this thread from the past week on python-dev illuminating: http://mail.python.org/pipermail/python-dev/2012-July/120991.html
+2012-07-21 18:20 < mathieui> yeah, it’s here http://gitweb.louiz.org/?p=poezio;a=summary
+2012-07-21 18:22 < idletask> General python question: this code works, but how is it not "pythonic"? http://paste.ubuntu.com/1104077/ (please disregard error checking)
+2012-07-21 18:35 < thinkUland> judoboy: You're right - your version is clearer but: http://stackoverflow.com/questions/2710940/python-if-x-is-not-none-or-if-not-x-is-none
+2012-07-21 18:35 < nedbat> idletask: http://paste.pound-python.org/show/24205/
+2012-07-21 18:44 < nedbat> dmishe: this looks promising: http://code.activestate.com/recipes/577073-fast-running-median-using-an-indexable-skiplist-fa/
+2012-07-21 18:53 < judoboy> ssbr, I'm not judoka: https://en.wikipedia.org/wiki/Judo_Boy
+2012-07-21 18:55 < swordfish> ssbr: here is the text from the error http://pastebin.ca/2173481
+2012-07-21 18:55 < infobob> http://paste.pound-python.org/show/24206/ (repasted for swordfish)
+2012-07-21 18:58 < nedbat> pepijndevos: can you try adapting code found here? http://nedbatchelder.com/text/whirlext.html
+2012-07-21 18:59 < rob```> idletask: maybe this http://dev.pocoo.org/hg/lodgeit-main/summary
+2012-07-21 18:59 < ssbr> despite causing breakage etc.: https://bugs.archlinux.org/task/25058
+2012-07-21 19:00 < ssbr> idletask: https://github.com/bufferio/spacepaste
+2012-07-21 19:11 < bwq> and there's http://paste.pound-python.org/ too
+2012-07-21 19:11 < Peng> pepijndevos: http://bpaste.net/+python is in the /topic; infobob uses http://paste.pound-python.org/ and also http://codepad.org/
+2012-07-21 19:12 < pepijndevos> nedbat, http://paste.pound-python.org/show/24207/
+2012-07-21 19:19 < sproc> Newb question, just learning Python: http://pastebin.com/n1T2iFcP
+2012-07-21 19:19 < infobob> http://paste.pound-python.org/show/24208/ (repasted for sproc)
+2012-07-21 19:56 < MostAwesomeDude> idletask: http://codepad.org/mPtEnCB4
+2012-07-21 20:11 < kbar> does anyone know how to correctly pass a user's ip address to python app when using an nginx reverse proxy? i'm looking at http://pastie.org/4297663 as my nginx config, and http://pastie.org/4297665 running in gunicorn.
+2012-07-21 20:24 < Vertel> sdiaz: Go here http://bpaste.net/+python and paste your code there. No-one wants to or is going to read it when pasted in chat.
+2012-07-21 20:25 < sdiaz> http://bpaste.net/show/MqFx8eulLN8aRRi01D0s/
+2012-07-21 20:28 < Trashlord> sdiaz: http://en.wikibooks.org/wiki/Think_Python
+2012-07-21 20:47 < kbar> does anyone know how to correctly pass a user's ip address to python app when using an nginx reverse proxy? i'm looking at http://pastie.org/4297663 as my nginx config, and http://pastie.org/4297665 running in gunicorn.
+2012-07-21 21:02 < ssbr> leshaste: http://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html#arrays-dtypes-constructing
+2012-07-21 21:15 < leshaste> ssbr, there is this which looks tempting http://stackoverflow.com/questions/4389517/in-place-type-conversion-of-a-numpy-array
+2012-07-21 21:36 < _FBi> https://gist.github.com/0b571fb2bd3c99db447a
+2012-07-21 22:18 < Nervous_Robot> http://pastebin.com/DSVhQs9b
+2012-07-21 22:18 < infobob> http://paste.pound-python.org/show/24209/ (repasted for Nervous_Robot)
+2012-07-21 22:29 < tos9> Nervous_Robot: http://twistedmatrix.com
+2012-07-21 22:58 < neataroni> for example: http://bpaste.net/show/J287EDJtxkO7ukyBcH2L/
+2012-07-21 23:03 < nedbat> Justice: http://bit.ly/unipain
+2012-07-21 23:39 < nedbat> chriszf: I teach for http://dabeaz.com, you can see the curriculum on his site.
+2012-07-21 23:47 < teklol> is line 12 possible or am i just going about it the wrong way? http://bpaste.net/show/ZQipdYwSbWSkC0lq2Xtv/
+2012-07-22 00:08 < Nisstyre> http://htdp.org
+2012-07-22 00:19 < Nisstyre> http://wiki.python.org/moin/IntegratedDevelopmentEnvironments
+2012-07-22 00:25 < xZain> http://pytools.codeplex.com/
+2012-07-22 01:46 < dmishe> i mentioned before split, it's for https://www.interviewstreet.com
+2012-07-22 02:27 < kolistivra> hi -- I have a problem regarding urllib, StringIO and binary mode file operation. The question with relevant code is posted here http://stackoverflow.com/questions/11598032/ . What do you guys suggest?
+2012-07-22 03:08 < kolistivra> hi -- I have a problem regarding urllib, StringIO and binary mode file operation. The question with relevant code is posted here http://stackoverflow.com/questions/11598032/ . What do you guys suggest?
+2012-07-22 03:16 < greggyNapalm> Hi All, I jus create s simple flask app following guid at this page http://flask.pocoo.org/docs/patterns/sqlalchemy/
+2012-07-22 03:16 < greggyNapalm> and have question how to use some app attr(like SQLALCHEMY_DATABASE_URI) in dtabase file https://gist.github.com/de173e9030c18c7ecb51 ?
+2012-07-22 03:34 < kolistivra> https://github.com/abbyysdk/ocrsdk.com/tree/master/Python
+2012-07-22 03:41 < chriszf> That you try this module: http://docs.python-requests.org/en/latest/index.html
+2012-07-22 03:41 < chriszf> http://docs.python-requests.org/en/latest/user/quickstart/#post-a-multipart-encoded-file
+2012-07-22 03:57 < chriszf> kolistivra: https://gist.github.com/3158819#comments
+2012-07-22 04:24 < alo21> how can I know my public IP with python, without using a web service (like http://ip.42.pl/)?
+2012-07-22 04:44 < meisth0th> i am working on inheritance on python, and i am trying to write a class that extends Gtk.Builder(), what is wrong with my code can you please check? http://paste.pound-python.org/show/24211/
+2012-07-22 05:06 < xZain> http://pastie.org/4299314
+2012-07-22 05:08 < Skola> http://pastie.org/4299321
+2012-07-22 05:11 < xZain> http://pastie.org/4299327
+2012-07-22 05:16 < CDrone> http://pastie.org/4299351
+2012-07-22 05:19 < rob```> idletask: http://sprunge.us/YGRZ
+2012-07-22 05:25 < xZain> http://pastie.org/private/dwoi8h2usjwzgssfcedw
+2012-07-22 05:36 < idletask> CDrone: http://pastie.org/4299421
+2012-07-22 05:43 < idletask> CDrone: try that: http://pastie.org/4299437
+2012-07-22 05:52 < idletask> xZain: if you want exercises look at http://projecteuler.net
+2012-07-22 06:00 < ConsoleFx> guys, I am trying to write a small py script which will parse a webpage and dump the output to strings.txt. the script is working fine but I am not able to write the contents inside strings.txt file. I want to place '\n' after each item... if I run this script with the argument "http://www.useragentstring.com/pages/Beonex/" you can see I got 2 results after parsing. So while the file object is writing then its not inserting \n after each item
+2012-07-22 06:00 < ConsoleFx> . Can anybody please help? I am not able to proceed further as I am stuck here. The python script is dumped here: http://bpaste.net/show/7j7SnU5BJdRjvNqhfqMg/
+2012-07-22 06:39 < eddd> Ferus: http://www.codinghorror.com/blog/2009/11/parsing-html-the-cthulhu-way.html
+2012-07-22 06:42 < eddd> http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454
+2012-07-22 08:27 < nedbat> MikePer: http://json-rpc.org/wiki/python-json-rpc ?
+2012-07-22 08:29 < nedbat> MikePer: sorry, I meant: https://github.com/joshmarshall/jsonrpclib
+2012-07-22 08:32 < phaethon> irong33k: There's some good intermediate to advanced content at http://ivory.idyll.org/articles/advanced-swc/
+2012-07-22 08:41 < phaethon> MikePer:  Are you looking for something like https://code.google.com/p/wsgi-jsonrpc/ (not used it)T
+2012-07-22 08:49 < tos9> MikePer: http://github.com/oubiwann/txjsonrpc works, albeit it's a bit outdated.
+2012-07-22 08:57 < riot> do i really have to get these myself first? like here: http://mail.python.org/pipermail/tkinter-discuss/2007-January/001054.html  ??
+2012-07-22 09:07 < Mavericks> then i saw http://bugs.python.org/issue6394#msg89981
+2012-07-22 09:41 < Mavericks> os.getppid() doesn't work for py 2.7.2 host is windows vista os then i saw http://bugs.python.org/issue6394#msg89981 how can i resolve this problem ?
+2012-07-22 09:47 < Raydiation> Wulf: http://docs.python.org/tutorial/datastructures.html
+2012-07-22 09:53 < Raydiation> http://www.diveintopython.net/native_data_types/lists.html#d0e6392
+2012-07-22 10:10 < Raydiation> lxsameer: maybe take a look at http://docs.python.org/library/ipc.html
+2012-07-22 10:31 < Raydiation> slikts: http://www.python.org/dev/peps/pep-0008/ ?
+2012-07-22 11:44 < lambacck> Core_UK: http://pygtk.org/downloads.html get the all-in-one installer
+2012-07-22 11:50 < chriszf> Understanding http and the 'request'/'response' cycle.
+2012-07-22 12:08 < Raydiation> thats the coverfetcher class https://pastee.org/gnzas
+2012-07-22 12:18 < wieshka> hey there - how can i create 3-dimensional associative array in python for this code : http://pastebin.com/d46p3CEC . I need to get array, where for every uniq issuekey & worklogAuthor (see code) worklogtimentry are summed. http://pastebin.com/d46p3CEC
+2012-07-22 12:18 < infobob> http://paste.pound-python.org/show/24216/ (repasted for wieshka)
+2012-07-22 12:20 < Raydiation> https://pastee.org/ft93v
+2012-07-22 12:22 < Raydiation> wieshka:also look at http://learnpythonthehardway.org/book/
+2012-07-22 12:36 < tos9> Raydiation: http://as.ynchrono.us/2007/12/filesystem-structure-of-python-project_21.html
+2012-07-22 12:57 < dAnjou> hey, i have a directory structure like this https://gist.github.com/3160268. how can i import class Thing which is inside model.py in __init__.py of package lorem and ipsum without messing with the path?
+2012-07-22 13:01 < [Tritium]> http://www.python.org/community/irc/
+2012-07-22 13:02 < chriszf> nslater: http://nedbatchelder.com/blog/201207/bad_answers_on_stack_overflow.html
+2012-07-22 13:11 < chriszf> pandu101: http://initd.org/psycopg/docs/usage.html
+2012-07-22 13:19 < nedbat> ronny: http://nedbatchelder.com/blog/201207/bad_answers_on_stack_overflow.html
+2012-07-22 14:16 < slikts> a restful api is just one that works over http
+2012-07-22 14:20 < slikts> this is a bit hard to digest: http://en.wikipedia.org/wiki/Representational_State_Transfer#Constraints
+2012-07-22 14:21 < slikts> artnez: then I don't get why saying that restulf apis are http apis is wrong
+2012-07-22 14:21 < arkanes> MostAwesomeDude: REST isn't the same as doing stuff over http, and not being restful isn't the same as fundamentally failing
+2012-07-22 14:21 < phaethon> Maybe http://tomayko.com/writings/rest-to-my-wife ?
+2012-07-22 14:23 < slikts> phaethon: you mean like in this article? http://en.wikipedia.org/wiki/Representational_State_Transfer#Constraints
+2012-07-22 14:26 < slikts> saying "http spec" was less fuzzy imo
+2012-07-22 14:50 < pranavk> url="http://en.wikipedia.org/wiki/List_of_airports_by_IATA_code:_"
+2012-07-22 15:49 < nedbat> i was just trying to pick up a topic from earlier...   http://nedbatchelder.com/blog/201207/bad_answers_on_stack_overflow.html
+2012-07-22 16:16 < kcbanner> I am manually starting a thread to server http requests, and when exceptions occur in that thread it simply dies silently with no error messages printed. This makes debugging essentially guesswork
+2012-07-22 16:34 < pepijndevos> dropdrive, http://svn.red-bean.com/bbum/trunk/hacques/di/di.c :D
+2012-07-22 17:04 < curveater> A little musical break: http://www.youtube.com/watch?v=MfVz17wSUD4&feature=youtu.be   or  www.myspace.com/4smartfeminity
+2012-07-22 17:44 < therealfakemoot> revil: http://docs.python.org/library/struct.html#module-struct
+2012-07-22 17:44 < nedbat> situ: http://hg.python.org/cpython
+2012-07-22 18:35 < smalleat> https://gist.github.com/3161250   I'm wondering if there's a clearer or more standard way to serialize a JSON object into a flat data structure suitable for inserting into a MySQL table. In the loan_lenders() function, I'm using a dict with keys of the MySQL table fields and corresponding values are lambda functions to access the right element in the json-originated dictionary.
+2012-07-22 19:16 < tos9> kylesnav: Um.. oh I wish I would spend time working on this. It almost certainly doesn't work properly, though it does do something correct iirc. Working on it would probably require just knowing about coverage.py and git, but if you're interested I could walk you through whatever you'd need. http://github.com/Julian/clogs
+2012-07-22 19:22 < tos9> kylesnav: looks like github has a tutorial these days? No idea if it's any good. http://learn.github.com/p/intro.html
+2012-07-22 19:26 < vamega> https://speakerdeck.com/u/kennethreitz/p/flasky-goodness
+2012-07-22 20:47 < reuf> im writing a script to do some service checking - i need to pass info on user names, passwords, ports, etc...i made this "properties" file http://bpaste.net/show/xJexQrb8gPgWTvexCFt2/
+2012-07-22 20:50 < reuf> here is a script http://bpaste.net/show/1bSgiiSgqPdlD9LakQSe/
+2012-07-22 20:56 < ChrisOelmueller> elvis4526: http://www.addedbytes.com/cheat-sheets/download/regular-expressions-cheat-sheet-v2.png
+2012-07-22 21:31 < h1ll37> tos9, nedbat: http://pastie.org/4303498
+2012-07-22 21:37 < ssbr> e.g. http://stackoverflow.com/questions/973541/how-to-set-sqlite3-to-be-case-insensitive-when-string-comparing
+2012-07-22 21:40 < ssbr> mritz: http://www.zeromq.org/topics:encryption mentions SSL
+2012-07-22 22:06 < arkanes> requests decoded it for you using http metadata, or possibly just making stuff up, who knows
+2012-07-22 22:08 < Nisstyre> so there's no guarantee it would even have http metadata
+2012-07-22 22:12 < arkanes> expecting lxml to examine http request objects and double guess what you pass it is unneccesary, though
+2012-07-22 22:12 < arkanes> lxml *may* do this when it uses its own http infrastructure
+2012-07-22 22:13 < ssbr> arkanes: well, I could never get its http interface to work.
+2012-07-22 22:13 < ssbr> I can't even find it in the docs anymore? I swear there was an example to the effect of lxml.blah.something('http://...')
+2012-07-22 22:14 < ssbr> ah, lxml.html.parse('http://...')
+2012-07-22 22:17 < raj> can someone tell me where socket.send_packet(pkt) comes from ( http://gevent-socketio.readthedocs.org/en/latest/mixins.html?highlight=send_packet )? I don't see it here--> http://gevent-socketio.readthedocs.org/en/latest/_modules/socketio/server.html#SocketIOServer
+2012-07-22 22:47 < sdiaz> http://bpaste.net/show/QvIDv8EMtpGAqtDjB8Sn/
+2012-07-22 23:02 < bwq> http://www.mongodb.org/display/DOCS/Schema+Design
+2012-07-22 23:12 < dropdrive> preaction: If you're expert on dbs, I would also be interested in your thoughts to http://stackoverflow.com/questions/9539763/daemonless-multi-gibibyte-capable-key-value-store-supporting-synchronization
+2012-07-22 23:28 < peugi> Greetings, can someone please help me parsing api response with the json module? Data: http://dpaste.org/bU7nW/ I am trying to get forecast.simpleforecast.forecastday keys by the day.
+2012-07-23 01:13 < dcrouch> I have the following code.  login(request, user)   Documentation here describes it as taking 2 arguements.  https://docs.djangoproject.com/en/1.4/topics/auth/  I receive this error:   Exception Value: login() takes exactly 1 argument (2 given)
+2012-07-23 01:14 < phaethon> http://q-continuum.net/question.txt
+2012-07-23 01:15 < dcrouch> therealfakemoot, I'm trying the example from the link I pasted.  Here it is is in a paste.  http://thunked.org/p/view/pri/81rw26twz
+2012-07-23 01:17 < dcrouch> therealfakemoot, http://thunked.org/p/view/pri/f9p68tgmw
+2012-07-23 01:23 < dcrouch> darkf, I posted a link to docs there, it shows 2 where I looked.  http://thunked.org/p/view/pri/opyt47f78  Here is the section.
+2012-07-23 01:27 < dcrouch> alexdoom this is what I have so far.  http://thunked.org/p/view/pub/qbgxvgfzv
+2012-07-23 01:37 < phaethon> alexdoom: http://q-continuum.net/question.txt
+2012-07-23 02:19 < rgenito_> http://pastie.org/private/9rudz1lpxm9ufyt5ewlng
+2012-07-23 02:29 < rgenito_> halfie: you might wanna look at http://pastie.org/private/9rudz1lpxm9ufyt5ewlng
+2012-07-23 02:42 < rgenito_> http://stackoverflow.com/questions/3167494/how-often-does-python-flush-to-a-file
+2012-07-23 03:36 < ssbr> dash: http://fay-lang.org/
+2012-07-23 04:35 < ssbr> maybe requests makes it easier? See http://stackoverflow.com/questions/107405/how-do-you-send-a-head-http-request-in-python
+2012-07-23 04:38 < haas> hi, I want parse a config file in my python project, do you prefer libraries like http://hkn.eecs.berkeley.edu/~dyoo/python/scanf/ for parsing?
+2012-07-23 04:46 < haas> l4mRh4X0r: i know but there are common points in daemons config files like httpd
+2012-07-23 05:09 < l4mRh4X0r> And in that case: http://code.google.com/p/pyrtf-ng/ seems a good library
+2012-07-23 05:24 < ssbr> http://lxml.de/lxmlhtml.html
+2012-07-23 06:20 < benedikt> http://codepad.org/bxLCyvRv This is the code I want to change to Javascript.
+2012-07-23 07:01 < jkbbwr> Does this look as "clean" as possible, (considering its screen scraping) http://paste.pound-python.org/show/24223/
+2012-07-23 07:02 < jkbbwr> ^ http://paste.pound-python.org/show/24224/
+2012-07-23 07:30 < gry> http://docs.python.org/library/re.html#re.match
+2012-07-23 07:32 < ikanobori> http://docs.python.org/library/fnmatch.html#module-fnmatch
+2012-07-23 08:06 < bcroq> could someone explain how to write a test for http://bugs.python.org/issue4713 without using sgmlop when the bug is a bad use of sgmlop?
+2012-07-23 08:54 < john2x> http://bpaste.net/show/n6sYMyywmKbiTm5LFFTE/
+2012-07-23 08:54 < l4mRh4X0r> john2x: http://www.python.org/dev/peps/pep-0008/#maximum-line-length
+2012-07-23 09:00 < rob```> DrLuke: http://bottlepy.org/docs/dev/tutorial.html#tutorial-static-files
+2012-07-23 09:06 < l4mRh4X0r> john2x: http://twistedmatrix.com/documents/current/core/development/policy/coding-standard.html#auto16 ;)
+2012-07-23 09:25 < no-n> Wild_Cat, idletask, and would urwid be suitable for a test-based roguelike? e.g. http://en.wikipedia.org/wiki/Roguelike#Origin
+2012-07-23 09:26 < caaakeeey> http://dpaste.com/774185/
+2012-07-23 09:27 < nedbat> Ephexeve_laptop: have you seen this?  http://bit.ly/unipain
+2012-07-23 09:29 < Ephexeve_laptop> nedbat: http://codepad.org/FHcSa9Yz
+2012-07-23 09:36 < Ephexeve_laptop> nedbat: Ops, my bad, here: http://codepad.org/8KjYJLQx
+2012-07-23 09:40 < meisth0th> i am trying to write a class which is a subclass of Gtk.Builder, but in my class i can't use Gtk.Builder's methods, can you please help me? here is my code: http://paste.pound-python.org/show/24225/
+2012-07-23 09:40 < Plastefuchs> no-n: heck there is even a tutorial for exactly that http://roguebasin.roguelikedevelopment.org/index.php/Complete_Roguelike_Tutorial,_using_python%2Blibtcod,_part_1
+2012-07-23 09:43 < meisth0th> nedbat, or full traceback: http://paste.pound-python.org/show/24226/
+2012-07-23 10:35 < gcbirzan> Blazemore|Work: http://docs.python.org/library/fcntl.html#fcntl.lockf ?
+2012-07-23 10:43 < ssbr> dash: so, http://fay-lang.org/
+2012-07-23 11:06 < aboudreault> dash, http://pastebin.com/hxN5pRLd
+2012-07-23 11:06 < infobob> http://paste.pound-python.org/show/24229/ (repasted for aboudreault)
+2012-07-23 11:09 < qwerty1793> hi, is there a way to get Py_BuildValue in a C extension to return a bool? I found this discussion http://bugs.python.org/issue10880 where it was suggested that Py_BuildValue("?", my_bool); should do i but when i do that i get "SystemError: bad format char passed to Py_BuildValue"
+2012-07-23 11:12 < ssbr> dash: http://www.haskell.org/haskellwiki/The_JavaScript_Problem
+2012-07-23 11:16 < llvllatrix> FYI: Just released a new python project I cooked up over the weekend. It's used to load and visualise macroeconomic data. Feedback appreciated :) https://github.com/RishiRamraj/smith
+2012-07-23 11:20 < alo21> and then an error appears to me: http://paste.ubuntu.com/1106585/
+2012-07-23 11:20 < alo21> dash: http://paste.ubuntu.com/1106585/
+2012-07-23 11:21 < alo21> dash: sure. here it is all my code: http://paste.ubuntu.com/1106586/
+2012-07-23 11:43 < Juhaz> alo21_, http://python-gtk-3-tutorial.readthedocs.org/en/latest/index.html
+2012-07-23 11:57 < pepijndevos> dash: https://github.com/hackerschool12/perper
+2012-07-23 12:05 < dash> ThiefMaster: example using it: http://habnabit.org/twistedex.html
+2012-07-23 12:08 < dash> pepijndevos: here's what I think a python version of persistent hashmaps should look like: http://bazaar.launchpad.net/~washort/+junk/perseus/view/head:/perseus/__init__.py
+2012-07-23 12:20 < dash> this looks useful: http://www.blog.pythonlibrary.org/2012/07/18/python-a-simple-step-by-step-sqlite-tutorial/
+2012-07-23 12:24 < tworkin> dash yes its a hardware specification format, full of registers https://github.com/thwest/pygenicam http://www.emva.org/cms/index.php?idcat=27
+2012-07-23 12:32 < dash> ssbr-: http://bazaar.launchpad.net/~washort/pymeta/ng/revision/94?start_revid=94
+2012-07-23 12:36 < qwerty1793> hi, is there a way to get Py_BuildValue in a C extension to return a bool? I found this discussion http://bugs.python.org/issue10880 where it was suggested that Py_BuildValue("?", my_bool); should do i but when i do that i get "SystemError: bad format char passed to Py_BuildValue"
+2012-07-23 12:39 < white_magic> mDemocritus: http://bpaste.net/show/blFLy26zmVRalSGVPVU3/
+2012-07-23 12:43 < slikts> maybe it's useful for someone: https://github.com/slikts/repython it's a dev util that restarts commands when files are changed
+2012-07-23 12:58 < pcperini> when writing C extensions for python, does one have to do/install anything special? http://stackoverflow.com/questions/11616452/gcc-linker-error-pycallable-check-and-others-not-found
+2012-07-23 13:09 < pcperini> any idea why GCC wouldn't be able to find _PyCallable_Check? http://stackoverflow.com/questions/11616452/gcc-linker-error-pycallable-check-and-others-not-found
+2012-07-23 13:11 < nyuszika7h> Hi, could someone please tell me what am I doing wrong here? http://mysticpaste.com/view/14965
+2012-07-23 13:23 < fission6> i have a dictionary of floats, i want to loop through and round them to floats, should i just do something like http://dpaste.org/4EQV7/
+2012-07-23 13:38 < pepijndevos> papna, where are they? I'm looking at http://docs.cython.org/src/userguide/external_C_code.html now
+2012-07-23 13:50 < pepijndevos> papna, http://wiki.cython.org/examples one example. :\
+2012-07-23 13:54 < lesshaste> http://bpaste.net/show/hdxRNZHmcL915Donegb3/  does something surprising. Instead of getting the tuples I get the second element in each tyuple
+2012-07-23 13:54 < dash> kevlarman: https://launchpad.net/~fkrull/+archive/deadsnakes
+2012-07-23 14:01 < KirkMcDonald> lesshaste: It's strange because types which are indexable are iterable by definition. http://paste.pound-python.org/show/24231/
+2012-07-23 14:16 < dash> slikts: please stare at this monochrome image for a while then: http://bit.ly/QfJgmh
+2012-07-23 14:17 < nickasloan> has anyone used this: https://github.com/simplegeo/python-oauth2?
+2012-07-23 14:34 < Sacryo> dash: http://pastebin.com/4mbDtfyp
+2012-07-23 14:34 < infobob> http://paste.pound-python.org/show/24232/ (repasted for Sacryo)
+2012-07-23 14:36 < dash> adnauseam: http://python.org/doc/tut/ is a good place to start
+2012-07-23 14:38 < greggyNapalm> Hi All, I have a small question about unix domain socket in Linux and python socket module. I have this code https://gist.github.com/01ad879b09cdd7cf80cb
+2012-07-23 14:43 < dash> Ianrr: http://lxml.de/lxmlhtml.html#html-diff
+2012-07-23 15:05 < helo> http://wiki.python.org/moin/Distutils/Tutorial determine_path() doesn't find __file__, is there a better way to find companion files in a cross-platform way?
+2012-07-23 15:11 < mrkent> I keep getting an "invalid syntax" at line 39 (else statement). Can someone take a look? http://dpaste.com/774301/
+2012-07-23 15:32 < mrkent> What's the way to combine lists in a textfile? I have enthalpy values like this in different directories that I want to combine into 1 spreadsheet. http://dpaste.com/774313/
+2012-07-23 15:34 < Roots> Here we go: http://bpaste.net/show/36435/
+2012-07-23 15:43 < mrkent> mDemocritus: inputs: http://dpaste.com/774313/ http://dpaste.com/774318/
+2012-07-23 15:43 < mrkent> output: http://dpaste.com/774320/
+2012-07-23 15:47 < mDemocritus> mrkent: start with this http://dpaste.com/774323/
+2012-07-23 15:53 < jacobw> I have a question about iterators, http://bpaste.net/show/iRWRf9sEmOrpHDLzIdlx/
+2012-07-23 15:55 < jacobw> mDemocritus: http://bpaste.net/show/iRWRf9sEmOrpHDLzIdlx/
+2012-07-23 15:56 < osmosis> http://dpaste.com/774329/  not sure why im getting  httplib.BadStatusLine
+2012-07-23 15:56 < drasica22> zalg: when you import, python searches in a whole variety of places as specified by your pythonpath http://docs.python.org/tutorial/modules.html#the-module-search-path
+2012-07-23 15:57 < Deepy> Is there a better way to do this? http://dpaste.org/vt7QA/
+2012-07-23 16:07 < [Tritium]> https://github.com/simplegeo/python-oauth2/
+2012-07-23 16:08 < Fah> Yeah, that's on my radar along with http://pypi.python.org/pypi/oauthlib/
+2012-07-23 16:10 < [Tritium]> nickasloan: by what means are you getting http requests?  (frameworks?  twisted?)
+2012-07-23 16:13 < rob```> slick-: http://docs.python.org
+2012-07-23 16:13 < drasica22> slick: http://web.mit.edu/6.s189/www/
+2012-07-23 16:14 < slick-> this is exactly what i needed actually http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap11.html
+2012-07-23 16:26 < mDemocritus> nickasloan: http://docs.python-requests.org/en/latest/user/advanced/#verbose-logging
+2012-07-23 16:32 < nextime> anyway, anyone can suggest a more performant way to write this thing: http://pastebin.com/tyWZW2Qz  Considerations: "arg" is a raw "string" of 4 char, where from an embedded device i send the bitwise status of some digital I/O, first 12 bit are outputs, fisrt 12 bits of the third and 4th char are inputs, and they are in bit level opposite endianess
+2012-07-23 16:32 < infobob> http://paste.pound-python.org/show/24235/ (repasted for nextime)
+2012-07-23 16:48 < therealfakemoot> elvis4526: http://docs.python.org/library/sqlite3.html
+2012-07-23 16:53 < mDemocritus> elvis4526: http://docs.python.org/library/sqlite3.html
+2012-07-23 16:53 < osmosis> why does the first block complete successfully but the second block fail?  http://bpaste.net/show/6ZrEQn1Yo2pwLUKsJiak/
+2012-07-23 16:55 < jroll> osmosis: looks like your httplib part is doing a GET request and your urllib part is doing a POST
+2012-07-23 16:55 < osmosis> therealfakemoot, works fine with httplib though. only fails with urllib2
+2012-07-23 16:55 < osmosis> so if I switch it to POST, I get  httplib.BadStatusLine: HTTP/1.1 [object Object] unknown
+2012-07-23 17:00 < coolcusty> therealfakemoot: i didn't write anything in python yet i have it in sql i just wanted to know if python would send my query straight to file if i wanted it to. here is the sql query http://bpaste.net/show/skAWxlRWTt8ptnAkkQoV/
+2012-07-23 17:02 < mDemocritus> mrkent: when you're done doing that, pressure_to_enthalpy will look something like http://dpaste.com/774354/
+2012-07-23 17:16 < mDemocritus> elvis4526: you'll want to do something like this: http://docs.python.org/library/sqlite3.html#using-the-connection-as-a-context-manager
+2012-07-23 17:18 < elvis4526> http://bpaste.net/show/tuIp3MO0i8KNe4zCNR8G/
+2012-07-23 17:21 < elvis4526> therealfakemoot: http://bpaste.net/show/tuIp3MO0i8KNe4zCNR8G/
+2012-07-23 17:28 < mrkent> mDemocritus: http://dpaste.com/774361/
+2012-07-23 17:36 < elvis4526> http://slackbuilds.org/slackbuilds/13.37/SLACKBUILDS.TXT
+2012-07-23 17:38 < elvis4526> mDemocritus: http://bpaste.net/show/tuIp3MO0i8KNe4zCNR8G/
+2012-07-23 17:41 < mochi27> Hi peeps, I'm trying to make a daemon, and it isn't working :( http://bpaste.net/show/l9uO1v4aYDnZZvxrW0oi/  What am I doing wrong?
+2012-07-23 17:41 < mDemocritus> elvis4526: try this http://bpaste.net/show/kZaGvrNB48XTQ5yEpC7j/
+2012-07-23 17:47 < therealfakemoot> elvis4526: http://docs.python.org/modindex.html
+2012-07-23 18:30 < Guddu> win32print.EnumPrinters() take exactly one argument....But i don't know what argument that is...And MSDN page hardly says anything http://msdn.microsoft.com/en-us/library/windows/desktop/dd162692(v=vs.85).aspx
+2012-07-23 18:31 < mrkent> anyway I can make this code cleaner? http://dpaste.com/774390/
+2012-07-23 18:41 < mDemocritus> eoss: start here: http://en.wikipedia.org/wiki/Ajax_(programming)
+2012-07-23 18:43 < mDemocritus> eoss: this looks promising, but i can't speak for it's accuracy http://ginstrom.com/scribbles/2010/03/07/simple-ajax-with-cherrypy-and-jquery/
+2012-07-23 18:46 < mDemocritus> well it'd better be, it's http on the client side
+2012-07-23 18:56 < mDemocritus> Led_Zeppelin: you want subparsers http://docs.python.org/library/argparse.html#argparse.ArgumentParser.add_subparsers
+2012-07-23 18:58 < mDemocritus> Irishmanluke: http://svn.python.org/view/python/trunk/Objects/dictobject.c?view=markup
+2012-07-23 19:25 < atoi> This is a dumb question, but why would this, essentially, immediately exit? http://dpaste.com/774401/
+2012-07-23 19:26 < mDemocritus> therealfakemoot: http://www.sqlite.org/lang_expr.html CTRL+F REGEXP
+2012-07-23 19:27 < mDemocritus> therealfakemoot: and http://docs.python.org/library/sqlite3.html#sqlite3.Connection.create_function
+2012-07-23 19:28 < KirkMcDonald> atoi: Find a daemonize library. Python has many. Here's a PEP. http://www.python.org/dev/peps/pep-3143/
+2012-07-23 20:23 < mDemocritus> elvis4526: http://www.sqlite.org/lang_expr.html
+2012-07-23 20:31 < therealGentleman> http://pastebin.com/27FCki5b
+2012-07-23 20:31 < infobob> http://paste.pound-python.org/show/24236/ (repasted for therealGentleman)
+2012-07-23 20:36 < mDemocritus> elvis4526: start here: http://en.wikipedia.org/wiki/SQL
+2012-07-23 20:39 < snizzzzle> http://pastebin.com/sAwxFp17
+2012-07-23 20:39 < infobob> http://paste.pound-python.org/show/24237/ (repasted for snizzzzle)
+2012-07-23 20:43 < mDemocritus> snizzzzle: http://paste.pound-python.org/show/24238/
+2012-07-23 21:07 < dash> therealGentleman: http://moronlab.blogspot.com/
+2012-07-23 21:08 < therealGentleman> Briggs, http://stackoverflow.com/questions/7668979/how-do-you-watch-a-variable-in-pdb
+2012-07-23 21:09 < mDemocritus> therealGentleman: http://mywiki.wooledge.org/XyProblem <- this is what i'm talking about
+2012-07-23 21:11 < snizzzzle> http://paste.pound-python.org/show/24239/
+2012-07-23 21:43 < milkshoes> ok, just to let y'all know. to get scrapy working on windows 7 i had to install the binary from https://launchpad.net/pyopenssl/+download
+2012-07-23 22:00 < Azelphur> Found this, http://www.sublimetext.com/ from the demo on the front page it looks really cool, is there anything like it, but open source?
+2012-07-23 22:02 < chriszf> Azelphur: http://vim-adventures.com/
+2012-07-23 22:09 -!- Topic for #python: NO LOL | NO PRIMES | Julython is on! http://julython.org/ | Don't paste, use http://bpaste.net/+python | 2.x or 3.x? http://bit.ly/py2vs3k | Tutorial: http://bit.ly/MCAhYx | New programmer? http://goo.gl/c170V | Find your nearest Python User Group: http://goo.gl/S1Zsq | #python-fr #python.de #python-es #python.tw #python.pl #python-br #python-nl #python-ir #python-fi
+2012-07-23 22:22 < mDemocritus> http://bpaste.net/+python
+2012-07-23 22:23 < mDemocritus> lapointemar: i refuse to help you until you repaste that to http://bpaste.net/+python
+2012-07-23 22:25 < lapointemar> this ? http://bpaste.net/show/bWGrBwcojiNk4UzyRjbM/
+2012-07-23 22:39 < ssbr> Man, it's weird when you realize you gave someone like this ( https://plus.google.com/u/0/112639169585937485709/posts ) programming advice
+2012-07-23 22:40 < mDemocritus> lapointemar: but you shouldn't use names for different things like that. try this: http://bpaste.net/show/zpWGr8SDaf6YUGHA0JoR/
+2012-07-23 22:49 < mDemocritus> lapointemar: is this pyro: http://packages.python.org/Pyro4/intro.html
+2012-07-23 22:52 < shing`> Is there an http library for python that exposes the slow level socket connect / recv timeouts?
+2012-07-23 23:40 < dash> osmosis: handy tips: http://as.ynchrono.us/2007/12/filesystem-structure-of-python-project_21.html
+2012-07-23 23:45 < Ronald_Reagan> Why does this: http://bpaste.net/show/v9YhMdjkG6j3Shz4BTM3/ not produce a result that looks like a standard result from a 4-5 CA generation? Reference is here: http://roguebasin.roguelikedevelopment.org/index.php/Cellular_Automata_Method_for_Generating_Random_Cave-Like_Levels
+2012-07-24 00:32 < Nisstyre> http://en.wikipedia.org/wiki/Guilt#Evolutionary_theories
+2012-07-24 00:32 < Nisstyre> http://www.python.org/doc/newstyle/
+2012-07-24 01:07 < SmashShock> http://bpaste.net/show/KpoawyQjwKzKKhCMJpwd/
+2012-07-24 01:10 < noahk11> Hey, can somone help us with this really quick. I am just learning python. Im creating a simple calculator. The code and problem is here: http://pastebin.com/raw.php?i=YLALGkHv
+2012-07-24 01:11 < Azelphur> SmashShock: http://bpaste.net/show/MSuqlUAdcq9O4OB6ysBV/ this is probably more along the lines of what you want
+2012-07-24 01:14 < Azelphur> SmashShock: http://bpaste.net/show/DYVgCHG5Ky4e1OgMTtFt/ so this is how you should do it :)
+2012-07-24 01:25 < preaction> klep, and here's a potential implementation of that memoize function: http://wiki.python.org/moin/PythonDecoratorLibrary#Memoize
+2012-07-24 02:15 < dash> dropdrive: http://bazaar.launchpad.net/~washort/pymeta/ng/revision/97?start_revid=97
+2012-07-24 02:25 < saboot> dash, this is a layout of the software, The only thing I really need to interface with is 'WaveDump' at the very top, but it has several layers of includes and drivers http://www.caen.it/documents/work_EcommerceProduct/717/CAENDigitizerLib.jpg
+2012-07-24 02:27 < saboot> I see projects like http://cern.root.ch/ that are fully pythonized, so probably people who know what they are doing could solve it D:
+2012-07-24 02:28 < no-n> cancel that,found it here http://docs.python.org/tutorial/interpreter.html#source-code-encoding
+2012-07-24 03:30 < zigon> if anyone wishes to help me out i posted a question on stackoverflow (http://stackoverflow.com/questions/11612663/using-python-ctypes-to-access-a-visual-foxpro-com-dll)
+2012-07-24 03:31 < SmashShock> http://bpaste.net/show/iCdyW1SgjaQohFk4c8kq/
+2012-07-24 03:32 < SmashShock> Here: http://perpendicularreality.wordpress.com/2011/05/31/fun-with-omegle/
+2012-07-24 03:42 < alo21> so.. http://www.pygtk.org/docs/pygtk/class-gtkwindow.html#method-gtkwindow--set-decorated
+2012-07-24 03:44 < TML> taipres: http://docs.python.org/library/stdtypes.html
+2012-07-24 04:24 < Plastefuchs> bwq: it tells me it listens on localhost, me being fancy put my ip into my browser and it doesn't connect, only when i go http://localhost .. oh ... It blocks connections from outside i assume?
+2012-07-24 05:10 < pandu101> hey guys Im passing a psql query via psycopg2 and it does not work. But if I run the same query in a postgres prompt - it works fine. What am I doing wrong? Here is the code snippet --> http://bpaste.net/show/w9UL7nH7C6PRyE3GEsy1/
+2012-07-24 05:11 < no-n> http://excess.org/urwid/tutorial.html#edit <-- what does "return" on its own do here?
+2012-07-24 05:15 < Norwack> Blazemore|Work: http://docs.python.org/library/functions.html#open && http://docs.python.org/library/functions.html#file describes the modes it can be opened to. (Linked both, so you also can read more about the file() and open() functions, so you can use the one who match your project best.
+2012-07-24 05:20 < pandu101> They say to always use %s. See http://packages.python.org/psycopg2/usage.html
+2012-07-24 05:27 < bpeterson> http://ptgmedia.pearsoncmg.com/imprint_downloads/informit/promotions/python/python2python3.pdf
+2012-07-24 06:05 < Blazemore|Work> http://inamidst.com/phenny/
+2012-07-24 06:08 < Norwack> Blazemore|Work: Im want to make one myself, w/o anything pre-made to make it easier. xlq: http://oreilly.com/pub/h/1963 works just fine
+2012-07-24 06:29 < bpeterson> Norwack, https://github.com/peterbencze/Montybot/blob/master/System/IrcMessages.py
+2012-07-24 06:42 < Blazemore|Work> http://pastebin.com/ppDQ3khJ
+2012-07-24 06:42 < infobob> http://paste.pound-python.org/show/24251/ (repasted for Blazemore|Work)
+2012-07-24 06:43 < xlq> alexander__b: https://gist.github.com/3169339
+2012-07-24 06:45 < confessin> xlq http://pastebin.com/3pPBZWhm
+2012-07-24 06:45 < infobob> http://paste.pound-python.org/show/24252/ (repasted for confessin)
+2012-07-24 06:50 < xlq> alexander__b: https://gist.github.com/3169363
+2012-07-24 07:02 < alo21> xlq: for example here (http://pastebin.ubuntu.com/1107991/) I wold like to put the "save" button at a new line
+2012-07-24 07:05 < xlq> alo21: http://pygtk.org/docs/pygtk/class-gtktable.html
+2012-07-24 07:08 < alexander__b> jorrit: nedbat: here's xlq's code: https://gist.github.com/3169363 - I have something like this in a class. the problem is that my one/two procedures need to use self.commands.
+2012-07-24 07:08 < alo21> xlq: http://python-gtk-3-tutorial.readthedocs.org/en/latest/layout.html#grid
+2012-07-24 07:12 < alexander__b> jorrit: nedbat: here's an example: http://paste.pound-python.org/show/24253/
+2012-07-24 07:15 < ambv> Hey there. Anybody using Ubuntu 12.04 knows what's going on? http://bpaste.net/show/uBfbrB0STZ1TNgmQab1o/
+2012-07-24 07:20 < nedbat> alexander__b: this works: http://paste.pound-python.org/show/24254/
+2012-07-24 07:22 < nedbat> alexander__b: ?? http://paste.pound-python.org/show/24254/
+2012-07-24 07:23 < nedbat> alexander__b: http://dpaste.com/774573/
+2012-07-24 07:32 < xlq> alexander__b: nedbat: https://gist.github.com/3169482
+2012-07-24 07:39 < Minty> xlq: nedbat: here is an example, http://paste.pound-python.org/show/24255/
+2012-07-24 07:41 < nyuszika7h> http://stackoverflow.com/questions/6587507/how-to-install-pip-with-python-3
+2012-07-24 07:43 < Minty> nedbat: i mean, or would you rather I did this: http://paste.pound-python.org/show/24256/
+2012-07-24 07:50 < r71> nedbat, i want function like List::MoreUtils::any in perl ( http://goo.gl/12eaj )
+2012-07-24 07:51 < nyuszika7h> What am I doing wrong here? http://mysticpaste.com/view/14977
+2012-07-24 08:15 < LPhas> hi, i was reading this code here http://pieceofpy.com/blog/2011/08/05/hooking-up-whoosh-and-sqlalchemy-(sawhoosh)/ and i'm puzzled by why this guy is keeping to use '{0}'.format(foo) and u'{0}'.format(foo). Shuldn't str(foo) and unicode(foo) do the same thing in a less strange way?
+2012-07-24 08:31 < dhoelzer> If you have any experience interfacing Python with Objective-C and have a minute, please have a look at this: http://pastebin.com/nbmsaqHK  I cannot seem to get the NSURLConnection to fire off.  Equivalent code in Objective-C runs perfectly.  All ideas are welcome.
+2012-07-24 08:31 < infobob> http://paste.pound-python.org/show/24259/ (repasted for dhoelzer)
+2012-07-24 09:18 < _ikke_> cian1500ww: Maybe this will help: http://stackoverflow.com/questions/436220/python-is-there-a-way-to-determine-the-encoding-of-text-file
+2012-07-24 09:27 < pepijndevos> dash, from my tests, it seems pysistence is just immutable, not persistent. https://github.com/HackerSchool12/perper#performance
+2012-07-24 09:30 < papna> pepijndevos: https://code.launchpad.net/~washort/+junk/perseus
+2012-07-24 09:52 < someoneelse> what am i missing? https://gist.github.com/3169996 -- are function arguments not part of the scope?
+2012-07-24 09:55 < ssbr> Python in the news! http://www.thestar.com/news/gta/crime/article/1230628--python-found-in-annex-bathroom
+2012-07-24 10:02 < mDemocritus> someoneelse: http://www.artima.com/weblogs/viewpost.jsp?thread=240845
+2012-07-24 10:04 < dropdrive> papna: Search for "poor" in http://en.wikipedia.org/wiki/In-place_matrix_transposition#Square_matrices
+2012-07-24 10:13 < mrksprvn> http://bpaste.net/show/g143mjkOpl7LJZsXpSNZ/
+2012-07-24 10:25 < FichteFoll> https://github.com/SublimeText/AAAPackageDev/issues/7
+2012-07-24 10:30 < mDemocritus> dddh: http://docs.python.org/glossary.html#term-decorator
+2012-07-24 10:30 < mDemocritus> dddh: and there's a lot of good stuff here: http://stackoverflow.com/questions/739654/understanding-python-decorators
+2012-07-24 10:51 < Minty> jelly1: http://xmlsoft.org/python.html
+2012-07-24 10:53 < phillips321> http://alastairs-place.net/projects/netifaces/
+2012-07-24 11:00 < Plastefuchs> So i took the suggestion from someone in here and looked at Flask as an alternative to Bottle (not that i care much if one is better, just to see what each can do) and i am a bit stumped by this part: http://flask.pocoo.org/docs/quickstart/#http-methods <- I get a "NameError: global name 'request' is not defined" thrown at me. :|
+2012-07-24 11:02 < mDemocritus> Plastefuchs: flask does wierd things. check this out http://flask.pocoo.org/docs/quickstart/#context-locals
+2012-07-24 11:05 < abhinavmehta> I'm having issue with namespace conflicts. Having same name for a global-python-module. http://bpaste.net/show/oAx6wdDVYUuixgK5HsJE/
+2012-07-24 11:14 < abhinavmehta> dash: tried but failed. Guess you are saying this: http://bpaste.net/show/wfvnuUyu9oGcLgx5LwUK/
+2012-07-24 11:17 < phillips321> dash, that doesnt work as the string just needs to be formatted, http://pastie.org/4317205
+2012-07-24 11:18 < phillips321> dash: http://pastie.org/4317205
+2012-07-24 11:23 < abhinavmehta> dash: not sure, what you are saying..but doing that raise SyntaxError: http://bpaste.net/show/tRtd2EUFhbDTRnLaXR5f/
+2012-07-24 11:51 < Ingela> http://bpaste.net/show/Kh9yVuYQPEghsVzKepIk/
+2012-07-24 11:57 < dash> slikts: here's a tutorial: http://krondo.com/?page_id=1327
+2012-07-24 12:09 < jwhisnant> techmatt06: http://stackoverflow.com/questions/319279/how-to-validate-ip-address-in-python ??
+2012-07-24 12:18 < phillips321> SirScott, thanks, this is what i need but now i need to catch the error: http://docs.python.org/library/socket.html#socket.socket.settimeout
+2012-07-24 12:22 < dash> ocx: then i would start here: http://python.org/doc/tut/
+2012-07-24 12:24 < dash> http://twistedmatrix.com/
+2012-07-24 12:24 < rns> is a RESTful http request considered an api?
+2012-07-24 12:30 < ocx> j| http://shop.oreilly.com/product/0636920003434.do?CMP=ILC-hf1st
+2012-07-24 12:30 < phillips321> dash, Norwack, its a way to learn, here's is what ive got http://pastie.org/4317568
+2012-07-24 12:31 < dash> ocx: http://python.org/doc/tut/
+2012-07-24 12:33 < cwillu_at_work> arietis, http://www.habnabit.org/twistedex.html comes to mind
+2012-07-24 12:37 < Norwack> http://www.py2exe.org/
+2012-07-24 12:39 < phillips321> ocx, 33minutes in http://www.youtube.com/watch?feature=player_embedded&v=psOgFtIGpSY he talks about creating exe from py code
+2012-07-24 12:40 < phillips321> ocx, http://www.pyinstaller.org/ or http://www.py2exe.org/
+2012-07-24 12:46 < Zinc__> can someone tell me why my parts return the same value even after adding a new var to it? http://bpaste.net/show/yfb8lM2jvlYRDaKSHISE/
+2012-07-24 13:02 < Zinc__> http://bpaste.net/show/JLi8UhnKBFYjxzaM80XB/
+2012-07-24 13:09 < mDemocritus> RyuGuns: https://www.google.com/webhp?q=python%20fill%20web%20form
+2012-07-24 13:12 < alexander__b> dash: bot: http://bpaste.net/show/36574/
+2012-07-24 13:12 < alexander__b> dash: http://bpaste.net/show/36575/ socket. that should be all you need to make a bit sense out of it.
+2012-07-24 13:17 < dash> alexander__b: here's an example of using twisted's irc support: http://habnabit.org/twistedex.html
+2012-07-24 13:25 < lacrymology> how to resolve this? http://dpaste.com/774687/ I'd like a.p to raise an AttributeError for 'p' not for object.__getattr__
+2012-07-24 13:26 < dash> alexander__b: well, that code i showed you should get you started -- here's a general tutorial for twisted, it might go kind of slow: http://krondo.com/?page_id=1327
+2012-07-24 13:26 < glenford> i am trying to create an rpm using bdist_rpm but keeping getting an error http://bpaste.net/show/WYXYawaReFN3z3rHPUpp/
+2012-07-24 13:31 < ThiefMaster> http://stackoverflow.com/questions/11636162/trouble-with-python-while-loop
+2012-07-24 13:42 < reuf> tos9:  here is example of configuration file that i pass to my python script http://bpaste.net/show/uDJDmLFTIaD8PEObydGN/
+2012-07-24 13:45 < jwhisnant> reuf : consider using ConfigParser for reading,writing config files; class; http://docs.python.org/library/configparser.html
+2012-07-24 13:53 < frewsxcv> or in my own example https://github.com/frewsxcv/reddit-calpoly-addflair/blob/master/web/register/calpoly.py
+2012-07-24 14:06 < nodie> I know because the http response has encoding to utf-8
+2012-07-24 14:10 < therealfakemoot> http://wiki.python.org/moin/PythonDecorators
+2012-07-24 14:39 < MonsterWizard> And I know the python syntax but I still cannot do the easy projects shown here http://www.reddit.com/r/dailyprogrammer/
+2012-07-24 14:45 < alexander__b> dash: http://bpaste.net/show/36595/ - started moving the bot to twisted. how would you suggest I keep things like quizmaster here though?
+2012-07-24 14:46 < dash> MonsterWizard: here's an essay I found helpful and encouraging: http://norvig.com/21-days.html
+2012-07-24 14:47 < Skola> two2thehead & MonsterWizard: http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html
+2012-07-24 14:49 < SirScott> `mx: i'm fond of this: http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
+2012-07-24 15:04 < spaceone> can i simplify this: http://cxg.de/_591f41.htm
+2012-07-24 15:07 < alexander__b> dash: I can't find that in http://twistedmatrix.com/documents/current/api/twisted.words.protocols.irc.IRCClient.html
+2012-07-24 15:12 < alexander__b> dash: I'll look at doing this: http://stackoverflow.com/questions/5305050/how-to-use-twisted-to-get-an-irc-channels-user-list
+2012-07-24 15:19 < alexander__b> dash: fixed. :-) http://stackoverflow.com/questions/6671620/list-users-in-irc-channel-using-twisted-python-irc-framework worked.
+2012-07-24 15:39 < goshawk> if some python devs are around can you take a look at http://bugs.python.org/issue15443#msg166326 ?
+2012-07-24 15:47 < niix> http://pastebin.com/HFSa9q93 - I need a better way to do this, currently it's adding all the items to the description and the actual field.  I like for it to do it one by one i.e. ('Monday','Monday'), ('Tuesday','Tuesday')
+2012-07-24 15:48 < infobob> http://paste.pound-python.org/show/24267/ (repasted for niix)
+2012-07-24 16:44 < infogulch> example: http://pastebin.com/fEacaPMG
+2012-07-24 16:44 < infobob> http://paste.pound-python.org/show/24270/ (repasted for infogulch)
+2012-07-24 16:50 < abhinavmehta> I found mentioned color-option output at stack-exchange. Now I need few more color options, likewise this: http://bpaste.net/show/yfdqCILcFhsWc2dbaHWx/ Need to understand, how to write these: "\033[1;31m%s\033[1;m"
+2012-07-24 16:55 < mlt-> tos9: I was just confused by an answer http://stackoverflow.com/questions/3277367/how-does-pythons-super-work-with-multiple-inheritance saying that like C will call A's init
+2012-07-24 17:00 < nedbat> infogulch: this isn't pretty (yet), but it works: http://paste.pound-python.org/show/24273/
+2012-07-24 17:10 < dcrouch> Hello, I have the following code.  http://thunked.org/p/view/pri/xvinrf3bf  Having an issue trying to get from my template to an array in javascript.  It's seeming to split on characters instead of each index.  Any idea how to proceed?
+2012-07-24 17:14 < infogulch> nedbat: how about this: http://paste.pound-python.org/show/24274/
+2012-07-24 17:18 < infogulch> nedbat: how about this: http://paste.pound-python.org/show/24275/
+2012-07-24 17:29 < infogulch> nedbat: beautiful: http://paste.pound-python.org/show/24276/
+2012-07-24 17:30 < dcrouch> Hello, I have the following code.  http://thunked.org/p/view/pri/xvinrf3bf  Having an issue trying to get from my template to an array in javascript.  It's seeming to split on characters instead of each index.  Any idea how to proceed?
+2012-07-24 17:34 < Sicp> apparently this is not the correct means of finding whether a query returned a result or didn't, http://bpaste.net/show/2NGTUvXHQW4nX3ptkOFK/
+2012-07-24 17:34 < infogulch> nedbat: this looks better http://paste.pound-python.org/show/24277/ but i can't help feeling weird about the doing the order twice
+2012-07-24 17:59 < yedi> python? http://ideone.com/3Quws
+2012-07-24 18:03 < Sicp> apparently this is not the correct means of finding whether a query returned a result or didn't, http://bpaste.net/show/2NGTUvXHQW4nX3ptkOFK/
+2012-07-24 18:09 < theholder> http://bpaste.net/show/TwnPOwhHsmwh5hnsFonK/ however it constantly returns a None error
+2012-07-24 18:12 < sente> http://sente.cc/scripts/yt_stats?NKaHMMwSiII
+2012-07-24 18:13 < ThiefMaster> https://paste.aeum.net/show/126/ - why does the `x in d` check fail?
+2012-07-24 18:13 < sente> http://sente.cc/scripts/yt/display_images.py?IL2O64tajP0 <-- this lets you view the viewcount on a daily basis, maybe
+2012-07-24 18:17 < ThiefMaster> https://paste.aeum.net/show/127/ is the actual object - those methods are mainly used as sugar since when comparing an object it's usually compared to a string
+2012-07-24 18:25 < dash> gld1982ltd: then this is probably a good place to start: http://learnpythonthehardway.org/
+2012-07-24 18:26 < dash> gld1982ltd: also: http://python-gtk-3-tutorial.readthedocs.org/en/latest/index.html
+2012-07-24 18:40 < dcrouch> kvashir, http://stackoverflow.com/questions/1006289/how-to-find-out-the-number-of-cpus-in-python
+2012-07-24 18:45 < dcrouch> My paste has two files.  http://thunked.org/p/view/pri/xvinrf3bf
+2012-07-24 18:49 < BlueProtoman> Question.  Which version of this code is faster?  http://ideone.com/kojtR
+2012-07-24 19:14 < rufianw> http://pastebin.com/sCrECZvp Why this code fails at line 12 with a 'TypeError: a float is required'?
+2012-07-24 19:14 < infobob> http://paste.pound-python.org/show/24279/ (repasted for rufianw)
+2012-07-24 19:16 < rufianw> nedbat: http://pastebin.com/eK1eF7qx
+2012-07-24 19:16 < infobob> http://paste.pound-python.org/show/24280/ (repasted for rufianw)
+2012-07-24 19:18 < nedbat> rufianw: do you have an environment variable set for an http or socks proxy?  It has a %f in it where it shouldn't.
+2012-07-24 19:23 < rufianw> Ok, nedbat. Is this what you want? https://ssl.rufian.eu/~lamatanza/nt/environ.txt
+2012-07-24 19:42 < infogulch> nedbat: fyi: http://paste.pound-python.org/show/24281/
+2012-07-24 20:06 < infogulch> tos9: this says that the key param to the sorted() function need not refer to the actual object being sorted. so i'm trying this and it's giving me an error http://paste.pound-python.org/show/24282/
+2012-07-24 20:09 < jackhammer2022> http://wiki.python.org/jython/JythonFaq/DistributingJythonScripts
+2012-07-24 20:11 < jackhammer2022> voo: yes https://developer.apple.com/library/mac/#documentation/Java/Conceptual/Jar_Bundler/Packaging/Packaging.html
+2012-07-24 20:39 < ninjax1> can you take the value of a key like the on displayed in line 36 of the paste into a paragraph http://bpaste.net/show/9vt61a7nXrx76gNUxyd4/
+2012-07-24 20:44 < ninjax1> does anyone know how to take the value of a key the one displayed in line 36 of the pastecan you take the value of a key like the on displayed in line 36 of the paste and format into a paragraph http://bpaste.net/show/9vt61a7nXrx76gNUxyd4/
+2012-07-24 20:47 < leo2007> how to indent the closing ) to conform to pep8: http://bpaste.net/show/36636
+2012-07-24 21:04 < dash> gurft: http://pypi.python.org/pypi/python-magic/
+2012-07-24 21:48 < voo> grekkos: http://docs.python.org/howto/logging.html#logging-advanced-tutorial you'll want to read that probably
+2012-07-24 21:49 < voo> shaun: http://learnpythonthehardway.org/ http://getpython3.com/diveintopython3/
+2012-07-24 21:54 < CareBear\> I'll add another book recommendation: http://www.openbookproject.net/thinkcs/python/english2e/
+2012-07-24 22:21 < voo> http://wiki.python.org/moin/Python2orPython3
+2012-07-24 22:22 < grekkos> voo: https://github.com/hk0i/gskel/blob/master/gui/TrayPrinter.py this is what it looks like... don't ask about the Icon things...
+2012-07-24 22:31 < dcrouch> hsnmck, similar to an issue I was having.  Look at this.  http://stackoverflow.com/questions/298772/django-template-variables-and-javascript?answertab=votes#tab-top
+2012-07-24 22:57 < dash> heh, this was a fun little easter egg to discover: http://nuitka.net/posts/python-3-wonders-barry-bdfl.html
+2012-07-24 23:28 < dash> So here's the grammar interpreter I wrote for pull parsing: http://www.hastebin.com/baxapekepe.py
+2012-07-24 23:32 < Ox31c0> https://github.com/31c0/pylibwired
+2012-07-25 00:00 < Mavericks> from subprocess import call and call("wget http://www.google.com", shell=True) doesn't work
+2012-07-25 00:04 < Ox31c0> http://www.read-write.fr/wired/html/wired.html
+2012-07-25 00:07 < Mavericks> dash: because of http://herberthamaral.com/2010/03/criando-web-crawlers-em-python-parte-ii/
+2012-07-25 00:09 < Mavericks> stuartrexkin: http://lmgtfy.com/?q=recursively+dict+an+object+graph
+2012-07-25 00:23 < sente> stuartrexkin: https://gist.github.com/3174379
+2012-07-25 00:32 < sente> leo2007: http://c.sente.cc/Euc6/rundcmd.py
+2012-07-25 00:34 < lyrae> http://ipython.org/videos.html im trying to watch this
+2012-07-25 00:43 < dash> Ox31c0: http://cloudshark.com/
+2012-07-25 00:43 < Ox31c0> is that supposed to redirect to http://www.sevenpoundnine.com/
+2012-07-25 00:46 < Ox31c0> dash: http://cloudshark.org/captures/537bf947fa64
+2012-07-25 00:56 < leo2007> my current config file looks like this: http://bpaste.net/show/20xOGaalQljfPkDINWFC
+2012-07-25 01:19 < dash> ssbr_: here's the pull version: http://www.hastebin.com/baxapekepe.py
+2012-07-25 01:20 < dash> ssbr_: okay FINE. http://www.bpaste.net/show/KETMB5xvywFjxKRbPkPI/
+2012-07-25 01:34 < misblay> http://bpaste.net/show/aics7Y8LbyW3ZXzPFefW/ list indexes return as x*2 (ex: for 1 it returns 2, for 2 it returns 4) when dealing inside the iterator. Any idea why?
+2012-07-25 02:00 < sente> Inside: http://docs.python.org/reference/datamodel.html#object.__getattribute__
+2012-07-25 02:10 < sente> unnecessary I know, but I wanted a boilerplate example https://gist.github.com/3174676
+2012-07-25 02:14 < sente> likehttp://code.activestate.com/recipes/576693/ <--- an example
+2012-07-25 02:18 < michaelmartinez> http://lucumr.pocoo.org/2011/12/7/thoughts-on-python3/
+2012-07-25 02:25 < sente> no-n, Inside http://truongnghiem.wordpress.com/2011/07/08/what-is-pypy/
+2012-07-25 02:35 < Inside> I'm trying to write a @callCount decorator here that can work on member functions... I'm doing something wrong though and I'm not exactly sure what [http://pastebin.com/VrSyKDub test case]
+2012-07-25 02:35 < infobob> http://paste.pound-python.org/show/24285/ (repasted for Inside)
+2012-07-25 02:47 < ssbr_> Inside: http://ideone.com/9ueaj
+2012-07-25 02:50 < Nisstyre> http://docs.python.org/library/functools.html#functools.wraps
+2012-07-25 02:56 < Nisstyre> Inside: http://codepad.org/oKhGWNSi
+2012-07-25 03:08 < Nisstyre> ssbr_: http://en.wikipedia.org/wiki/Well-ordering_theorem
+2012-07-25 03:20 < Nisstyre> http://en.wikipedia.org/wiki/Category:Lua-scripted_video_games (keep in mind not all of these use it as the main language)
+2012-07-25 03:25 < pratz> sente: Nisstyre here guys http://pastebin.com/uuDXEqQr
+2012-07-25 03:25 < infobob> http://paste.pound-python.org/show/24287/ (repasted for pratz)
+2012-07-25 03:27 < pratz> sente: Nisstyre can not understand how to determine the language on that bases  http://paste.pound-python.org/show/24287/
+2012-07-25 03:34 < Nisstyre> pratz: https://www.google.ca/webhp?q=nltk%20language%20detection
+2012-07-25 03:47 < pratz> sente: http://translate.google.com/toolkit/workbench?did=00005xu2l81vif4&hl=en
+2012-07-25 03:50 < pratz> sente: http://pastebin.com/uuDXEqQr this is what i get
+2012-07-25 03:50 < infobob> http://paste.pound-python.org/show/24287/ (repasted for pratz)
+2012-07-25 03:56 < pratz> sente: did you see this output http://pastebin.com/uuDXEqQr
+2012-07-25 03:56 < infobob> http://paste.pound-python.org/show/24287/ (repasted for pratz)
+2012-07-25 04:06 < Ephexeve_laptop> darkf: Hmm, but I still see it a lot of repetition, look: http://codepad.org/9asazmLD
+2012-07-25 04:10 < notk0> no-n: http://docs.python.org/library/re.html
+2012-07-25 04:10 < Ephexeve_laptop> http://codepad.org/5NxwRJHA
+2012-07-25 04:14 < jita> I want to encode a wav audio file into a base64 format. So i used file.read().encode('base64') and sent it across http via mime type. The exception at the receiving end is raised as "AudioConvertor.BadAudioException: Invalid header expected chunk id but got random bytes". Any ideas ?
+2012-07-25 04:15 < ssbr_> jita: "sent it acrpss http via mime type"? What was your mime type?
+2012-07-25 04:15 < jita> ssbr, http://create.spinvox.com/assets/SpinVox_API_Developer_guide.pdf
+2012-07-25 04:24 < Ephexeve_laptop> http://codepad.org/9asazmLD
+2012-07-25 04:27 < jita> sente, http://create.spinvox.com/assets/SpinVox_API_Developer_guide.pdf
+2012-07-25 04:43 < Jerub> suprise! http uses MIME
+2012-07-25 05:05 < FUZxxl> http://packages.ubuntu.com/lucid/i386/python-numpy/filelist
+2012-07-25 05:37 < Ephexeve_laptop> Hmm, Jerub Won't work, check my outout:http://codepad.org/ByKM8VgM
+2012-07-25 05:43 < Ephexeve_laptop> Jerub: Jerub Check it: http://codepad.org/56MgNgr1
+2012-07-25 05:44 < Ephexeve_laptop> sente: http://www.mt.nl/home/rss/?category=sales+%2526+marketing <- and there are a few more.
+2012-07-25 05:54 < Ephexeve_laptop> http://24.media.tumblr.com/tumblr_m7cy11gDFh1rqhwhro1_500.jpg
+2012-07-25 06:02 < sente> Ephexeve_laptop: http://c.sente.cc/AAB1/feed-marketing.json is this easier to work witH?
+2012-07-25 06:10 < alex88_> hi guys, http://bpaste.net/show/0MvFxSywjPQJyOWLieiG/ i'm trying this and i get "TypeError: tuple indices must be integers, not str" but from http://zetcode.com/databases/mysqlpythontutorial/ it says i can use string keys, isn't correct?
+2012-07-25 06:11 < Pan_> alex88_: you may check this out: http://www.halfcooked.com/mt/archives/000969.html
+2012-07-25 07:04 < sente> https://github.com/ojii/pymaging
+2012-07-25 07:13 < sjw> hi all, i'm having some real trouble understanding why i'm getting unicode encoding errors. specifically: http://bpaste.net/show/Su8220c1m5BlMSeqZ6vj/
+2012-07-25 07:17 < rob```> sjw: http://bit.ly/unipain
+2012-07-25 07:31 < pratz> sente: here http://dpaste.com/775115/
+2012-07-25 07:33 < pratz> sente: here http://dpaste.com/775115/
+2012-07-25 07:33 < edwinkcw> pratz: hey , http://dpaste.com/, just  copy and paste your code and file please
+2012-07-25 07:35 < nolols_X> Hello, I wanted to make a text effect which is like "slowly filling". I then came up with this code: http://pastie.org/4329619 ; but it took too much time and effort. I want the same (or better) result but with a better, faster and easier way to do. How?
+2012-07-25 07:37 < pratz> edwinkcw: here http://dpaste.com/775117/
+2012-07-25 07:37 < sente> pratz: http://c.sente.cc/MehX/jap.txt
+2012-07-25 07:38 < sente> this is the doc in question: http://c.sente.cc/sQXA/file.doc
+2012-07-25 07:39 < pratz> sente: here http://pypi.python.org/pypi/chromium_compact_language_detector/0.1.1#downloads
+2012-07-25 07:40 < nolols_X> Hello, I wanted to make a text effect which is like "slowly filling". I then came up with this code: http://pastie.org/4329619 ; but it took too much time and effort. I want the same (or better) result but with a better, faster and easier way to do. How?
+2012-07-25 07:41 < kvashir> hi guys, i wrote this program https://bbs.archlinux.org/viewtopic.php?pid=1136328#p1136328 can you give me some impressions about it? sorry for my bad english :)
+2012-07-25 07:50 < sente> after i catdoc file.doc > file.txt, file.txt looks like: http://c.sente.cc/KfOH/file.txt
+2012-07-25 07:54 < pratz> sente: rob``` hey guys some how this works , here http://dpaste.com/775122/
+2012-07-25 07:54 < pratz> sente: here it say it only excepts unicode http://pypi.python.org/pypi/chromium_compact_language_detector/0.1.1#downloads
+2012-07-25 07:58 < pratz> nedbat: then how this is working http://dpaste.com/775122/
+2012-07-25 07:59 < sente> pratz: what does that code show report for http://c.sente.cc/enTr/arabic.txt ?
+2012-07-25 08:08 < pratz> nedbat: so ned you are expert in this http://pypi.python.org/pypi/chromium_compact_language_detector/0.1.1#downloads why is this accepting even string ?
+2012-07-25 08:10 < pangur> Although I realise that it is normally better to have firstname and lastname as separate attributes, I would like to be able to have a class that deals with them as shown in my paste http://bpaste.net/show/UhqabN2sjoPp28LLChe9/
+2012-07-25 08:16 < Ephexeve_laptop> ey guys, i keep on getting this error: http://codepad.org/VANVufoD
+2012-07-25 08:44 < ikhanh4x> looks like the Orlando, FL PUG website was hacked http://orlandopython.com/
+2012-07-25 08:52 < lahwran> http://codepad.org/fKgAU3pO
+2012-07-25 08:54 < lahwran> Absolute0: or this: http://codepad.org/wgY9YdOC
+2012-07-25 08:59 < Absolute0> Why aren't my nodes printing properly: http://codepad.org/dfHEabzi ?
+2012-07-25 09:03 < Lcawte> Anyone got an idea on how I can make https://gerrit.wikimedia.org/r/gitweb?p=operations/debs/adminbot.git;a=tree;h=HEAD;hb=HEAD use a page name as a base then add /<current year>/<current month number> after it? I'm sure its probably a simple patch but I can't quite get my head round it...
+2012-07-25 09:12 < voo> leo2007: http://docs.python.org/library/os.path.html - os.path.expandvars ?
+2012-07-25 09:28 < ssbr-> this is the best thing: http://en.wikipedia.org/wiki/Negation_normal_form
+2012-07-25 09:36 < nedbat> jacobian: ps: http://bit.ly/unipain
+2012-07-25 09:37 < MrElendig> jacobian: http://youtu.be/sgHbC6udIqc
+2012-07-25 09:56 < Jerub> Qtr: here's a quote: http://fishbowl.pastiche.org/2003/10/08/sig_quote_of_the_day/
+2012-07-25 10:07 < puddy> hey, i'm trying to edit an xml file in python to remove comments programmatically if they have some sort of delimiter (http://bpaste.net/show/KsEdG06E1KNDZARwMEwp/) - i've been having no luck using minidom to parse because it's unable to parse the xml inside the actual comment
+2012-07-25 10:30 < ssbr-> I was thinking of http://en.wikipedia.org/wiki/Translation_lookaside_buffer
+2012-07-25 10:32 < dash> jkbbwr: tis may be enlightening if you want a lower-level view of what's going on down there: http://www.infoq.com/presentations/click-crash-course-modern-hardware
+2012-07-25 10:32 < sente> how do i tell django to bind to 0.0.0.0:12345 instead of http://127.0.0.1:8000/ ?
+2012-07-25 10:58 < Kwpolska> motherbrain: http://webkit.org
+2012-07-25 11:01 < jkbbwr> SOmeone rip this to shreads http://paste.pound-python.org/show/24292/
+2012-07-25 11:03 < ssbr-> jkbbwr: http://tex.stackexchange.com/questions/40429/how-to-use-the-parskip-package-space-in-between-paragraphs
+2012-07-25 11:03 < ssbr-> http://paste.pound-python.org/?reply_to=24292
+2012-07-25 11:07 < cuci> hi guys! I'm trying to setup a new virtualenv but it fails with: http://dpaste.com/775199/
+2012-07-25 11:11 < humitos> I'm taking a look at this function: http://developer.gnome.org/gtk3/3.5/GtkTreeModelFilter.html#gtk-tree-model-filter-convert-child-iter-to-iter
+2012-07-25 11:16 < tapas> hi.. http://pastesite.com/40358 i get an error: File "export.py", line 33, in <module> .... UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 2: ordinal not in range(128)
+2012-07-25 11:21 < nedbat> tapas: http://bit.ly/unipain
+2012-07-25 11:24 < papna> tapas: http://bobby-tables.com/
+2012-07-25 11:28 < humitos> I'm trying to use this function: http://developer.gnome.org/gtk3/3.5/GtkTextIter.html#gtk-text-iter-forward-search but I can't find how to get the proper flag; I was trying something like this: Gtk.TextSearchFlags(4) but I get an error
+2012-07-25 11:42 < humitos> here is my problem -> http://fpaste.org/3LSB/
+2012-07-25 11:43 < humitos> there is something wrong with this function: http://developer.gnome.org/gtk3/3.5/GtkTextIter.html#gtk-text-iter-forward-search
+2012-07-25 11:50 < qwerty1793> jhonnyboy: you could look into "python freeze" see http://wiki.python.org/moin/Freeze
+2012-07-25 11:52 < enigmuriatic> can somewhat tell me what's wrong with this?   http://bpaste.net/show/3FiVa8z71vOwi9UC40AI/    it's giving me a syntax error around the execute statement
+2012-07-25 11:55 < JordiGH> What's the proper syntax for something like this? The interpreter complains that I have a comment after the line continuation character: http://codepad.org/AEqHaYcK
+2012-07-25 11:56 < enigmuriatic> http://bpaste.net/show/3FiVa8z71vOwi9UC40AI/
+2012-07-25 11:57 < macobo> Is there an inbuild equivelent to the following function? http://bpaste.net/show/9Z2x22dlU58EwgNJGMqx/
+2012-07-25 11:57 < nullie> JordiGH, http://codepad.org/comrqu8O or better use string formatting
+2012-07-25 12:07 < caaakeeey> http://dpaste.com/775214/
+2012-07-25 12:16 < caaakeeey> so any thoughts on the examples in my paste? (in the function 'data_flow') http://dpaste.com/775214/
+2012-07-25 12:18 < macobo> Is there an inbuild equivelent to the following function? http://bpaste.net/show/9Z2x22dlU58EwgNJGMqx/
+2012-07-25 12:19 < enigmuriatic> http://bpaste.net/show/qE8diISNNZn6Yd5PHcwC/
+2012-07-25 12:19 < enigmuriatic> http://docs.python.org/library/sqlite3    it's based off of that, seems identical
+2012-07-25 12:21 < helo> is there a premade parser for this format: http://community.bistudio.com/wiki/server.cfg#Example_Configuration_File
+2012-07-25 12:32 < enigmuriatic> http://docs.python.org/library/sqlite3
+2012-07-25 12:33 < enigmuriatic> i attempted to use the "?" substitution method described in that link in this script:   http://bpaste.net/show/qE8diISNNZn6Yd5PHcwC/   and it's giving me an error. What did I do wrong?
+2012-07-25 12:57 < papna> PigFlu: If you had copied and pasted http://www.habnabit.org/twistedex.html , adding this nicely would be easy.
+2012-07-25 13:27 < DX099> papna, http://learnpythonthehardway.org/book/ex3.html
+2012-07-25 13:50 < ThiefMaster> any suggestions which data structure would be most appropriate to perform matches like this? https://paste.aeum.net/show/jeb93ZEnhzhH3QwJAYxl/ - i.e. for each input line i want to select the most specific command possible
+2012-07-25 14:03 < JordiGH> http://codepad.org/DpoA4LNI
+2012-07-25 14:18 < Goopyo> anyone know how I can make it so that this is installed via pip? http://ta-lib.org/hdr_dw.html
+2012-07-25 14:35 < hashpuppy> i've posted this poll in #haskell, #scala, #clojure, and a few other channels.  i've received quite a few responses.  i would like 30 more, though.  if you guys get a few minutes, would you guys help me by filling out this poll on productivity and health in software engineering:  https://docs.google.com/spreadsheet/viewform?pli=1&formkey=dGZpbHExdHZteXY4VkpaRnBQUzRPRHc6MQ#gid=0
+2012-07-25 14:59 < mwilson_> http://cl.ly/image/1E1c3o2X3E3q between midnight and 2am is when I was testing it last
+2012-07-25 15:18 < ThiefMaster> https://paste.aeum.net/show/129/ - any suggestions if/how the _lookup() method could be improved?
+2012-07-25 15:22 < papna> alexander__b: http://jacobian.org/writing/gpl-questions/
+2012-07-25 15:22 < dash> http://ennui.org/rone/kibology/ils
+2012-07-25 15:31 < papna> alexander__b: https://www.gnu.org/licenses/gpl-faq.html#WhatIfWorkIsShort
+2012-07-25 15:36 < cwillu_at_work> http://bpaste.net
+2012-07-25 15:36 < ersi> alexander__b: It's in /topic; http://bpaste.net/+python
+2012-07-25 15:37 < alexander__b> nedbat: after I have rewritten this: http://bpaste.net/show/36776/ to not be so... stupid and ugly, I'll probably github it. :-)
+2012-07-25 15:39 < ogzy> i have a http body like 0q0o0M0K0I0\t\x06\x05+\x0e\x03\x02\x1a this is most probably a binary or something else, how can i convert it to the right type?
+2012-07-25 15:41 < tos9> Cyph0n: http://bit.ly/unipain
+2012-07-25 15:44 < ogzy> tos9: is it a http request, i was using dpkt binding
+2012-07-25 15:58 < mwilson_> Wild_Cat: and I'd accept that if it was a 10% or 20% decrease, but I'm going from steady 90% cpu utilization to rapid blips between 60% and 0% (as seen here, http://cl.ly/image/1E1c3o2X3E3q)
+2012-07-25 16:08 -!- Topic for #python: NO LOL | NO PRIMES | Julython is on! http://julython.org/ | Don't paste, use http://bpaste.net/+python | 2.x or 3.x? http://bit.ly/py2vs3k | Tutorial: http://bit.ly/MCAhYx | New programmer? http://goo.gl/c170V | Find your nearest Python User Group: http://goo.gl/S1Zsq | #python-fr #python.de #python-es #python.tw #python.pl #python-br #python-nl #python-ir #python-fi
+2012-07-25 16:27 < tos9> Jerub: https://github.com/docopt/docopt/
+2012-07-25 16:55 < KirkMcDonald> neemo: http://hg.python.org/cpython/file/2.7/Doc
+2012-07-25 17:30 < shaun413> http://pastebin.com/ervNS58E
+2012-07-25 17:30 < infobob> http://paste.pound-python.org/show/24297/ (repasted for shaun413)
+2012-07-25 17:33 < rob```> shaun413: read the tutorial at http://docs.python.org
+2012-07-25 17:41 < mDemocritus> oh god why http://stackoverflow.com/questions/11658998/strange-behavior-of-pythons-exec-function
+2012-07-25 17:48 < voo> ugh, anyone a good idea how I can select a line by its linenumber in a QT QPlainTextEdit? the current code wins a price for being obtuse: http://pastebin.com/58LLEB46
+2012-07-25 17:48 < infobob> http://paste.pound-python.org/show/24298/ (repasted for voo)
+2012-07-25 17:48 < Norwack> dash: http://bpaste.net/show/o2SujlA14V0iMGOwEPRR/
+2012-07-25 17:50 < pangur> Why do I need lines 9 to 11 in http://bpaste.net/show/XtHEgKDOs34qLDiSyZVF/ when I would have expected self.forename in line 16 to do the same job?
+2012-07-25 18:07 < Led_Zeppelin> http://docs.python.org/library/re.html
+2012-07-25 18:21 < cwillu_at_work> (http://bpaste.net)
+2012-07-25 18:23 < Budgie^Smore> http://bpaste.net/show/AAlVRitkVl4CMyFvoUjN/
+2012-07-25 18:37 < sonic_baker> http://pastebin.com/3D0cUapL
+2012-07-25 18:37 < infobob> http://paste.pound-python.org/show/24299/ (repasted for sonic_baker)
+2012-07-25 20:43 < CrazyGir> how do you get the interpreter to tell you all the fun opcode stuff seen here: http://www.slideshare.net/alexgolec/python-opcodes
+2012-07-25 20:50 < KirkMcDonald> http://docs.python.org/library/stdtypes#string-formatting-operations
+2012-07-25 21:00 < leo2007> getting an exception like this: http://bpaste.net/show/36833
+2012-07-25 21:07 < kwikness> how can i convert a mysql string to a datetime (http://docs.python.org/library/datetime.html)?
+2012-07-25 21:39 < leo2007> deltab: I made a subclass like this but substitution is not done. http://bpaste.net/show/36838
+2012-07-25 21:44 < JordiGH> tos9: Even the commercial docs have terrible reviews: http://shop.oreilly.com/product/9780596514235.do
+2012-07-25 21:45 < JordiGH> Reading these, I seem to be understanding it: http://fdik.org/pyPEG/
+2012-07-25 23:31 < leo2007> nedbat: http://bpaste.net/show/36842
+2012-07-25 23:47 < Asphyxiated|Dk> can someone take a look at the code at http://bpaste.net/show/36843/ and tell me why at line 82 it gives me an error of "class main_window_ex(main_window): TypeError str() argument 2 must be str, not tuple, I dont understand because main_window_ex only takes 1 arg....
+2012-07-26 00:01 < Asphyxiated|Dk> asdf`: perhaps I messed something up, http://bpaste.net/show/36846/ now has the correct capitalization with respect to the first file, notice that the variable defined is "main_window" while the class function wants "Main_window", if i try to run it it now states "Main_window not defined"
+2012-07-26 00:35 < tyrant91101> I've tried im_class but I get a  <html xmlns="http://www.w3.org/1999/xhtml">  <head>  <title>Py Photo &middot; The smart way to organize your Photos</title>	  <link rel="stylesheet" type="text/css" href="../css/style.css"> <link rel="stylesheet" type="text/css" href="../css/library_bar.css"> <link rel="stylesheet" type="text/css" href="../css/dynamic.grid.css"> <link rel="stylesheet" type="text/css" href="../css/group_view.css">
+2012-07-26 00:54 < dash> __machine: in every form i've done, you get validated/cleaned data from the form object, then do the db changes, then send an http response
+2012-07-26 00:56 < mlt-> rbik: http://www.python.org/dev/peps/pep-3127/
+2012-07-26 00:56 < Asphyxiated|Dk> can someone look at http://bpaste.net/show/36847/ I get the error: in __init__ QMainWindow.__init__(self,parent,name,fl) TypeError: QMainWindow(QWidget parent = None, Qt.WindowFlags flags = 0): argument 2 has unexpected type 'NoneType'
+2012-07-26 01:09 < mlt-> actually I don't see name http://www.riverbankcomputing.co.uk/static/Docs/PyQt4/html/qmainwindow.html#QMainWindow'
+2012-07-26 01:11 < Asphyxiated|Dk> startling: https://github.com/crossbowerbt is the person who wrote it and yes, i had to convert many calls like the print function and <> from py2 to py3 code
+2012-07-26 02:45 < alkamid> does a list get "empty" after a full "for" iteration? I'm trying to do http://bpaste.net/show/VV1TqD1h1SNyqcYlKWYs/ but in the second iteration the list looks empty
+2012-07-26 02:47 < alkamid> the real code: http://bpaste.net/show/hJKH5vskZXgu70SpLA8j/
+2012-07-26 02:54 < alkamid> jorrit, http://bpaste.net/show/PHJZPfryXx50oCEkCrxb/
+2012-07-26 02:58 < alkamid> jorrit, and lista_stron is generated by http://bpaste.net/show/y2OBpYmM9acrcVEo3B4R/
+2012-07-26 02:59 < jorrit> alkamid, I still need more. I need the code that goes around your first paste: http://bpaste.net/show/hJKH5vskZXgu70SpLA8j/
+2012-07-26 03:00 < alkamid> jorrit, sure: http://bpaste.net/show/PPg1zpOObnfM6Ze0o6bW/
+2012-07-26 03:02 < alkamid> jorrit, http://bpaste.net/show/xx7k1aHQBOXjMaf0wHIe/
+2012-07-26 03:07 < jorrit> pratz, http://docs.python.org/library/subprocess.html
+2012-07-26 03:12 < cognificent> does anyone know if I can... inject imports into a unittest module? I want to run the same unittest on a bunch of dynamically imported files without modifying the contents of the unittest file... something like this: http://bpaste.net/show/36859/
+2012-07-26 03:15 < CalvinnHobbes> i describe it here: http://bpaste.net/show/ZNhxfReOp4ueKDxTgCKK/
+2012-07-26 03:23 < sente> CalvinnHobbes: http://c.sente.cc/l0Vr/ssh_subprocess_example.txt
+2012-07-26 03:25 < CalvinnHobbes>  CalvinnHobbes: http://c.sente.cc/l0Vr/ssh_subprocess_example.txt
+2012-07-26 03:27 < VitamnP> Hi, could someone please tell me what piece of mathematics the accepted answer to this question refers to? The bit about a smart guy called Gauss finding out checking for duplicates in N objects requires (1+N)*(N/2) times ... http://gamedev.stackexchange.com/questions/29438/ai-updating-ai-use-a-lot-of-cpu
+2012-07-26 03:29 < Nisstyre> VitamnP: http://www.wolframalpha.com/input/?i=solve+s%281%29+%3D+1%2C+s%28n%29+%3D+n+%2B+s%28n-1%29
+2012-07-26 03:34 < sente> pratz: http://c.sente.cc/pVsF/pratz.txt
+2012-07-26 03:39 < VitamnP> p cool stuff http://mathforum.org/library/drmath/view/57919.html
+2012-07-26 03:52 < subb1> I'm trying to install mailman on my server. In my configure step, I ran into this python error: http://pastebin.com/gzzcJQpr . Following this I installed python-setuptools & python-distutils-extra. But still no luck. Please help
+2012-07-26 03:52 < infobob> http://paste.pound-python.org/show/24306/ (repasted for subb1)
+2012-07-26 03:54 < subb1> sorry about that paste. Please help on here: http://paste.pound-python.org/show/24306/
+2012-07-26 04:04 < pratz> sente: here buddy http://dpaste.com/775589/
+2012-07-26 04:15 < scott_w> http://dev.opera.com/articles/view/everything-you-need-to-know-about-html5-video-and-audio/ look at "I want to roll my own controls"
+2012-07-26 04:32 < adac> it seems that python-vatnumber  (python-vatnumber                1:0.5-1) on ubuntu lucid is broken. https://gist.github.com/3180986 any ideas what is wrong here?
+2012-07-26 04:38 < adac> scott_w, should be this bug: http://code.google.com/p/vatnumber/issues/detail?id=13
+2012-07-26 04:42 < adac> scott_w, I once tried out this: https://github.com/utahta/pythonbrew but it was a total diseaster. Is virtualenv better?
+2012-07-26 04:46 < pratz> sente: did you check http://dpaste.com/775589/
+2012-07-26 04:50 < kakashi_> http://lucene.apache.org/pylucene/features.html
+2012-07-26 04:52 < kakashi_> iivvoo: say I am using this piece of code - http://pluke.googlecode.com/svn-history/r5/trunk/src/plukerunner.py
+2012-07-26 05:08 < phillips321> guys, if i run the following in a python shell it works but doesnt work as a script: http://pastie.org/4335415 any ideras where im going wrong
+2012-07-26 05:47 < Wulf> http://docs.python.org/library/constants.html
+2012-07-26 05:48 < Wulf> leo2007: there you go: http://docs.python.org/library/runpy.html
+2012-07-26 05:51 < Lartza> http://pastebin.ca/2174811
+2012-07-26 05:51 < infobob> http://paste.pound-python.org/show/24308/ (repasted for Lartza)
+2012-07-26 05:56 < Tichodroma> http://docs.python.org/library/datetime.html?highlight=timedelta#timedelta-objects has all the details
+2012-07-26 06:02 < Tichodroma> pandu101, see http://stackoverflow.com/questions/2119472/convert-a-timedelta-to-days-hours-and-minutes
+2012-07-26 06:27 < deltab> noxael: you may be interested in http://developer.ubuntu.com/get-started/quickly-workflow/
+2012-07-26 07:07 < Norwack> Jerub: That didnt work out the way i planned...it printed worked, but didnt send anything with sockets http://bpaste.net/show/3ZAmytR6xa9Mqi5UuodY/
+2012-07-26 07:32 < Lartza> Finally I got this running on Python :) http://youtu.be/ggCTxrzMAy8
+2012-07-26 07:36 < b0rsuk> Here's sample usage: https://gist.github.com/1073424
+2012-07-26 07:37 < lukecarrier> Hi, does anybody know why I'd see this during a make install? http://bpaste.net/show/1XsfGc472Z7HgJrCOYNy/
+2012-07-26 07:41 < alexander__b> ssbr_: http://bpaste.net/show/36893/
+2012-07-26 07:41 < pangur> Why do I need lines 9-11 in http://bpaste.net/show/lwtfW2vVC3lNMmnGdep7/ ?
+2012-07-26 08:05 < crazydiamond> http://docs.python.org/library/array.html
+2012-07-26 08:06 < Kwpolska> Ormie: http://stackoverflow.com/questions/842557/how-to-prevent-a-block-of-code-from-being-interrupted-by-keyboardinterrupt-in-py
+2012-07-26 08:08 < Kwpolska> Ormie: in case you need that link repeated: http://stackoverflow.com/questions/842557/how-to-prevent-a-block-of-code-from-being-interrupted-by-keyboardinterrupt-in-py
+2012-07-26 08:43 < jorrit> nedbat, http://en.wiktionary.org/wiki/retardedly
+2012-07-26 08:48 < tapas> the code is here: http://pastesite.com/40419 [it's about a page]
+2012-07-26 08:52 < cgtobi> hi all. I have a little quoting issue while using MySQLdb. Maybe someone can take a quick look. http://pastebin.com/1JBSyq9X
+2012-07-26 08:54 < tapas> i guess this does help: http://docs.python.org/library/profile.html
+2012-07-26 08:55 < jwhisnant> tapas: I like using profilehooks http://pypi.python.org/pypi/profilehooks, but cProfile is the standard profiler
+2012-07-26 09:00 < Cluber> I have a directory structure http://codepad.org/ubbC8LOO and I want to import gui/searchGUI.py from my Client.py with "import gui.searchGUI" but I get the error ImportError: No module named gui.searchGUI
+2012-07-26 09:02 < alo21> jorrit: Look at this programm(http://pastebin.ubuntu.com/1111876/)
+2012-07-26 09:05 < jorrit> alo21, do it like this: http://bpaste.net/show/cqE7sgPT467Vp7AXYVco/
+2012-07-26 09:09 < alo21> jorrit: how can i solve this?  http://pastebin.ubuntu.com/1111883/
+2012-07-26 09:15 < jorrit> ansgar, btw, documentation on re.split: http://docs.python.org/library/re.html#re.split
+2012-07-26 09:16 < ThiefMaster> i guess http://www.python.org/dev/peps/pep-0257/#handling-docstring-indentation isn't hidden anywhere in the python stdlib?
+2012-07-26 09:40 < voo> jorrit, untested http://paste.pound-python.org/show/24315/ - but I think it also covers all implicit assumptions of the regex
+2012-07-26 09:50 < voo> http://paste.pound-python.org/show/24316/
+2012-07-26 09:54 < voo> http://paste.pound-python.org/show/24318/
+2012-07-26 09:58 < EdwardIII> is this a legit way to read and then write a utf8 CSV? https://gist.github.com/3182183
+2012-07-26 10:09 < MJ> http://docs.python.org/py3k/library/re.html#re.ASCII
+2012-07-26 10:10 < MJ> vs. http://docs.python.org/library/re.html#re.UNICODE
+2012-07-26 10:13 < voo> Mj wardi, code: http://paste.pound-python.org/show/24319/
+2012-07-26 10:38 < dash> nelson777br: i assume you've read this then? http://acksyn.org/docs/smart-cards-openvpn.html
+2012-07-26 10:40 < voldyman> i have made a small terminal http://pastebin.com/Z5Mi5tmP. but its transparency is not working. can anyone help?
+2012-07-26 10:40 < infobob> http://paste.pound-python.org/show/24320/ (repasted for voldyman)
+2012-07-26 10:47 < Furao> it's weird that in http://docs.python.org/library/logging.config.html it's documented that I can configure logging filters, but it's not true
+2012-07-26 11:12 < Aha2Y> http://paste.pound-python.org/show/24323/ <- How can i make this working? (Its my first time using csv)
+2012-07-26 11:22 < phrearch> i have a string like &#60;base href=&#34;http://localhost:8100/&#34; , which i want to process in python
+2012-07-26 11:24 < phrearch> i end up with http://paste.kde.org/523316/
+2012-07-26 11:27 < phrearch> it looks like http://paste.kde.org/523328/
+2012-07-26 11:45 < phillips321> http://pastie.org/4337172
+2012-07-26 11:47 < henux> so why is this not a good idea? http://pastebin.com/6Qj454f1
+2012-07-26 11:47 < infobob> http://paste.pound-python.org/show/24324/ (repasted for henux)
+2012-07-26 12:07 < JordiGH> Neat, found something that actually makes sense to me: http://onlamp.com/pub/a/python/2006/01/26/pyparsing.html
+2012-07-26 12:25 < alexander__b> dash: http://twistedmatrix.com/documents/2.5.0/api/moduleIndex.html
+2012-07-26 12:28 < alexander__b> dash: or actually, no. http://twistedmatrix.com/documents/current/api/nameIndex.html has a million callaters and bleh, but no twisted.internet.reactor.callLater
+2012-07-26 12:29 < dash> alexander__b: http://twistedmatrix.com/documents/current/api/twisted.internet.interfaces.IReactorTime.html#callLater
+2012-07-26 12:45 < mcantor> carljm: I am Googling, and it appears that the traditional workaround for this specific dependcy problem is to run "easy_install -i http://tg.gy/ tg.devtools" before running anything else.
+2012-07-26 12:46 < mcantor> carljm: Also, http://turbogears.org/ seems to indicate that TG is still an actively-developed discrete project
+2012-07-26 13:27 < jparkton> I am following the python tutorial and I am on ex26 http://learnpythonthehardway.org/exercise26.txt when I get to the part def secret_formula it says beans is not defined but it is the same code as used in ex24 and that one runs fine?
+2012-07-26 13:28 < yeshuah> Anyone with experience with the bitarray package who can explain me why this happens? http://dpaste.com/775824/
+2012-07-26 13:42 < lesshaste> but is terrible http://bpaste.net/show/FIZR63K8pMbZoJbku2C5/
+2012-07-26 13:49 < lesshaste> cylob, try stackoverflow..they like this sort of question but do point to http://stackoverflow.com/questions/394039/which-python-gui-framework
+2012-07-26 13:50 < lesshaste> http://www.wxpython.org/download.php claims ppc works
+2012-07-26 13:55 < jparkton> I am following the python tutorial and I am on ex26 http://learnpythonthehardway.org/exercise26.txt when I get to the part def secret_formula it says beans is not defined but it is the same code as used in ex24 and that one runs fine?
+2012-07-26 13:56 < alexander__b> arkanes_: http://bpaste.net/show/36946/ - let's say there are more lists like computing, and they are all added to qa. I need to pick a random list from qa, print its description string, then pick a random pair in that list, print the question and store the answer.
+2012-07-26 13:58 < Martty> hey guys, im trying to simulate the number of tosses required to get two consecutive heads. im not sure why, im getting ~4 instead of 6 (the right analytical answer). here's the code http://codepad.org/MgwFzub8 . im tired and its probably something retarded, anyone care to take a look?
+2012-07-26 14:03 < alexander__b> arkanes_: it's like this ATM http://bpaste.net/show/36948/
+2012-07-26 14:05 < jjshabs> http://pastebin.com/VrmZnUG7
+2012-07-26 14:05 < infobob> http://paste.pound-python.org/show/24325/ (repasted for jjshabs)
+2012-07-26 14:47 < CasW> http://paste.ubuntu.com/1112448/ Parse that into nice objects ;)
+2012-07-26 14:52 < Doxin> I'm writing a web-based python ide for a site I'm making. could I get some opinions on http://python.superdoxin.com/ide.html ?
+2012-07-26 14:58 < nedbat> Doxin: try it: http://choosepython.com/gym/3/functions
+2012-07-26 15:02 < jwhisnant> nedbat: Doxin : ipython notebook might be a good alternative, http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html
+2012-07-26 15:42 < voo> shaun413, http://docs.python.org/release/3.2/tutorial/controlflow.html#more-on-defining-functions read that
+2012-07-26 16:26 < Doxin> nedbat: I slightly updated http://python.superdoxin.com/ide
+2012-07-26 16:26 < Doxin> nedbat: http://python.superdoxin.com/ide.html
+2012-07-26 16:30 < hydester> hi, i'm using mod_python (please don't chastise me) and was wondering if there is a way to inject data to the apache log, similar to this in php http://php.net/manual/en/function.apache-note.php
+2012-07-26 16:31 < hydester> sente: i mean like how http authenticated users are in an apache log line
+2012-07-26 16:31 < hydester> want to be able to have the logged in username, that isn't using http auth, to be in each log event
+2012-07-26 16:32 < dash> ssbr-: i don't know if this is relevant to your interests but: http://lambda-the-ultimate.org/node/4571
+2012-07-26 16:33 < Doxin> nedbat: http://python.superdoxin.com/ide_new.html
+2012-07-26 16:34 < elvis4526>     urllib.request.urlretrieve("http://slackbuilds.org/slackbuilds/13.37/{0}{1}.tar.gz".format(location,name), "/tmp/slackmaster/work/{0}.tar.gz".format(name))
+2012-07-26 16:38 < evanton> elvis4526: I may be wrong but I think urllib / urllib2 can't reuse http connections. So if you fetch multiple things from that site - you may be hammering it, opening a new connection for each request
+2012-07-26 16:40 < ssbr-> dash: http://bpaste.net/show/BR9fJMauqPWwiPPucN1b/
+2012-07-26 16:40 < elvis4526> http://bpaste.net/show/gdf8VpU6797oOpbliztk/
+2012-07-26 16:44 < cnf>  https://github.com/kennethreitz/osx-gcc-installer/ will have a 10.8 package soon
+2012-07-26 16:44 < cnf> or you know, build your own http://www.opensource.apple.com/release/developer-tools-41/
+2012-07-26 16:45 < ssbr-> oh man this is beautiful code: http://bpaste.net/show/RcVLChKkNlttL1GDriK1/
+2012-07-26 16:45 < dash> elvis4526: i guess your http request failed?
+2012-07-26 16:46 < true_techie> http://bpaste.net/show/36981/ how would i do an or equals for the second line?
+2012-07-26 16:47 < evanton> elvis4526: can you fetch the file using another http client?
+2012-07-26 16:50 < elvis4526> I can't download file from slackbuilds.org with my http client of choice%
+2012-07-26 16:52 < lesshaste> tos9, http://bpaste.net/show/Of0Bj8fxsx1VCWjtx7In/
+2012-07-26 16:53 < elvis4526> evanton:     urllib.request.urlretrieve("http://slackbuilds.org/slackbuilds/13.37/{0}{1}.tar.gz".format(location,name), "/tmp/slackmaster/work/{0}.tar.gz".format(name))
+2012-07-26 16:53 < lesshaste> tos9, I missed out a ... . http://bpaste.net/show/8xMAY9iS2sz2mfvhOkI9/ is more accurate
+2012-07-26 16:55 < pepijndevos> dash, https://github.com/pepijndevos/perper it's in the readme
+2012-07-26 16:56 < dash> ssbr-: looks like this: http://bazaar.launchpad.net/~washort/pymeta/ng/view/head:/ometa/interp.py#L13
+2012-07-26 16:56 < lesshaste> tos9, slightly more accurate again http://bpaste.net/show/PCgkABjIH4IWFRqM9Eih/ (I haven't changed much.. just made it clear that it is array.dtype.names)
+2012-07-26 16:59 < true_techie> can i use datetime.now() like this? http://bpaste.net/show/36989/
+2012-07-26 17:16 < lesshaste> tos9, how about this? http://bpaste.net/show/HW5JRJjW5w2MYM4Y3ae9/
+2012-07-26 17:21 < jwhisnant> abyss42: PIL http://pypi.python.org/pypi/PIL/
+2012-07-26 17:24 < jwhisnant> abyss42: you will probably have to write the pixel data to an Image instance ... http://stackoverflow.com/questions/7569553/working-tiffs-with-python
+2012-07-26 17:53 < voo> jparkton, there's also the whole thing as a single html page: http://docs.python.org/genindex-all.html
+2012-07-26 17:54 < mDemocritus> jparkton: http://docs.python.org/download.html
+2012-07-26 17:57 < mDemocritus> jparkton: http://docs.python.org/py3k/download.html for py3k
+2012-07-26 18:08 < CarlFK>  python code that authenticates to google, for posting videos to youtube.  very simple code, works on some boxes, not on others.  https://github.com/CarlFK/veyepar/blob/master/tests/you_tube/goog_auth_README.TXT
+2012-07-26 18:18 < MostAwesomeDude> Omni|Work: http://werkzeug.pocoo.org/docs/middlewares/#werkzeug.wsgi.DispatcherMiddleware
+2012-07-26 18:44 < KirkMcDonald> gent00fan: I will answer that question in the form of source code: http://hg.python.org/cpython/file/2.7/Python/ceval.c
+2012-07-26 18:50 < nickmeharry> Norwack: No. Special characters are listed here: http://docs.python.org/library/re.html#regular-expression-syntax
+2012-07-26 19:01 < nedbat> gent00fan: look at this" http://www.slideshare.net/alexgolec/python-opcodes
+2012-07-26 19:01 < deltab> gent00fan: http://www.slideshare.net/alexgolec/python-opcodes
+2012-07-26 19:07 < lyrae> basically, write a script that outputs this in infinitely: http://tabbit.org/pgQK6HP
+2012-07-26 19:07 < deltab> gent00fan: http://hacks.mozilla.org/2009/07/tracemonkey-overview/
+2012-07-26 19:15 < nanonyme> dash, https://github.com/nanonyme/twisterman am I getting the Twisted style at all? ;P
+2012-07-26 19:40 < __machine> nedbat: i have a django app that has multiple processes each with multiple threads to satisfy http requests... what i want to do is start a daemon thread whenever an http request is received, unless such a thread is already running... looking for a way to store in the db a flag to indicate that such a thread is actually still running, and a way to double-check that it is actually still running
+2012-07-26 19:45 < lyrae> anyways, this was my solution http://tabbit.org/7XctCuUS. I couldn't figure out how to make it any simpler
+2012-07-26 20:00 < zamabe> Hello. I'm confused as to the correct way to have a class start a thread to call an updater method on an interval. Here's the (threading.Timer) solution I've come across, but hopefully you'll facepalm hard enough to let me know if this is stupid: http://dpaste.de/rswKI/
+2012-07-26 20:02 < voo> zamabe, well there's the sched module, which is a better fit http://docs.python.org/library/sched.html
+2012-07-26 20:30 < dcrouch> I've been working with the following code.  http://thunked.org/p/view/pri/6pxq4iofe  For some reason, I'm not getting all content with s.get('key') I seem to get about 50% returns.  With the code provided, here is an example of a line of output.  344 - 549: None
+2012-07-26 20:31 < voo> __machine: could be some strange setting but generally no: http://en.wikipedia.org/wiki/Orphan_process
+2012-07-26 20:47 < osmosis> leo2007, http://guide.python-distribute.org/creation.html
+2012-07-26 20:53 < jparkton> I am on this tutorial and there is an undefined list http://learnpythonthehardway.org/book/ex32.html python wont let me run it because it is undefined?
+2012-07-26 20:57 < dash> jparkton: pastebin it here: http://bpaste.net/
+2012-07-26 20:58 < jparkton> http://bpaste.net/show/37040/
+2012-07-26 21:02 < zamabe> voo, sched blocks :/   This is what I ended up with. Anything terribly stupid about it? http://dpaste.de/gLnNO/
+2012-07-26 21:09 < dash> ok. then i recommend an async http client, such as twisted.web.client
+2012-07-26 23:09 < true_techie> http://bpaste.net/show/0WWN8ElG7eWkuXvYUwKC/ i need to put three fields specific fields from auctions inside records. are there any good articles on lists?
+2012-07-26 23:20 < fellow> There, that's three. Now my question: http://bpaste.net/show/EKXA8pl0x4c4uPIG7VZy/
+2012-07-26 23:53 < true_techie> like this but is there a better way to create the list? http://bpaste.net/show/LneoCbHSUcfXQyqs6UMo/
+2012-07-26 23:53 < sambo_c> I'm relatively new to python but use it quite a bit for work, is the following 'pythonic' ? http://pastebin.com/mZjVLa1P
+2012-07-27 00:33 < sente> Inside: i linked you http://truongnghiem.wordpress.com/2011/07/08/what-is-pypy/
