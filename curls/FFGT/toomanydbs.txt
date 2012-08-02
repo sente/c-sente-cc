@@ -1,0 +1,23 @@
+>>> for k in os.environ:
+...     print '%s: %s' % (k,os.environ[k])
+...
+LANG: en_US.UTF-8
+TERM: xterm-256color
+LIBRARY_PATH: /app/.heroku/vendor/lib
+HEROKU_POSTGRESQL_YELLOW_URL: postgres://ajdmmtqiwwszfn:Mz9GfLO_NVHMxqgR-M4oIx1v3S@ec2-107-21-101-4.compute-1.amazonaws.com:5432/d7dr5n5cfpa20h
+SHLVL: 1
+PYTHONPATH: /app/
+LINES: 50
+PYTHONHOME: /app/.heroku/venv/
+HEROKU_POSTGRESQL_SILVER_URL: postgres://xnlsxdohipvhaw:WRMbYb9thhJr-FFrxhf0-tUdAO@ec2-23-21-85-233.compute-1.amazonaws.com:5432/d9gsuatgdh1c0
+PORT: 7921
+PWD: /app
+PYTHONHASHSEED: random
+HEROKU_POSTGRESQL_BLACK_URL: postgres://eogrkgcxhtdiwr:ig8jc-xuK8t2L7QPpuq06A-_HK@ec2-23-21-204-86.compute-1.amazonaws.com:5432/dbkoufsa6b2or6
+_: /app/.heroku/venv/bin/python
+HOME: /app
+PATH: /app/.heroku/venv/bin:/bin:/usr/local/bin:/usr/bin
+PYTHONUNBUFFERED: true
+LD_LIBRARY_PATH: /app/.heroku/vendor/lib
+COLUMNS: 127
+
