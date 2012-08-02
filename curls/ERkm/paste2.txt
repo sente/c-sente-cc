@@ -1,0 +1,47 @@
+stu@slice ~/tmp/daily/08/02/guestbook_demo $ heroku ps:scale web=1
+Scaling web processes... done, now running 1
+stu@slice ~/tmp/daily/08/02/guestbook_demo $ heroku addons:add heroku-postgresql:dev
+Adding heroku-postgresql:dev on stark-cove-2563... done, v5 (free)
+Attached as HEROKU_POSTGRESQL_BLACK
+Database has been created and is available
+Use `heroku addons:docs heroku-postgresql:dev` to view documentation.
+stu@slice ~/tmp/daily/08/02/guestbook_demo $ heroku run python
+Running `python` attached to terminal... up, run.1
+Python 2.7.2 (default, Oct 31 2011, 16:22:04)
+[GCC 4.4.3] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from guestbook_demo import db
+>>>
+>>> db.Base.metadata.create_all(bind=db.engine)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/schema.py", line 2564, in create_all
+    tables=tables)
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 2299, in _run_visitor
+    conn = self.contextual_connect(close_with_result=False)
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 2490, in contextual_connect
+    self.pool.connect(),
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/pool.py", line 224, in connect
+    return _ConnectionFairy(self).checkout()
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/pool.py", line 387, in __init__
+    rec = self._connection_record = pool._do_get()
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/pool.py", line 741, in _do_get
+    con = self._create_connection()
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/pool.py", line 188, in _create_connection
+    return _ConnectionRecord(self)
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/pool.py", line 270, in __init__
+    self.connection = self.__connect()
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/pool.py", line 330, in __connect
+    connection = self.__pool._creator()
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/engine/strategies.py", line 80, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/app/.heroku/venv/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 281, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/app/.heroku/venv/lib/python2.7/site-packages/psycopg2/__init__.py", line 179, in connect
+    connection_factory=connection_factory, async=async)
+sqlalchemy.exc.OperationalError: (OperationalError) could not connect to server: No such file or directory
+        Is the server running locally and accepting
+        connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+ None None
+>>>
+
