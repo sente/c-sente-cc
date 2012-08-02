@@ -1,0 +1,13 @@
+stu@slice ~/tmp/daily/08/02/guestbook_demo $ heroku run python
+Running `python` attached to terminal... up, run.1
+Python 2.7.2 (default, Oct 31 2011, 16:22:04)
+[GCC 4.4.3] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from guestbook_demo import db
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named guestbook_demo
+>>>
+>>>
+stu@slice ~/tmp/daily/08/02/guestbook_demo $
+
