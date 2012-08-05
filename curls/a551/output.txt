@@ -1,0 +1,15 @@
+stu@slice ~ $ jitsu install helloworld;
+info:    Welcome to Nodejitsu sente
+info:    It worked if it ends with Nodejitsu ok
+info:    Executing command install helloworld
+info:    Installing helloworld locally
+warn:    Downloading packages from npm, this may take a moment...
+npm http GET https://registry.npmjs.org/nodeapps-helloworld
+npm http 200 https://registry.npmjs.org/nodeapps-helloworld
+npm http GET https://registry.npmjs.org/nodeapps-helloworld/-/nodeapps-helloworld-0.2.0.tgz
+npm http 200 https://registry.npmjs.org/nodeapps-helloworld/-/nodeapps-helloworld-0.2.0.tgz
+error:   Error running command install helloworld
+error:   EACCES, mkdir '/home/stu/.npm/nodeapps-helloworld'
+error:   Error: EACCES, mkdir '/home/stu/.npm/nodeapps-helloworld'
+info:    Nodejitsu not ok
+
