@@ -1,0 +1,59 @@
+<html>
+ <head>
+  <title>derp</title>
+    <script type="text/javascript" src="http://dygraphs.com/dygraph-combined.js"></script>
+ </head>
+ <body>
+  <div id="stu" style="width:95%; height:25%;"></div>
+  <div id="Farenheit" style="width:95%; height:25%;"></div>
+  <div id="Humidity" style="width:95%; height:25%;"></div>
+  <div id="COtwo" style="width:95%; height:25%;"></div>
+
+  <script type="text/javascript">
+   wireFaren = new Dygraph(
+     document.getElementById("stu"),
+     "df.csv",
+     {
+      rollPeriod: 1,
+      animatedZooms: true,
+     }
+   );
+
+   wireFaren = new Dygraph(
+     document.getElementById("Farenheit"),
+     "wirelog-faren.csv",
+     {
+      rollPeriod: 1,
+      animatedZooms: true,
+     }
+   );
+
+   wireHumd = new Dygraph(
+     document.getElementById("Humidity"),
+     "wirelog-humd.csv",
+      {
+       rollPeriod: 1,
+       animatedZooms: true,
+      }
+     );
+
+   wireCOtwo = new Dygraph(
+     document.getElementById("COtwo"),
+     "wirelog-co2.csv",
+      {
+       rollPeriod: 1,
+       animatedZooms: true,
+      }
+     );
+
+   window.onresize = function() {
+     wireFaren.resize();
+     wireHumd.resize();
+     wireCOtwo.resize();
+   }
+
+  </script>
+
+</body>
+</html>
+
