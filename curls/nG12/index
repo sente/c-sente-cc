@@ -1,0 +1,17 @@
+MusicClipRepository initializing db client
+Express server listening on port 3001 in development mode
+
+events.js:66
+        throw arguments[1]; // Unhandled 'error' event
+                       ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:776:11)
+    at HTTPServer.Server._listen2 (net.js:915:14)
+    at listen (net.js:942:10)
+    at HTTPServer.Server.listen (net.js:992:5)
+    at new AutoUri (/home/stu/red-note-web-app/node_modules/twilio/lib/auto-uri.js:34:18)
+    at new Client (/home/stu/red-note-web-app/node_modules/twilio/lib/twilio.js:18:15)
+    at Object.<anonymous> (/home/stu/red-note-web-app/app_rn_stu.js:30:14)
+    at Module._compile (module.js:449:26)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
