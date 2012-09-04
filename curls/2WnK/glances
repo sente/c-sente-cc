@@ -1,0 +1,9 @@
+stu@sente ~ (master) $ which glances
+/usr/local/bin/glances
+stu@sente ~ (master) $ # ^--- not this location
+stu@sente ~ (master) $ locate glances.py
+/usr/local/lib/python2.6/dist-packages/glances/glances.py
+/usr/local/lib/python2.6/dist-packages/glances/glances.pyc
+stu@sente ~ (master) $ # ^---- but instaed, this location
+stu@sente ~ (master) $
+
