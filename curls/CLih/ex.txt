@@ -1,0 +1,14 @@
+
+
+CREATE TABLE "clips_musicclip" (
+    "id" integer NOT NULL PRIMARY KEY,
+    "MusicClipID" integer,
+    "Name" varchar(500),
+    "Lyrics" varchar(5000),
+    "Mood" varchar(50),
+    "SubMood" varchar(50),
+    "Emoticon" varchar(50),
+    "TimeMS" integer,
+
+
+...
